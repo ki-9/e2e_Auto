@@ -1,0 +1,156 @@
+<testsuites id="" name="" tests="5" failures="1" skipped="0" errors="0" time="35.751956">
+<testsuite name="rtsm-login.test.ts" timestamp="2025-09-18T09:04:40.779Z" hostname="chromium" tests="5" failures="1" skipped="0" time="66.214" errors="0">
+<testcase name="RTSM Maven Clinical 로그인 테스트 › 페이지 접속 테스트" classname="rtsm-login.test.ts" time="8.939">
+</testcase>
+<testcase name="RTSM Maven Clinical 로그인 테스트 › 디바이스 키 없이 로그인 테스트 (인증번호 단계 포함)" classname="rtsm-login.test.ts" time="11.863">
+<system-out>
+<![CDATA[현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiZWFiMzlhMDgtOTE5Ny00ZmMyLWE0OTMtOTcxODZkMmVmZGE4Iiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gc3dEUVlKS29aSWh2Y05BUUVCQlFBRFNnQXdSd0pBY3pCZ01jNEVuY2dUZ2dCTjdzQTIzeXNXOXk3dUJvOWJcbjdmM0xaR0g4dmlySUZpOXhDemZBVmlqMlExSnhQaXdXcHBNN2dVZWdZRW13cnNya204SFZjd0lEQVFBQlxuLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tIn0%3D
+인증번호 입력이 필요한 상태입니다.
+]]>
+</system-out>
+</testcase>
+<testcase name="RTSM Maven Clinical 로그인 테스트 › 디바이스 키로 로그인 테스트 (인증번호 단계 생략)" classname="rtsm-login.test.ts" time="10.5">
+<system-out>
+<![CDATA[✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
+✅ 디바이스 키를 사용한 로그인 성공 - 인증번호 단계 생략됨
+]]>
+</system-out>
+</testcase>
+<testcase name="RTSM Maven Clinical 로그인 테스트 › 로그인 후 기본 기능 테스트" classname="rtsm-login.test.ts" time="19.257">
+<failure message="rtsm-login.test.ts:145:7 로그인 후 기본 기능 테스트" type="FAILURE">
+<![CDATA[  [chromium] › rtsm-login.test.ts:145:7 › RTSM Maven Clinical 로그인 테스트 › 로그인 후 기본 기능 테스트 ────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('text=스터디 목록을 조회하고')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('text=스터디 목록을 조회하고')
+
+
+      157 |       
+      158 |       // 스터디 목록이 표시되는지 확인
+    > 159 |       await expect(page.locator('text=스터디 목록을 조회하고')).toBeVisible();
+          |                                                       ^
+      160 |       
+      161 |       // 테이블이 로드되었는지 확인
+      162 |       await expect(page.locator('table')).toBeVisible();
+        at C:\Users\jkan\e2e_auto\tests\rtsm-login.test.ts:159:55
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\rtsm-login-RTSM-Maven-Clinical-로그인-테스트-로그인-후-기본-기능-테스트-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
+
+[[ATTACHMENT|rtsm-login-RTSM-Maven-Clinical-로그인-테스트-로그인-후-기본-기능-테스트-chromium\test-failed-1.png]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[기본 기능 테스트 실패: ExpectError: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m failed
+
+Locator:  locator('text=스터디 목록을 조회하고')
+Expected: visible
+Received: <element(s) not found>
+Timeout:  10000ms
+
+Call log:
+[2m  - Expect "toBeVisible" with timeout 10000ms[22m
+[2m  - waiting for locator('text=스터디 목록을 조회하고')[22m
+
+    at [90mC:\Users\jkan\e2e_auto\[39mtests\rtsm-login.test.ts:159:55 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m failed\n'[39m +
+      [32m'\n'[39m +
+      [32m"Locator:  locator('text=스터디 목록을 조회하고')\n"[39m +
+      [32m'Expected: visible\n'[39m +
+      [32m'Received: <element(s) not found>\n'[39m +
+      [32m'Timeout:  10000ms\n'[39m +
+      [32m'\n'[39m +
+      [32m'Call log:\n'[39m +
+      [32m'\x1B[2m  - Expect "toBeVisible" with timeout 10000ms\x1B[22m\n'[39m +
+      [32m"\x1B[2m  - waiting for locator('text=스터디 목록을 조회하고')\x1B[22m\n"[39m,
+    pass: [33mfalse[39m,
+    actual: [32m'<element(s) not found>'[39m,
+    name: [32m'toBeVisible'[39m,
+    expected: [32m'visible'[39m,
+    log: [
+      [32m'  - Expect "toBeVisible" with timeout 10000ms'[39m,
+      [32m"  - waiting for locator('text=스터디 목록을 조회하고')"[39m
+    ],
+    timeout: [33m10000[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeVisible'[39m,
+    title: [32m'Expect "toBeVisible"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@39'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts'[39m,
+      line: [33m159[39m,
+      column: [33m55[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@39'[39m,
+      _title: [32m'Expect "toBeVisible"'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    recoverFromStepError: [36m[AsyncFunction: recoverFromStepError][39m,
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1758186308852[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m failed\n'[39m +
+        [32m'\n'[39m +
+        [32m"Locator:  locator('text=스터디 목록을 조회하고')\n"[39m +
+        [32m'Expected: visible\n'[39m +
+        [32m'Received: <element(s) not found>\n'[39m +
+        [32m'Timeout:  10000ms\n'[39m +
+        [32m'\n'[39m +
+        [32m'Call log:\n'[39m +
+        [32m'\x1B[2m  - Expect "toBeVisible" with timeout 10000ms\x1B[22m\n'[39m +
+        [32m"\x1B[2m  - waiting for locator('text=스터디 목록을 조회하고')\x1B[22m\n"[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m failed\n'[39m +
+        [32m'\n'[39m +
+        [32m"Locator:  locator('text=스터디 목록을 조회하고')\n"[39m +
+        [32m'Expected: visible\n'[39m +
+        [32m'Received: <element(s) not found>\n'[39m +
+        [32m'Timeout:  10000ms\n'[39m +
+        [32m'\n'[39m +
+        [32m'Call log:\n'[39m +
+        [32m'\x1B[2m  - Expect "toBeVisible" with timeout 10000ms\x1B[22m\n'[39m +
+        [32m"\x1B[2m  - waiting for locator('text=스터디 목록을 조회하고')\x1B[22m\n"[39m +
+        [32m'\n'[39m +
+        [32m'    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts:159:55'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+<testcase name="RTSM Maven Clinical 로그인 테스트 › 로그아웃 테스트" classname="rtsm-login.test.ts" time="15.655">
+<system-out>
+<![CDATA[✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
+로그아웃 메뉴를 찾을 수 없습니다. 사용자 메뉴 구조를 확인해주세요.
+페이지 내용 미리보기: 
+    English59:53Waken: Thu Sep 18 2025 18:05:14 GMT+0900 (Korean Standard Time)안재규StudyRelease NoteVersion 1.1.23.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvS
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
