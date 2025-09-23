@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -43,7 +43,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -59,7 +59,7 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.55.0",
-    "workers": 4,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
@@ -73,7 +73,7 @@
         {
           "title": "RTSM Maven Clinical 로그인 테스트",
           "file": "rtsm-login.test.ts",
-          "line": 64,
+          "line": 406,
           "column": 6,
           "specs": [
             {
@@ -92,12 +92,16 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8939,
+                      "duration": 3444,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "✅ 모든 환경 변수가 올바르게 설정되었습니다.\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-18T09:04:49.403Z",
+                      "startTime": "2025-09-23T05:17:17.888Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -107,7 +111,7 @@
               ],
               "id": "c84e81a56e7e20f61db2-22dee4f280e8bf441412",
               "file": "rtsm-login.test.ts",
-              "line": 66,
+              "line": 408,
               "column": 7
             },
             {
@@ -123,14 +127,20 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 11863,
+                      "duration": 9305,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiZWFiMzlhMDgtOTE5Ny00ZmMyLWE0OTMtOTcxODZkMmVmZGE4Iiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gc3dEUVlKS29aSWh2Y05BUUVCQlFBRFNnQXdSd0pBY3pCZ01jNEVuY2dUZ2dCTjdzQTIzeXNXOXk3dUJvOWJcbjdmM0xaR0g4dmlySUZpOXhDemZBVmlqMlExSnhQaXdXcHBNN2dVZWdZRW13cnNya204SFZjd0lEQVFBQlxuLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tIn0%3D\n"
+                          "text": "🔍 중복 로그인 팝업 확인 중...\n"
+                        },
+                        {
+                          "text": "✅ 중복 로그인 팝업 없음 - 정상 진행\n"
+                        },
+                        {
+                          "text": "현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiMzM1NTg1NjgtY2E4Ny00Nzk5LTgzYzEtYmU4NjFlYTAwYzEzIiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gc3dEUVlKS29aSWh2Y05BUUVCQlFBRFNnQXdSd0pBZTlRUW1ibW1keWpxZUdOMlJNVUQ0RW1xV3MvNWlaTlFcbk9HRFhJNmVJS0dOODFmWERlb3N6YTRqUW5nelBlcFRKY0JDS056RWU2aElXbVA3S29wQW9JUUlEQVFBQlxuLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tIn0%3D\n"
                         },
                         {
                           "text": "인증번호 입력이 필요한 상태입니다.\n"
@@ -138,7 +148,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-18T09:04:49.403Z",
+                      "startTime": "2025-09-23T05:17:22.258Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -148,124 +158,11 @@
               ],
               "id": "c84e81a56e7e20f61db2-6207da27b96c6750236e",
               "file": "rtsm-login.test.ts",
-              "line": 86,
+              "line": 428,
               "column": 7
             },
             {
-              "title": "디바이스 키로 로그인 테스트 (인증번호 단계 생략)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 10500,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "✅ 디바이스 인증 키가 성공적으로 설정되었습니다.\n"
-                        },
-                        {
-                          "text": "✅ 디바이스 키를 사용한 로그인 성공 - 인증번호 단계 생략됨\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-09-18T09:04:49.408Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "c84e81a56e7e20f61db2-e016eecc394970fd9bca",
-              "file": "rtsm-login.test.ts",
-              "line": 115,
-              "column": 7
-            },
-            {
-              "title": "로그인 후 기본 기능 테스트",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "failed",
-                      "duration": 19257,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=스터디 목록을 조회하고')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=스터디 목록을 조회하고')\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=스터디 목록을 조회하고')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=스터디 목록을 조회하고')\u001b[22m\n\n    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts:159:55",
-                        "location": {
-                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts",
-                          "column": 55,
-                          "line": 159
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 157 |\u001b[39m       \n \u001b[90m 158 |\u001b[39m       \u001b[90m// 스터디 목록이 표시되는지 확인\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 159 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=스터디 목록을 조회하고'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 160 |\u001b[39m       \n \u001b[90m 161 |\u001b[39m       \u001b[90m// 테이블이 로드되었는지 확인\u001b[39m\n \u001b[90m 162 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'table'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts",
-                            "column": 55,
-                            "line": 159
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=스터디 목록을 조회하고')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=스터디 목록을 조회하고')\u001b[22m\n\n\n\u001b[0m \u001b[90m 157 |\u001b[39m       \n \u001b[90m 158 |\u001b[39m       \u001b[90m// 스터디 목록이 표시되는지 확인\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 159 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=스터디 목록을 조회하고'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 160 |\u001b[39m       \n \u001b[90m 161 |\u001b[39m       \u001b[90m// 테이블이 로드되었는지 확인\u001b[39m\n \u001b[90m 162 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'table'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts:159:55\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "✅ 디바이스 인증 키가 성공적으로 설정되었습니다.\n"
-                        }
-                      ],
-                      "stderr": [
-                        {
-                          "text": "기본 기능 테스트 실패: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('text=스터디 목록을 조회하고')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=스터디 목록을 조회하고')\u001b[22m\n\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\rtsm-login.test.ts:159:55 {\n  matcherResult: {\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m\"Locator:  locator('text=스터디 목록을 조회하고')\\n\"\u001b[39m +\n      \u001b[32m'Expected: visible\\n'\u001b[39m +\n      \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n      \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Call log:\\n'\u001b[39m +\n      \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m\"\\x1B[2m  - waiting for locator('text=스터디 목록을 조회하고')\\x1B[22m\\n\"\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m,\n    actual: \u001b[32m'<element(s) not found>'\u001b[39m,\n    name: \u001b[32m'toBeVisible'\u001b[39m,\n    expected: \u001b[32m'visible'\u001b[39m,\n    log: [\n      \u001b[32m'  - Expect \"toBeVisible\" with timeout 10000ms'\u001b[39m,\n      \u001b[32m\"  - waiting for locator('text=스터디 목록을 조회하고')\"\u001b[39m\n    ],\n    timeout: \u001b[33m10000\u001b[39m\n  },\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toBeVisible'\u001b[39m,\n    title: \u001b[32m'Expect \"toBeVisible\"'\u001b[39m,\n    params: \u001b[90mundefined\u001b[39m,\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'expect@39'\u001b[39m,\n    group: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\rtsm-login.test.ts'\u001b[39m,\n      line: \u001b[33m159\u001b[39m,\n      column: \u001b[33m55\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@39'\u001b[39m,\n      _title: \u001b[32m'Expect \"toBeVisible\"'\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    recoverFromStepError: \u001b[36m[AsyncFunction: recoverFromStepError]\u001b[39m,\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1758186308852\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m\"Locator:  locator('text=스터디 목록을 조회하고')\\n\"\u001b[39m +\n        \u001b[32m'Expected: visible\\n'\u001b[39m +\n        \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n        \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('text=스터디 목록을 조회하고')\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m\"Locator:  locator('text=스터디 목록을 조회하고')\\n\"\u001b[39m +\n        \u001b[32m'Expected: visible\\n'\u001b[39m +\n        \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n        \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('text=스터디 목록을 조회하고')\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\rtsm-login.test.ts:159:55'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "startTime": "2025-09-18T09:04:49.414Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\rtsm-login-RTSM-Maven-Clinical-로그인-테스트-로그인-후-기본-기능-테스트-chromium\\test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts",
-                        "column": 55,
-                        "line": 159
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "c84e81a56e7e20f61db2-bb2ab5ef84113f8fb236",
-              "file": "rtsm-login.test.ts",
-              "line": 145,
-              "column": 7
-            },
-            {
-              "title": "로그아웃 테스트",
+              "title": "디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우)",
               "ok": true,
               "tags": [],
               "tests": [
@@ -280,22 +177,106 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 15655,
+                      "duration": 17243,
                       "errors": [],
                       "stdout": [
+                        {
+                          "text": "🚀 디바이스 키 로그인 및 로그아웃 전체 플로우 테스트 시작\n"
+                        },
+                        {
+                          "text": "1️⃣ 페이지 접속 중...\n"
+                        },
+                        {
+                          "text": "2️⃣ 디바이스 인증 키 설정 중...\n"
+                        },
                         {
                           "text": "✅ 디바이스 인증 키가 성공적으로 설정되었습니다.\n"
                         },
                         {
-                          "text": "로그아웃 메뉴를 찾을 수 없습니다. 사용자 메뉴 구조를 확인해주세요.\n"
+                          "text": "3️⃣ 로그인 수행 중...\n"
                         },
                         {
-                          "text": "페이지 내용 미리보기: \n    English59:53Waken: Thu Sep 18 2025 18:05:14 GMT+0900 (Korean Standard Time)안재규StudyRelease NoteVersion 1.1.23.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvS\n"
+                          "text": "🔍 중복 로그인 팝업 확인 중...\n"
+                        },
+                        {
+                          "text": "⚠️ 중복 로그인 팝업 발견됨\n"
+                        },
+                        {
+                          "text": "📝 감지 방법: 텍스트 기반 감지\n"
+                        },
+                        {
+                          "text": "✅ \"button:has-text(\"Confirm\")\" 버튼 클릭하여 중복 로그인 해결\n"
+                        },
+                        {
+                          "text": "✅ 중복 로그인 팝업 처리 완료\n"
+                        },
+                        {
+                          "text": "✅ 중복 로그인 팝업 처리 완료\n"
+                        },
+                        {
+                          "text": "4️⃣ 로그인 성공 확인 중...\n"
+                        },
+                        {
+                          "text": "⏳ 스터디 목록 초기 로딩 대기 중...\n"
+                        },
+                        {
+                          "text": "✅ 로그인 성공 확인 완료 - 모든 주요 요소가 정상적으로 로드됨\n"
+                        },
+                        {
+                          "text": "✅ 디바이스 키를 사용한 로그인 성공 - 인증번호 단계 생략됨\n"
+                        },
+                        {
+                          "text": "5️⃣ 대시보드 기능 확인 중...\n"
+                        },
+                        {
+                          "text": "📊 대시보드 기능 확인 시작...\n"
+                        },
+                        {
+                          "text": "⏳ 스터디 목록 로딩 완료 대기 중...\n"
+                        },
+                        {
+                          "text": "✅ 스터디 목록 로딩 완료\n"
+                        },
+                        {
+                          "text": "✅ 스터디 목록에 3개의 스터디가 로드됨\n"
+                        },
+                        {
+                          "text": "📋 첫 번째 스터디: RTSM_JK3SN\n"
+                        },
+                        {
+                          "text": "✅ 환경 타입 \"SANDBOX\": 1개 발견\n"
+                        },
+                        {
+                          "text": "📊 총 1개의 환경 타입 확인됨\n"
+                        },
+                        {
+                          "text": "📊 스터디 상태 \"Unlocked\": 2개\n"
+                        },
+                        {
+                          "text": "📊 스터디 상태 \"Locked\": 3개\n"
+                        },
+                        {
+                          "text": "📊 스폰서 정보 확인됨: 1개\n"
+                        },
+                        {
+                          "text": "📊 대시보드 기능 확인 완료\n"
+                        },
+                        {
+                          "text": "6️⃣ 로그아웃 시도 중...\n"
+                        },
+                        {
+                          "text": "7️⃣ 로그아웃 버튼 클릭 완료, 리다이렉트 대기 중...\n"
+                        },
+                        {
+                          "text": "✅ 로그아웃 성공 - 로그인 페이지로 정상 리다이렉트됨\n"
+                        },
+                        {
+                          "text": "🏁 디바이스 키 로그인 및 로그아웃 전체 플로우 테스트 완료\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-18T09:04:59.590Z",
+                      "startTime": "2025-09-23T05:17:31.583Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -303,9 +284,194 @@
                   "status": "expected"
                 }
               ],
-              "id": "c84e81a56e7e20f61db2-2265c138585c5f5ac44c",
+              "id": "c84e81a56e7e20f61db2-e8bd1f8996b6a20ea62e",
               "file": "rtsm-login.test.ts",
-              "line": 177,
+              "line": 457,
+              "column": 7
+            },
+            {
+              "title": "로그인 후 기본 기능 테스트",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9055,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ 디바이스 인증 키가 성공적으로 설정되었습니다.\n"
+                        },
+                        {
+                          "text": "🔍 중복 로그인 팝업 확인 중...\n"
+                        },
+                        {
+                          "text": "✅ 중복 로그인 팝업 없음 - 정상 진행\n"
+                        },
+                        {
+                          "text": "⏳ 스터디 목록 초기 로딩 대기 중...\n"
+                        },
+                        {
+                          "text": "✅ 로그인 성공 확인 완료 - 모든 주요 요소가 정상적으로 로드됨\n"
+                        },
+                        {
+                          "text": "📊 대시보드 기능 확인 시작...\n"
+                        },
+                        {
+                          "text": "⏳ 스터디 목록 로딩 완료 대기 중...\n"
+                        },
+                        {
+                          "text": "✅ 스터디 목록 로딩 완료\n"
+                        },
+                        {
+                          "text": "✅ 스터디 목록에 3개의 스터디가 로드됨\n"
+                        },
+                        {
+                          "text": "📋 첫 번째 스터디: RTSM_JK3SN\n"
+                        },
+                        {
+                          "text": "✅ 환경 타입 \"SANDBOX\": 1개 발견\n"
+                        },
+                        {
+                          "text": "📊 총 1개의 환경 타입 확인됨\n"
+                        },
+                        {
+                          "text": "📊 스터디 상태 \"Unlocked\": 2개\n"
+                        },
+                        {
+                          "text": "📊 스터디 상태 \"Locked\": 3개\n"
+                        },
+                        {
+                          "text": "📊 스폰서 정보 확인됨: 1개\n"
+                        },
+                        {
+                          "text": "📊 대시보드 기능 확인 완료\n"
+                        },
+                        {
+                          "text": "✅ 페이지네이션 요소 확인됨\n"
+                        },
+                        {
+                          "text": "✅ 기본 기능 테스트 완료\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-23T05:17:48.840Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c84e81a56e7e20f61db2-bb2ab5ef84113f8fb236",
+              "file": "rtsm-login.test.ts",
+              "line": 545,
+              "column": 7
+            },
+            {
+              "title": "스터디 선택 및 상세 확인 테스트",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 22895,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('table tbody tr').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('table tbody tr').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\n    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts:606:35",
+                        "location": {
+                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts",
+                          "column": 35,
+                          "line": 606
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 604 |\u001b[39m       \u001b[90m// 스터디 목록에서 첫 번째 스터디 확인\u001b[39m\n \u001b[90m 605 |\u001b[39m       \u001b[36mconst\u001b[39m firstStudyRow \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'table tbody tr'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 606 |\u001b[39m       \u001b[36mawait\u001b[39m expect(firstStudyRow)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 607 |\u001b[39m       \n \u001b[90m 608 |\u001b[39m       \u001b[90m// 스터디 상태 확인 (Unlocked 등)\u001b[39m\n \u001b[90m 609 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Unlocked'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts",
+                            "column": 35,
+                            "line": 606
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('table tbody tr').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 604 |\u001b[39m       \u001b[90m// 스터디 목록에서 첫 번째 스터디 확인\u001b[39m\n \u001b[90m 605 |\u001b[39m       \u001b[36mconst\u001b[39m firstStudyRow \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'table tbody tr'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 606 |\u001b[39m       \u001b[36mawait\u001b[39m expect(firstStudyRow)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 607 |\u001b[39m       \n \u001b[90m 608 |\u001b[39m       \u001b[90m// 스터디 상태 확인 (Unlocked 등)\u001b[39m\n \u001b[90m 609 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Unlocked'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts:606:35\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "✅ 디바이스 인증 키가 성공적으로 설정되었습니다.\n"
+                        },
+                        {
+                          "text": "🔍 중복 로그인 팝업 확인 중...\n"
+                        },
+                        {
+                          "text": "⚠️ 중복 로그인 팝업 발견됨\n"
+                        },
+                        {
+                          "text": "📝 감지 방법: 텍스트 기반 감지\n"
+                        },
+                        {
+                          "text": "✅ \"button:has-text(\"Confirm\")\" 버튼 클릭하여 중복 로그인 해결\n"
+                        },
+                        {
+                          "text": "✅ 중복 로그인 팝업 처리 완료\n"
+                        },
+                        {
+                          "text": "✅ 중복 로그인 팝업 처리 완료\n"
+                        },
+                        {
+                          "text": "⏳ 스터디 목록 초기 로딩 대기 중...\n"
+                        },
+                        {
+                          "text": "✅ 로그인 성공 확인 완료 - 모든 주요 요소가 정상적으로 로드됨\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "스터디 목록 테스트 실패: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('table tbody tr').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\rtsm-login.test.ts:606:35 {\n  matcherResult: {\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m\"Locator:  locator('table tbody tr').first()\\n\"\u001b[39m +\n      \u001b[32m'Expected: visible\\n'\u001b[39m +\n      \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n      \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Call log:\\n'\u001b[39m +\n      \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m\"\\x1B[2m  - waiting for locator('table tbody tr').first()\\x1B[22m\\n\"\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m,\n    actual: \u001b[32m'<element(s) not found>'\u001b[39m,\n    name: \u001b[32m'toBeVisible'\u001b[39m,\n    expected: \u001b[32m'visible'\u001b[39m,\n    log: [\n      \u001b[32m'  - Expect \"toBeVisible\" with timeout 10000ms'\u001b[39m,\n      \u001b[32m\"  - waiting for locator('table tbody tr').first()\"\u001b[39m\n    ],\n    timeout: \u001b[33m10000\u001b[39m\n  },\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toBeVisible'\u001b[39m,\n    title: \u001b[32m'Expect \"toBeVisible\"'\u001b[39m,\n    params: \u001b[90mundefined\u001b[39m,\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'expect@47'\u001b[39m,\n    group: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\rtsm-login.test.ts'\u001b[39m,\n      line: \u001b[33m606\u001b[39m,\n      column: \u001b[33m35\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@47'\u001b[39m,\n      _title: \u001b[32m'Expect \"toBeVisible\"'\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    recoverFromStepError: \u001b[36m[AsyncFunction: recoverFromStepError]\u001b[39m,\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1758604700667\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m\"Locator:  locator('table tbody tr').first()\\n\"\u001b[39m +\n        \u001b[32m'Expected: visible\\n'\u001b[39m +\n        \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n        \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('table tbody tr').first()\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m\"Locator:  locator('table tbody tr').first()\\n\"\u001b[39m +\n        \u001b[32m'Expected: visible\\n'\u001b[39m +\n        \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n        \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('table tbody tr').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\rtsm-login.test.ts:606:35'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-09-23T05:17:57.913Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\rtsm-login-RTSM-Maven-Clinical-로그인-테스트-스터디-선택-및-상세-확인-테스트-chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts",
+                        "column": 35,
+                        "line": 606
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c84e81a56e7e20f61db2-de095279598408986af5",
+              "file": "rtsm-login.test.ts",
+              "line": 591,
               "column": 7
             }
           ]
@@ -315,8 +481,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-18T09:04:40.398Z",
-    "duration": 35751.956,
+    "startTime": "2025-09-23T05:17:14.548Z",
+    "duration": 66632.10399999999,
     "expected": 4,
     "skipped": 0,
     "unexpected": 1,

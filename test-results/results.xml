@@ -1,88 +1,154 @@
-<testsuites id="" name="" tests="5" failures="1" skipped="0" errors="0" time="35.751956">
-<testsuite name="rtsm-login.test.ts" timestamp="2025-09-18T09:04:40.779Z" hostname="chromium" tests="5" failures="1" skipped="0" time="66.214" errors="0">
-<testcase name="RTSM Maven Clinical 로그인 테스트 › 페이지 접속 테스트" classname="rtsm-login.test.ts" time="8.939">
-</testcase>
-<testcase name="RTSM Maven Clinical 로그인 테스트 › 디바이스 키 없이 로그인 테스트 (인증번호 단계 포함)" classname="rtsm-login.test.ts" time="11.863">
+<testsuites id="" name="" tests="5" failures="1" skipped="0" errors="0" time="66.632104">
+<testsuite name="rtsm-login.test.ts" timestamp="2025-09-23T05:17:14.995Z" hostname="chromium" tests="5" failures="1" skipped="0" time="61.942" errors="0">
+<testcase name="RTSM Maven Clinical 로그인 테스트 › 페이지 접속 테스트" classname="rtsm-login.test.ts" time="3.444">
 <system-out>
-<![CDATA[현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiZWFiMzlhMDgtOTE5Ny00ZmMyLWE0OTMtOTcxODZkMmVmZGE4Iiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gc3dEUVlKS29aSWh2Y05BUUVCQlFBRFNnQXdSd0pBY3pCZ01jNEVuY2dUZ2dCTjdzQTIzeXNXOXk3dUJvOWJcbjdmM0xaR0g4dmlySUZpOXhDemZBVmlqMlExSnhQaXdXcHBNN2dVZWdZRW13cnNya204SFZjd0lEQVFBQlxuLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tIn0%3D
+<![CDATA[✅ 모든 환경 변수가 올바르게 설정되었습니다.
+]]>
+</system-out>
+</testcase>
+<testcase name="RTSM Maven Clinical 로그인 테스트 › 디바이스 키 없이 로그인 테스트 (인증번호 단계 포함)" classname="rtsm-login.test.ts" time="9.305">
+<system-out>
+<![CDATA[🔍 중복 로그인 팝업 확인 중...
+✅ 중복 로그인 팝업 없음 - 정상 진행
+현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiMzM1NTg1NjgtY2E4Ny00Nzk5LTgzYzEtYmU4NjFlYTAwYzEzIiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gc3dEUVlKS29aSWh2Y05BUUVCQlFBRFNnQXdSd0pBZTlRUW1ibW1keWpxZUdOMlJNVUQ0RW1xV3MvNWlaTlFcbk9HRFhJNmVJS0dOODFmWERlb3N6YTRqUW5nelBlcFRKY0JDS056RWU2aElXbVA3S29wQW9JUUlEQVFBQlxuLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tIn0%3D
 인증번호 입력이 필요한 상태입니다.
 ]]>
 </system-out>
 </testcase>
-<testcase name="RTSM Maven Clinical 로그인 테스트 › 디바이스 키로 로그인 테스트 (인증번호 단계 생략)" classname="rtsm-login.test.ts" time="10.5">
+<testcase name="RTSM Maven Clinical 로그인 테스트 › 디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우)" classname="rtsm-login.test.ts" time="17.243">
 <system-out>
-<![CDATA[✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
+<![CDATA[🚀 디바이스 키 로그인 및 로그아웃 전체 플로우 테스트 시작
+1️⃣ 페이지 접속 중...
+2️⃣ 디바이스 인증 키 설정 중...
+✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
+3️⃣ 로그인 수행 중...
+🔍 중복 로그인 팝업 확인 중...
+⚠️ 중복 로그인 팝업 발견됨
+📝 감지 방법: 텍스트 기반 감지
+✅ "button:has-text("Confirm")" 버튼 클릭하여 중복 로그인 해결
+✅ 중복 로그인 팝업 처리 완료
+✅ 중복 로그인 팝업 처리 완료
+4️⃣ 로그인 성공 확인 중...
+⏳ 스터디 목록 초기 로딩 대기 중...
+✅ 로그인 성공 확인 완료 - 모든 주요 요소가 정상적으로 로드됨
 ✅ 디바이스 키를 사용한 로그인 성공 - 인증번호 단계 생략됨
+5️⃣ 대시보드 기능 확인 중...
+📊 대시보드 기능 확인 시작...
+⏳ 스터디 목록 로딩 완료 대기 중...
+✅ 스터디 목록 로딩 완료
+✅ 스터디 목록에 3개의 스터디가 로드됨
+📋 첫 번째 스터디: RTSM_JK3SN
+✅ 환경 타입 "SANDBOX": 1개 발견
+📊 총 1개의 환경 타입 확인됨
+📊 스터디 상태 "Unlocked": 2개
+📊 스터디 상태 "Locked": 3개
+📊 스폰서 정보 확인됨: 1개
+📊 대시보드 기능 확인 완료
+6️⃣ 로그아웃 시도 중...
+7️⃣ 로그아웃 버튼 클릭 완료, 리다이렉트 대기 중...
+✅ 로그아웃 성공 - 로그인 페이지로 정상 리다이렉트됨
+🏁 디바이스 키 로그인 및 로그아웃 전체 플로우 테스트 완료
 ]]>
 </system-out>
 </testcase>
-<testcase name="RTSM Maven Clinical 로그인 테스트 › 로그인 후 기본 기능 테스트" classname="rtsm-login.test.ts" time="19.257">
-<failure message="rtsm-login.test.ts:145:7 로그인 후 기본 기능 테스트" type="FAILURE">
-<![CDATA[  [chromium] › rtsm-login.test.ts:145:7 › RTSM Maven Clinical 로그인 테스트 › 로그인 후 기본 기능 테스트 ────────────
+<testcase name="RTSM Maven Clinical 로그인 테스트 › 로그인 후 기본 기능 테스트" classname="rtsm-login.test.ts" time="9.055">
+<system-out>
+<![CDATA[✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
+🔍 중복 로그인 팝업 확인 중...
+✅ 중복 로그인 팝업 없음 - 정상 진행
+⏳ 스터디 목록 초기 로딩 대기 중...
+✅ 로그인 성공 확인 완료 - 모든 주요 요소가 정상적으로 로드됨
+📊 대시보드 기능 확인 시작...
+⏳ 스터디 목록 로딩 완료 대기 중...
+✅ 스터디 목록 로딩 완료
+✅ 스터디 목록에 3개의 스터디가 로드됨
+📋 첫 번째 스터디: RTSM_JK3SN
+✅ 환경 타입 "SANDBOX": 1개 발견
+📊 총 1개의 환경 타입 확인됨
+📊 스터디 상태 "Unlocked": 2개
+📊 스터디 상태 "Locked": 3개
+📊 스폰서 정보 확인됨: 1개
+📊 대시보드 기능 확인 완료
+✅ 페이지네이션 요소 확인됨
+✅ 기본 기능 테스트 완료
+]]>
+</system-out>
+</testcase>
+<testcase name="RTSM Maven Clinical 로그인 테스트 › 스터디 선택 및 상세 확인 테스트" classname="rtsm-login.test.ts" time="22.895">
+<failure message="rtsm-login.test.ts:591:7 스터디 선택 및 상세 확인 테스트" type="FAILURE">
+<![CDATA[  [chromium] › rtsm-login.test.ts:591:7 › RTSM Maven Clinical 로그인 테스트 › 스터디 선택 및 상세 확인 테스트 ─────────
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator:  locator('text=스터디 목록을 조회하고')
+    Locator:  locator('table tbody tr').first()
     Expected: visible
     Received: <element(s) not found>
     Timeout:  10000ms
 
     Call log:
       - Expect "toBeVisible" with timeout 10000ms
-      - waiting for locator('text=스터디 목록을 조회하고')
+      - waiting for locator('table tbody tr').first()
 
 
-      157 |       
-      158 |       // 스터디 목록이 표시되는지 확인
-    > 159 |       await expect(page.locator('text=스터디 목록을 조회하고')).toBeVisible();
-          |                                                       ^
-      160 |       
-      161 |       // 테이블이 로드되었는지 확인
-      162 |       await expect(page.locator('table')).toBeVisible();
-        at C:\Users\jkan\e2e_auto\tests\rtsm-login.test.ts:159:55
+      604 |       // 스터디 목록에서 첫 번째 스터디 확인
+      605 |       const firstStudyRow = page.locator('table tbody tr').first();
+    > 606 |       await expect(firstStudyRow).toBeVisible();
+          |                                   ^
+      607 |       
+      608 |       // 스터디 상태 확인 (Unlocked 등)
+      609 |       await expect(page.locator('text=Unlocked')).toBeVisible();
+        at C:\Users\jkan\e2e_auto\tests\rtsm-login.test.ts:606:35
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\rtsm-login-RTSM-Maven-Clinical-로그인-테스트-로그인-후-기본-기능-테스트-chromium\test-failed-1.png
+    ..\test-results\rtsm-login-RTSM-Maven-Clinical-로그인-테스트-스터디-선택-및-상세-확인-테스트-chromium\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
 <![CDATA[✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
+🔍 중복 로그인 팝업 확인 중...
+⚠️ 중복 로그인 팝업 발견됨
+📝 감지 방법: 텍스트 기반 감지
+✅ "button:has-text("Confirm")" 버튼 클릭하여 중복 로그인 해결
+✅ 중복 로그인 팝업 처리 완료
+✅ 중복 로그인 팝업 처리 완료
+⏳ 스터디 목록 초기 로딩 대기 중...
+✅ 로그인 성공 확인 완료 - 모든 주요 요소가 정상적으로 로드됨
 
-[[ATTACHMENT|rtsm-login-RTSM-Maven-Clinical-로그인-테스트-로그인-후-기본-기능-테스트-chromium\test-failed-1.png]]
+[[ATTACHMENT|rtsm-login-RTSM-Maven-Clinical-로그인-테스트-스터디-선택-및-상세-확인-테스트-chromium\test-failed-1.png]]
 ]]>
 </system-out>
 <system-err>
-<![CDATA[기본 기능 테스트 실패: ExpectError: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m failed
+<![CDATA[스터디 목록 테스트 실패: ExpectError: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m failed
 
-Locator:  locator('text=스터디 목록을 조회하고')
+Locator:  locator('table tbody tr').first()
 Expected: visible
 Received: <element(s) not found>
 Timeout:  10000ms
 
 Call log:
 [2m  - Expect "toBeVisible" with timeout 10000ms[22m
-[2m  - waiting for locator('text=스터디 목록을 조회하고')[22m
+[2m  - waiting for locator('table tbody tr').first()[22m
 
-    at [90mC:\Users\jkan\e2e_auto\[39mtests\rtsm-login.test.ts:159:55 {
+    at [90mC:\Users\jkan\e2e_auto\[39mtests\rtsm-login.test.ts:606:35 {
   matcherResult: {
     message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m failed\n'[39m +
       [32m'\n'[39m +
-      [32m"Locator:  locator('text=스터디 목록을 조회하고')\n"[39m +
+      [32m"Locator:  locator('table tbody tr').first()\n"[39m +
       [32m'Expected: visible\n'[39m +
       [32m'Received: <element(s) not found>\n'[39m +
       [32m'Timeout:  10000ms\n'[39m +
       [32m'\n'[39m +
       [32m'Call log:\n'[39m +
       [32m'\x1B[2m  - Expect "toBeVisible" with timeout 10000ms\x1B[22m\n'[39m +
-      [32m"\x1B[2m  - waiting for locator('text=스터디 목록을 조회하고')\x1B[22m\n"[39m,
+      [32m"\x1B[2m  - waiting for locator('table tbody tr').first()\x1B[22m\n"[39m,
     pass: [33mfalse[39m,
     actual: [32m'<element(s) not found>'[39m,
     name: [32m'toBeVisible'[39m,
     expected: [32m'visible'[39m,
     log: [
       [32m'  - Expect "toBeVisible" with timeout 10000ms'[39m,
-      [32m"  - waiting for locator('text=스터디 목록을 조회하고')"[39m
+      [32m"  - waiting for locator('table tbody tr').first()"[39m
     ],
     timeout: [33m10000[39m
   },
@@ -92,65 +158,56 @@ Call log:
     title: [32m'Expect "toBeVisible"'[39m,
     params: [90mundefined[39m,
     infectParentStepsWithError: [90mundefined[39m,
-    stepId: [32m'expect@39'[39m,
+    stepId: [32m'expect@47'[39m,
     group: [90mundefined[39m,
     boxedStack: [90mundefined[39m,
     location: {
       file: [32m'C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts'[39m,
-      line: [33m159[39m,
-      column: [33m55[39m
+      line: [33m606[39m,
+      column: [33m35[39m
     },
     steps: [],
     attachmentIndices: [],
     info: TestStepInfoImpl {
       annotations: [],
       _testInfo: [36m[TestInfoImpl][39m,
-      _stepId: [32m'expect@39'[39m,
+      _stepId: [32m'expect@47'[39m,
       _title: [32m'Expect "toBeVisible"'[39m,
       _parentStep: [90mundefined[39m,
       skip: [36m[Function (anonymous)][39m
     },
     recoverFromStepError: [36m[AsyncFunction: recoverFromStepError][39m,
     complete: [36m[Function: complete][39m,
-    endWallTime: [33m1758186308852[39m,
+    endWallTime: [33m1758604700667[39m,
     error: {
       message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m failed\n'[39m +
         [32m'\n'[39m +
-        [32m"Locator:  locator('text=스터디 목록을 조회하고')\n"[39m +
+        [32m"Locator:  locator('table tbody tr').first()\n"[39m +
         [32m'Expected: visible\n'[39m +
         [32m'Received: <element(s) not found>\n'[39m +
         [32m'Timeout:  10000ms\n'[39m +
         [32m'\n'[39m +
         [32m'Call log:\n'[39m +
         [32m'\x1B[2m  - Expect "toBeVisible" with timeout 10000ms\x1B[22m\n'[39m +
-        [32m"\x1B[2m  - waiting for locator('text=스터디 목록을 조회하고')\x1B[22m\n"[39m,
+        [32m"\x1B[2m  - waiting for locator('table tbody tr').first()\x1B[22m\n"[39m,
       stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m failed\n'[39m +
         [32m'\n'[39m +
-        [32m"Locator:  locator('text=스터디 목록을 조회하고')\n"[39m +
+        [32m"Locator:  locator('table tbody tr').first()\n"[39m +
         [32m'Expected: visible\n'[39m +
         [32m'Received: <element(s) not found>\n'[39m +
         [32m'Timeout:  10000ms\n'[39m +
         [32m'\n'[39m +
         [32m'Call log:\n'[39m +
         [32m'\x1B[2m  - Expect "toBeVisible" with timeout 10000ms\x1B[22m\n'[39m +
-        [32m"\x1B[2m  - waiting for locator('text=스터디 목록을 조회하고')\x1B[22m\n"[39m +
+        [32m"\x1B[2m  - waiting for locator('table tbody tr').first()\x1B[22m\n"[39m +
         [32m'\n'[39m +
-        [32m'    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts:159:55'[39m,
+        [32m'    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts:606:35'[39m,
       cause: [90mundefined[39m
     }
   }
 }
 ]]>
 </system-err>
-</testcase>
-<testcase name="RTSM Maven Clinical 로그인 테스트 › 로그아웃 테스트" classname="rtsm-login.test.ts" time="15.655">
-<system-out>
-<![CDATA[✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
-로그아웃 메뉴를 찾을 수 없습니다. 사용자 메뉴 구조를 확인해주세요.
-페이지 내용 미리보기: 
-    English59:53Waken: Thu Sep 18 2025 18:05:14 GMT+0900 (Korean Standard Time)안재규StudyRelease NoteVersion 1.1.23.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvS
-]]>
-</system-out>
 </testcase>
 </testsuite>
 </testsuites>

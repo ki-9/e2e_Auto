@@ -11,7 +11,7 @@ export default defineConfig({
   /* CI에서 실패 시 재시도 */
   retries: process.env.CI ? 2 : 0,
   /* 병렬 워커 수 */
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.WORKERS ? parseInt(process.env.WORKERS) : 1,
   /* 리포터 설정 */
   reporter: [
     ['html'],
