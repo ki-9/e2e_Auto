@@ -5,10 +5,7 @@ import {
   performLogin, 
   TEST_CONFIG 
 } from '../helpers/test-helpers';
-import { 
-  verifyLoginSuccess,
-  waitForTableLoading 
-} from '../helpers/page-helpers';
+import { waitForTableLoading, verifyLoginSuccess } from '../helpers/page-helpers';
 
 // 테스트 시작 전 환경 변수 검증
 test.beforeAll(async () => {
