@@ -2,7 +2,7 @@
 import { FullConfig } from '@playwright/test';
 
 async function globalSetup(config: FullConfig) {
-  console.log('🚀 Maven Clinical RTSM 테스트 시작');
+  console.log('Maven Clinical RTSM 테스트 시작');
   
   // 모든 프로젝트의 설정 확인
   const projects = config.projects || [];

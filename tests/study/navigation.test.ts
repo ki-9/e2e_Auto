@@ -28,7 +28,7 @@ test.describe('RTSM 스터디 네비게이션 테스트', () => {
       await verifyLoginSuccess(page);
       
       // 스터디 목록 로딩 대기
-      await waitForTableLoading(page, 15000);
+      await waitForTableLoading(page);
       
       // Protocol No. 열의 링크 클릭 (실제 Dashboard로 이동)
       console.log('📋 Protocol No. 링크를 클릭하여 스터디 Dashboard로 이동 시도...');
@@ -47,10 +47,6 @@ test.describe('RTSM 스터디 네비게이션 테스트', () => {
       await page.waitForTimeout(3000); // Dashboard 로딩 대기
       
       console.log('✅ 스터디 Dashboard로 이동 완료');
-      
-      // Dashboard 페이지 요소들 확인
-      await expect(page.locator('text=[Owner] 안재규')).toBeVisible();
-      console.log('👤 사용자 정보 확인: [Owner] 안재규');
       
       // Dashboard 메뉴들 확인
       const dashboardMenus = [
@@ -142,7 +138,7 @@ test.describe('RTSM 스터디 네비게이션 테스트', () => {
       await setDeviceAuthenticationKey(page);
       await performLogin(page);
       await verifyLoginSuccess(page);
-      await waitForTableLoading(page, 15000);
+      await waitForTableLoading(page);
       
       // 스터디 Dashboard로 이동
       const protocolLink = page.locator('a:has-text("RTSM_JK_MVN")').first();

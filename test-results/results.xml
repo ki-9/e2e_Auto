@@ -1,21 +1,46 @@
-<testsuites id="" name="" tests="5" failures="1" skipped="0" errors="0" time="66.632104">
-<testsuite name="rtsm-login.test.ts" timestamp="2025-09-23T05:17:14.995Z" hostname="chromium" tests="5" failures="1" skipped="0" time="61.942" errors="0">
-<testcase name="RTSM Maven Clinical 로그인 테스트 › 페이지 접속 테스트" classname="rtsm-login.test.ts" time="3.444">
+<testsuites id="" name="" tests="5" failures="3" skipped="0" errors="0" time="106.041891">
+<testsuite name="auth\login.test.ts" timestamp="2025-09-25T01:43:37.188Z" hostname="chromium" tests="3" failures="1" skipped="0" time="23.572" errors="0">
+<testcase name="RTSM 인증 테스트 › 페이지 접속 테스트" classname="auth\login.test.ts" time="3.214">
 <system-out>
 <![CDATA[✅ 모든 환경 변수가 올바르게 설정되었습니다.
+✅ 페이지 접속 및 로그인 폼 확인 완료
 ]]>
 </system-out>
 </testcase>
-<testcase name="RTSM Maven Clinical 로그인 테스트 › 디바이스 키 없이 로그인 테스트 (인증번호 단계 포함)" classname="rtsm-login.test.ts" time="9.305">
+<testcase name="RTSM 인증 테스트 › 디바이스 키 없이 로그인 테스트 (인증번호 단계 포함)" classname="auth\login.test.ts" time="7.98">
 <system-out>
 <![CDATA[🔍 중복 로그인 팝업 확인 중...
 ✅ 중복 로그인 팝업 없음 - 정상 진행
-현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiMzM1NTg1NjgtY2E4Ny00Nzk5LTgzYzEtYmU4NjFlYTAwYzEzIiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gc3dEUVlKS29aSWh2Y05BUUVCQlFBRFNnQXdSd0pBZTlRUW1ibW1keWpxZUdOMlJNVUQ0RW1xV3MvNWlaTlFcbk9HRFhJNmVJS0dOODFmWERlb3N6YTRqUW5nelBlcFRKY0JDS056RWU2aElXbVA3S29wQW9JUUlEQVFBQlxuLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tIn0%3D
+현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiYzc1OTMyNWEtMTU4YS00YTkxLWI2NjktYTdkZmVmNzk4N2YxIiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gd3dEUVlKS29aSWh2Y05BUUVCQlFBRFN3QXdTQUpCQUtlUG1Ray9YZklINmJOSDZwUXMzYWxZOVRNV2lESWdcbnZYd1FCZFlOUVQyT3VIaTlYVEtZd2Q5NDI3dmd4ZVY2T3lFZGpMWnRHdEZza3FMZkJvZksyYVVDQXdFQUFRPT1cbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9
 인증번호 입력이 필요한 상태입니다.
 ]]>
 </system-out>
 </testcase>
-<testcase name="RTSM Maven Clinical 로그인 테스트 › 디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우)" classname="rtsm-login.test.ts" time="17.243">
+<testcase name="RTSM 인증 테스트 › 디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우)" classname="auth\login.test.ts" time="12.378">
+<failure message="login.test.ts:73:7 디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우)" type="FAILURE">
+<![CDATA[  [chromium] › auth\login.test.ts:73:7 › RTSM 인증 테스트 › 디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우) ─────────────
+
+    Error: 로그아웃 버튼을 찾을 수 없습니다.
+
+       at helpers\page-helpers.ts:514
+
+      512 |       console.log('현재 페이지 내용:', dropdownContent?.substring(0, 300));
+      513 |       
+    > 514 |       throw new Error('로그아웃 버튼을 찾을 수 없습니다.');
+          |             ^
+      515 |     }
+      516 |   }
+      517 |
+        at PageHelpers.clickLogoutButton (C:\Users\jkan\e2e_auto\tests\helpers\page-helpers.ts:514:13)
+        at PageHelpers.performLogout (C:\Users\jkan\e2e_auto\tests\helpers\page-helpers.ts:530:7)
+        at performLogout (C:\Users\jkan\e2e_auto\tests\helpers\page-helpers.ts:742:3)
+        at C:\Users\jkan\e2e_auto\tests\auth\login.test.ts:102:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\auth-login-RTSM-인증-테스트-디바이스-키로-로그인-및-로그아웃-테스트-전체-플로우--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[🚀 디바이스 키 로그인 및 로그아웃 전체 플로우 테스트 시작
 1️⃣ 페이지 접속 중...
@@ -23,185 +48,209 @@
 ✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
 3️⃣ 로그인 수행 중...
 🔍 중복 로그인 팝업 확인 중...
-⚠️ 중복 로그인 팝업 발견됨
-📝 감지 방법: 텍스트 기반 감지
-✅ "button:has-text("Confirm")" 버튼 클릭하여 중복 로그인 해결
-✅ 중복 로그인 팝업 처리 완료
-✅ 중복 로그인 팝업 처리 완료
-4️⃣ 로그인 성공 확인 중...
-⏳ 스터디 목록 초기 로딩 대기 중...
-✅ 로그인 성공 확인 완료 - 모든 주요 요소가 정상적으로 로드됨
-✅ 디바이스 키를 사용한 로그인 성공 - 인증번호 단계 생략됨
-5️⃣ 대시보드 기능 확인 중...
-📊 대시보드 기능 확인 시작...
-⏳ 스터디 목록 로딩 완료 대기 중...
-✅ 스터디 목록 로딩 완료
-✅ 스터디 목록에 3개의 스터디가 로드됨
-📋 첫 번째 스터디: RTSM_JK3SN
-✅ 환경 타입 "SANDBOX": 1개 발견
-📊 총 1개의 환경 타입 확인됨
-📊 스터디 상태 "Unlocked": 2개
-📊 스터디 상태 "Locked": 3개
-📊 스폰서 정보 확인됨: 1개
-📊 대시보드 기능 확인 완료
-6️⃣ 로그아웃 시도 중...
-7️⃣ 로그아웃 버튼 클릭 완료, 리다이렉트 대기 중...
-✅ 로그아웃 성공 - 로그인 페이지로 정상 리다이렉트됨
-🏁 디바이스 키 로그인 및 로그아웃 전체 플로우 테스트 완료
-]]>
-</system-out>
-</testcase>
-<testcase name="RTSM Maven Clinical 로그인 테스트 › 로그인 후 기본 기능 테스트" classname="rtsm-login.test.ts" time="9.055">
-<system-out>
-<![CDATA[✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
-🔍 중복 로그인 팝업 확인 중...
 ✅ 중복 로그인 팝업 없음 - 정상 진행
-⏳ 스터디 목록 초기 로딩 대기 중...
-✅ 로그인 성공 확인 완료 - 모든 주요 요소가 정상적으로 로드됨
-📊 대시보드 기능 확인 시작...
-⏳ 스터디 목록 로딩 완료 대기 중...
-✅ 스터디 목록 로딩 완료
-✅ 스터디 목록에 3개의 스터디가 로드됨
-📋 첫 번째 스터디: RTSM_JK3SN
-✅ 환경 타입 "SANDBOX": 1개 발견
-📊 총 1개의 환경 타입 확인됨
-📊 스터디 상태 "Unlocked": 2개
-📊 스터디 상태 "Locked": 3개
-📊 스폰서 정보 확인됨: 1개
-📊 대시보드 기능 확인 완료
-✅ 페이지네이션 요소 확인됨
-✅ 기본 기능 테스트 완료
+4️⃣ 로그인 성공 확인 중...
+현재 URL: https://staging.rtsm.mavenclinical.com/
+페이지 제목: Maven RTSM
+페이지 내용 미리보기: 
+    English59:54Waken: Thu Sep 25 2025 10:44:00 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.1.23.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated atNo 
+✅ URL 기반으로 로그인 성공 확인됨
+✅ 디바이스 키를 사용한 로그인 성공 - 인증번호 단계 생략됨
+6️⃣ 로그아웃 시도 중...
+사용자 메뉴 클릭 시도 중...
+사용자 메뉴 버튼 발견: .css-unzqs5 button.GrButton:has(.GrIcon)
+버튼 텍스트: English
+✅ 사용자 메뉴 클릭 성공
+로그아웃 버튼 클릭 시도 중...
+⚠️ 로그아웃 버튼을 찾을 수 없습니다.
+현재 페이지 내용: 
+    English59:51Waken: Thu Sep 25 2025 10:44:03 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.1.23.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated atNo 
+실패
+현재 URL: https://staging.rtsm.mavenclinical.com/
+
+[[ATTACHMENT|auth-login-RTSM-인증-테스트-디바이스-키로-로그인-및-로그아웃-테스트-전체-플로우--chromium\test-failed-1.png]]
 ]]>
 </system-out>
+<system-err>
+<![CDATA[로그아웃 프로세스 실패: Error: 로그아웃 버튼을 찾을 수 없습니다.
+    at PageHelpers.clickLogoutButton [90m(C:\Users\jkan\e2e_auto\[39mtests\helpers\page-helpers.ts:514:13[90m)[39m
+    at PageHelpers.performLogout [90m(C:\Users\jkan\e2e_auto\[39mtests\helpers\page-helpers.ts:530:7[90m)[39m
+    at performLogout [90m(C:\Users\jkan\e2e_auto\[39mtests\helpers\page-helpers.ts:742:3[90m)[39m
+    at [90mC:\Users\jkan\e2e_auto\[39mtests\auth\login.test.ts:102:7
+    at [90mC:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:309:9
+    at [90mC:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\testInfo.js:326:11
+    at TimeoutManager.withRunnable [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\timeoutManager.js:67:14[90m)[39m
+    at TestInfoImpl._runWithTimeout [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\testInfo.js:324:7[90m)[39m
+    at [90mC:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:307:7
+    at WorkerMain._runTest [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:282:5[90m)[39m
+    at WorkerMain.runTestGroup [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:194:11[90m)[39m
+    at process.<anonymous> [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\common\process.js:65:22[90m)[39m
+❌ 디바이스 키 로그인/로그아웃 테스트 실패: Error: 로그아웃 버튼을 찾을 수 없습니다.
+    at PageHelpers.clickLogoutButton [90m(C:\Users\jkan\e2e_auto\[39mtests\helpers\page-helpers.ts:514:13[90m)[39m
+    at PageHelpers.performLogout [90m(C:\Users\jkan\e2e_auto\[39mtests\helpers\page-helpers.ts:530:7[90m)[39m
+    at performLogout [90m(C:\Users\jkan\e2e_auto\[39mtests\helpers\page-helpers.ts:742:3[90m)[39m
+    at [90mC:\Users\jkan\e2e_auto\[39mtests\auth\login.test.ts:102:7
+    at [90mC:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:309:9
+    at [90mC:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\testInfo.js:326:11
+    at TimeoutManager.withRunnable [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\timeoutManager.js:67:14[90m)[39m
+    at TestInfoImpl._runWithTimeout [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\testInfo.js:324:7[90m)[39m
+    at [90mC:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:307:7
+    at WorkerMain._runTest [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:282:5[90m)[39m
+    at WorkerMain.runTestGroup [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:194:11[90m)[39m
+    at process.<anonymous> [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\common\process.js:65:22[90m)[39m
+]]>
+</system-err>
 </testcase>
-<testcase name="RTSM Maven Clinical 로그인 테스트 › 스터디 선택 및 상세 확인 테스트" classname="rtsm-login.test.ts" time="22.895">
-<failure message="rtsm-login.test.ts:591:7 스터디 선택 및 상세 확인 테스트" type="FAILURE">
-<![CDATA[  [chromium] › rtsm-login.test.ts:591:7 › RTSM Maven Clinical 로그인 테스트 › 스터디 선택 및 상세 확인 테스트 ─────────
+</testsuite>
+<testsuite name="study\navigation.test.ts" timestamp="2025-09-25T01:43:37.188Z" hostname="chromium" tests="2" failures="2" skipped="0" time="71.672" errors="0">
+<testcase name="RTSM 스터디 네비게이션 테스트 › 스터디 선택 및 Dashboard 이동 테스트" classname="study\navigation.test.ts" time="40.134">
+<failure message="navigation.test.ts:17:7 스터디 선택 및 Dashboard 이동 테스트" type="FAILURE">
+<![CDATA[  [chromium] › study\navigation.test.ts:17:7 › RTSM 스터디 네비게이션 테스트 › 스터디 선택 및 Dashboard 이동 테스트 ──────
 
-    Error: expect(locator).toBeVisible() failed
-
-    Locator:  locator('table tbody tr').first()
-    Expected: visible
-    Received: <element(s) not found>
-    Timeout:  10000ms
-
+    Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
     Call log:
-      - Expect "toBeVisible" with timeout 10000ms
-      - waiting for locator('table tbody tr').first()
+      - waiting for locator('table') to be visible
 
 
-      604 |       // 스터디 목록에서 첫 번째 스터디 확인
-      605 |       const firstStudyRow = page.locator('table tbody tr').first();
-    > 606 |       await expect(firstStudyRow).toBeVisible();
-          |                                   ^
-      607 |       
-      608 |       // 스터디 상태 확인 (Unlocked 등)
-      609 |       await expect(page.locator('text=Unlocked')).toBeVisible();
-        at C:\Users\jkan\e2e_auto\tests\rtsm-login.test.ts:606:35
+       at helpers\page-helpers.ts:249
+
+      247 |       console.log(`페이지 내용 미리보기: ${pageContent.substring(0, 300)}`);
+      248 |       
+    > 249 |       throw new Error(`테이블을 찾을 수 없습니다: ${error}`);
+          |             ^
+      250 |     }
+      251 |   }
+      252 |
+        at PageHelpers.waitForTableLoading (C:\Users\jkan\e2e_auto\tests\helpers\page-helpers.ts:249:13)
+        at waitForTableLoading (C:\Users\jkan\e2e_auto\tests\helpers\page-helpers.ts:734:3)
+        at C:\Users\jkan\e2e_auto\tests\study\navigation.test.ts:31:7
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\rtsm-login-RTSM-Maven-Clinical-로그인-테스트-스터디-선택-및-상세-확인-테스트-chromium\test-failed-1.png
+    ..\test-results\study-navigation-RTSM-스터디--330af-트-스터디-선택-및-Dashboard-이동-테스트-chromium\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
-<![CDATA[✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
+<![CDATA[✅ 모든 환경 변수가 올바르게 설정되었습니다.
+✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
 🔍 중복 로그인 팝업 확인 중...
 ⚠️ 중복 로그인 팝업 발견됨
 📝 감지 방법: 텍스트 기반 감지
 ✅ "button:has-text("Confirm")" 버튼 클릭하여 중복 로그인 해결
 ✅ 중복 로그인 팝업 처리 완료
 ✅ 중복 로그인 팝업 처리 완료
-⏳ 스터디 목록 초기 로딩 대기 중...
-✅ 로그인 성공 확인 완료 - 모든 주요 요소가 정상적으로 로드됨
+현재 URL: https://staging.rtsm.mavenclinical.com/
+페이지 제목: Maven RTSM
+페이지 내용 미리보기: 
+    English59:54Waken: Thu Sep 25 2025 10:44:17 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.1.23.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated atNo 
+✅ URL 기반으로 로그인 성공 확인됨
+테이블 로딩 대기 중...
+페이지 내용 미리보기: 
+    English59:24Waken: Thu Sep 25 2025 10:44:47 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.1.23.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated atNo 
 
-[[ATTACHMENT|rtsm-login-RTSM-Maven-Clinical-로그인-테스트-스터디-선택-및-상세-확인-테스트-chromium\test-failed-1.png]]
+[[ATTACHMENT|study-navigation-RTSM-스터디--330af-트-스터디-선택-및-Dashboard-이동-테스트-chromium\test-failed-1.png]]
 ]]>
 </system-out>
 <system-err>
-<![CDATA[스터디 목록 테스트 실패: ExpectError: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m failed
-
-Locator:  locator('table tbody tr').first()
-Expected: visible
-Received: <element(s) not found>
-Timeout:  10000ms
-
+<![CDATA[스터디 Dashboard 테스트 실패: Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
 Call log:
-[2m  - Expect "toBeVisible" with timeout 10000ms[22m
-[2m  - waiting for locator('table tbody tr').first()[22m
+[2m  - waiting for locator('table') to be visible[22m
 
-    at [90mC:\Users\jkan\e2e_auto\[39mtests\rtsm-login.test.ts:606:35 {
-  matcherResult: {
-    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m failed\n'[39m +
-      [32m'\n'[39m +
-      [32m"Locator:  locator('table tbody tr').first()\n"[39m +
-      [32m'Expected: visible\n'[39m +
-      [32m'Received: <element(s) not found>\n'[39m +
-      [32m'Timeout:  10000ms\n'[39m +
-      [32m'\n'[39m +
-      [32m'Call log:\n'[39m +
-      [32m'\x1B[2m  - Expect "toBeVisible" with timeout 10000ms\x1B[22m\n'[39m +
-      [32m"\x1B[2m  - waiting for locator('table tbody tr').first()\x1B[22m\n"[39m,
-    pass: [33mfalse[39m,
-    actual: [32m'<element(s) not found>'[39m,
-    name: [32m'toBeVisible'[39m,
-    expected: [32m'visible'[39m,
-    log: [
-      [32m'  - Expect "toBeVisible" with timeout 10000ms'[39m,
-      [32m"  - waiting for locator('table tbody tr').first()"[39m
-    ],
-    timeout: [33m10000[39m
-  },
+    at PageHelpers.waitForTableLoading [90m(C:\Users\jkan\e2e_auto\[39mtests\helpers\page-helpers.ts:249:13[90m)[39m
+    at waitForTableLoading [90m(C:\Users\jkan\e2e_auto\[39mtests\helpers\page-helpers.ts:734:3[90m)[39m
+    at [90mC:\Users\jkan\e2e_auto\[39mtests\study\navigation.test.ts:31:7
+    at [90mC:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:309:9
+    at [90mC:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\testInfo.js:326:11
+    at TimeoutManager.withRunnable [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\timeoutManager.js:67:14[90m)[39m
+    at TestInfoImpl._runWithTimeout [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\testInfo.js:324:7[90m)[39m
+    at [90mC:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:307:7
+    at WorkerMain._runTest [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:282:5[90m)[39m
+    at WorkerMain.runTestGroup [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:194:11[90m)[39m
+    at process.<anonymous> [90m(C:\Users\jkan\e2e_auto\[39mnode_modules\[4mplaywright[24m\lib\common\process.js:65:22[90m)[39m
+]]>
+</system-err>
+</testcase>
+<testcase name="RTSM 스터디 네비게이션 테스트 › 스터디 메뉴 네비게이션 테스트" classname="study\navigation.test.ts" time="31.538">
+<failure message="navigation.test.ts:131:7 스터디 메뉴 네비게이션 테스트" type="FAILURE">
+<![CDATA[  [chromium] › study\navigation.test.ts:131:7 › RTSM 스터디 네비게이션 테스트 › 스터디 메뉴 네비게이션 테스트 ──────────────
+
+    TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[name="email"], input[type="email"], #email') to be visible
+
+
+       at helpers\test-helpers.ts:165
+
+      163 |   // 이메일 입력
+      164 |   const emailSelector = 'input[name="email"], input[type="email"], #email';
+    > 165 |   await page.waitForSelector(emailSelector, { timeout: TEST_CONFIG.timeout });
+          |              ^
+      166 |   await page.fill(emailSelector, TEST_CONFIG.credentials.email);
+      167 |
+      168 |   // 패스워드 입력
+        at performLogin (C:\Users\jkan\e2e_auto\tests\helpers\test-helpers.ts:165:14)
+        at C:\Users\jkan\e2e_auto\tests\study\navigation.test.ts:139:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\study-navigation-RTSM-스터디-네비게이션-테스트-스터디-메뉴-네비게이션-테스트-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[✅ 모든 환경 변수가 올바르게 설정되었습니다.
+✅ 디바이스 인증 키가 성공적으로 설정되었습니다.
+
+[[ATTACHMENT|study-navigation-RTSM-스터디-네비게이션-테스트-스터디-메뉴-네비게이션-테스트-chromium\test-failed-1.png]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[스터디 메뉴 네비게이션 테스트 실패: page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[name="email"], input[type="email"], #email') to be visible[22m
+
+    at performLogin [90m(C:\Users\jkan\e2e_auto\[39mtests\helpers\test-helpers.ts:165:14[90m)[39m
+    at [90mC:\Users\jkan\e2e_auto\[39mtests\study\navigation.test.ts:139:25 {
+  name: [32m'TimeoutError'[39m,
   [[32mSymbol(step)[39m]: {
-    category: [32m'expect'[39m,
-    apiName: [32m'expect.toBeVisible'[39m,
-    title: [32m'Expect "toBeVisible"'[39m,
-    params: [90mundefined[39m,
-    infectParentStepsWithError: [90mundefined[39m,
-    stepId: [32m'expect@47'[39m,
-    group: [90mundefined[39m,
-    boxedStack: [90mundefined[39m,
     location: {
-      file: [32m'C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts'[39m,
-      line: [33m606[39m,
-      column: [33m35[39m
+      file: [32m'C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\test-helpers.ts'[39m,
+      line: [33m165[39m,
+      column: [33m14[39m,
+      function: [32m'performLogin'[39m
     },
+    category: [32m'pw:api'[39m,
+    title: [32m`Wait for selector locator('input[name="email"], input[type="email"], #email')`[39m,
+    apiName: [32m'page.waitForSelector'[39m,
+    params: {
+      selector: [32m'input[name="email"], input[type="email"], #email'[39m,
+      timeout: [33m30000[39m
+    },
+    group: [90mundefined[39m,
+    stepId: [32m'pw:api@80'[39m,
+    boxedStack: [90mundefined[39m,
     steps: [],
     attachmentIndices: [],
     info: TestStepInfoImpl {
       annotations: [],
       _testInfo: [36m[TestInfoImpl][39m,
-      _stepId: [32m'expect@47'[39m,
-      _title: [32m'Expect "toBeVisible"'[39m,
+      _stepId: [32m'pw:api@80'[39m,
+      _title: [32m`Wait for selector locator('input[name="email"], input[type="email"], #email')`[39m,
       _parentStep: [90mundefined[39m,
       skip: [36m[Function (anonymous)][39m
     },
     recoverFromStepError: [36m[AsyncFunction: recoverFromStepError][39m,
     complete: [36m[Function: complete][39m,
-    endWallTime: [33m1758604700667[39m,
+    endWallTime: [33m1758764722255[39m,
     error: {
-      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m failed\n'[39m +
-        [32m'\n'[39m +
-        [32m"Locator:  locator('table tbody tr').first()\n"[39m +
-        [32m'Expected: visible\n'[39m +
-        [32m'Received: <element(s) not found>\n'[39m +
-        [32m'Timeout:  10000ms\n'[39m +
-        [32m'\n'[39m +
+      message: [32m'TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.\n'[39m +
         [32m'Call log:\n'[39m +
-        [32m'\x1B[2m  - Expect "toBeVisible" with timeout 10000ms\x1B[22m\n'[39m +
-        [32m"\x1B[2m  - waiting for locator('table tbody tr').first()\x1B[22m\n"[39m,
-      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m failed\n'[39m +
-        [32m'\n'[39m +
-        [32m"Locator:  locator('table tbody tr').first()\n"[39m +
-        [32m'Expected: visible\n'[39m +
-        [32m'Received: <element(s) not found>\n'[39m +
-        [32m'Timeout:  10000ms\n'[39m +
-        [32m'\n'[39m +
+        [32m`\x1B[2m  - waiting for locator('input[name="email"], input[type="email"], #email') to be visible\x1B[22m\n`[39m,
+      stack: [32m'TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.\n'[39m +
         [32m'Call log:\n'[39m +
-        [32m'\x1B[2m  - Expect "toBeVisible" with timeout 10000ms\x1B[22m\n'[39m +
-        [32m"\x1B[2m  - waiting for locator('table tbody tr').first()\x1B[22m\n"[39m +
+        [32m`\x1B[2m  - waiting for locator('input[name="email"], input[type="email"], #email') to be visible\x1B[22m\n`[39m +
         [32m'\n'[39m +
-        [32m'    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts:606:35'[39m,
+        [32m'    at performLogin (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\test-helpers.ts:165:14)\n'[39m +
+        [32m'    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:139:25'[39m,
       cause: [90mundefined[39m
     }
   }

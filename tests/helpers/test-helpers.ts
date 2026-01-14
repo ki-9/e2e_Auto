@@ -33,15 +33,11 @@ export function validateEnvironmentVariables(): void {
       '.env.example 파일을 참고하세요.'
     );
   }
-  
-  console.log('✅ 모든 환경 변수가 올바르게 설정되었습니다.');
 }
 
 // 디바이스 키 설정 헬퍼 함수
 export async function setDeviceAuthenticationKey(page: Page): Promise<void> {
-  // JavaScript로 쿠키 직접 설정 (실제 도메인 자동 감지)
   await page.evaluate((deviceKey) => {
-    // 도메인 없이 설정하는 것이 가장 효과적
     document.cookie = `cream:auth:device:key:staging=${deviceKey}; path=/; secure; samesite=lax`;
     console.log('디바이스 키 설정 완료:', document.cookie.includes('cream:auth:device:key:staging'));
   }, TEST_CONFIG.deviceKey);
@@ -54,13 +50,10 @@ export async function setDeviceAuthenticationKey(page: Page): Promise<void> {
   if (!cookieSet) {
     throw new Error('디바이스 키 쿠키 설정 실패');
   }
-  
-  console.log('✅ 디바이스 인증 키가 성공적으로 설정되었습니다.');
 }
 
 // 중복 로그인 팝업 처리 헬퍼 함수
 export async function handleDuplicateLoginPopup(page: Page): Promise<boolean> {
-  console.log('🔍 중복 로그인 팝업 확인 중...');
   
   try {
     // 중복 로그인 관련 텍스트가 나타날 때까지 잠시 대기
@@ -106,9 +99,6 @@ export async function handleDuplicateLoginPopup(page: Page): Promise<boolean> {
     }
     
     if (hasPopup) {
-      console.log('⚠️ 중복 로그인 팝업 발견됨');
-      console.log(`📝 감지 방법: ${foundSelector}`);
-      
       // Confirm 버튼 찾기 (다양한 방법으로)
       const confirmSelectors = [
         'button:has-text("Confirm")',
@@ -126,7 +116,6 @@ export async function handleDuplicateLoginPopup(page: Page): Promise<boolean> {
           const isConfirmVisible = await confirmButton.isVisible({ timeout: 2000 }).catch(() => false);
           
           if (isConfirmVisible) {
-            console.log(`✅ "${confirmSelector}" 버튼 클릭하여 중복 로그인 해결`);
             await confirmButton.click();
             confirmClicked = true;
             break;
@@ -138,22 +127,17 @@ export async function handleDuplicateLoginPopup(page: Page): Promise<boolean> {
       }
       
       if (!confirmClicked) {
-        console.log('❌ 확인 버튼을 찾을 수 없습니다. 수동 처리가 필요할 수 있습니다.');
         return false;
       }
       
       // 팝업이 사라질 때까지 대기
-      await page.waitForTimeout(3000);
-      console.log('✅ 중복 로그인 팝업 처리 완료');
-      
+      await page.waitForTimeout(3000);      
       return true;
     } else {
-      console.log('✅ 중복 로그인 팝업 없음 - 정상 진행');
       return false; // 팝업이 없었음을 의미
     }
     
   } catch (error) {
-    console.log('⚠️ 중복 로그인 팝업 처리 중 오류:', error.message);
     return false;
   }
 }
@@ -177,7 +161,7 @@ export async function performLogin(page: Page): Promise<void> {
   const hadPopup = await handleDuplicateLoginPopup(page);
   
   if (hadPopup) {
-    console.log('✅ 중복 로그인 팝업 처리 완료');
+    console.log('중복 로그인 팝업 처리 완료');
     // 팝업 처리 후 추가 대기
     await page.waitForTimeout(2000);
   }

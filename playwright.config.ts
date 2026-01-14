@@ -95,8 +95,8 @@ export default defineConfig({
   outputDir: 'test-results/',
   
   /* 글로벌 설정 */
-  globalSetup: require.resolve('./tests/global-setup.ts'),
-  globalTeardown: require.resolve('./tests/global-teardown.ts'),
+  globalSetup: require.resolve('./tests/helpers/global-setup.ts'),
+  globalTeardown: require.resolve('./tests/helpers/global-teardown.ts'),
   
   /* 테스트 타임아웃 */
   timeout: 60000,

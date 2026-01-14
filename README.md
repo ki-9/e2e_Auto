@@ -2,7 +2,7 @@
 
 Maven Clinical RTSM (Randomization and Trial Supply Management) 시스템의 자동화 테스트 프로젝트입니다.
 
-## 🚀 시작하기
+## 시작하기
 
 ### 1. 프로젝트 설치
 
@@ -34,7 +34,7 @@ nano .env
 | `TEST_DEVICE_KEY` | 디바이스 인증 키 | `eyJhbGciOiJIUzUxMi...` |
 | `TEST_TIMEOUT` | 테스트 타임아웃 (ms) | `30000` |
 
-## 📁 프로젝트 구조
+## 프로젝트 구조
 
 ```
 project/
@@ -59,7 +59,7 @@ project/
 └── test-results/                 # 테스트 결과 (자동 생성)
 ```
 
-## 🧪 테스트 케이스
+## 테스트 케이스
 
 ### 인증 테스트 (`tests/auth/`)
 - **페이지 접속 테스트**: 기본 URL 접속 및 로그인 폼 확인
@@ -74,7 +74,7 @@ project/
 - **스터디 선택 및 Dashboard 이동**: Protocol No. 링크를 통한 실제 Dashboard 진입
 - **스터디 메뉴 네비게이션**: Subject, IP Management, Study Setup 등 메뉴 테스트
 
-## 🔧 테스트 실행
+## 테스트 실행
 
 ### 기본 실행 명령어
 
@@ -133,7 +133,7 @@ npx playwright test --project=firefox
 npx playwright test --project=webkit
 ```
 
-## 🏗️ 헬퍼 함수 구조
+## 헬퍼 함수 구조
 
 ### `tests/helpers/test-helpers.ts`
 - **환경 변수 관리**: `validateEnvironmentVariables()`, `TEST_CONFIG`
@@ -144,7 +144,7 @@ npx playwright test --project=webkit
 - **페이지 검증**: `verifyLoginSuccess()`, `verifyDashboardFunctionality()`
 - **로딩 대기**: `waitForTableLoading()`
 
-## 🔍 주요 기능
+## 주요 기능
 
 ### 1. 환경 변수 기반 설정
 - 민감한 정보는 `.env` 파일로 분리
@@ -165,7 +165,7 @@ npx playwright test --project=webkit
 ### 5. 실제 워크플로우 테스트
 - 스터디 목록 → Protocol No. 클릭 → Dashboard 이동 → Back to Home
 
-## 📊 리포트
+## 리포트
 
 테스트 실행 후 다음 형태의 리포트가 생성됩니다:
 
@@ -173,7 +173,7 @@ npx playwright test --project=webkit
 - **JSON 결과**: `test-results/results.json`
 - **JUnit XML**: `test-results/results.xml`
 
-## 🚨 문제 해결
+## 문제 해결
 
 ### 환경 변수 오류
 ```
@@ -210,7 +210,7 @@ npm run test:debug
 npx playwright test --debug tests/auth/login.test.ts
 ```
 
-## 🔮 향후 확장 계획
+## 향후 확장 계획
 
 ### 추가 예정 테스트 모듈
 ```
@@ -239,7 +239,7 @@ tests/
 - REST API 엔드포인트 테스트
 - 데이터 무결성 검증
 
-## 🤝 기여하기
+## 기여하기
 
 1. 환경 변수 설정 후 테스트 실행
 2. 새로운 테스트 케이스 추가 시 적절한 폴더에 배치
@@ -247,6 +247,6 @@ tests/
 4. 민감한 정보는 반드시 환경 변수로 관리
 5. README 업데이트
 
-## 📝 라이선스
+## 라이선스
 
 MIT License

@@ -4,8 +4,8 @@
     "rootDir": "C:/Users/jkan/e2e_auto/tests",
     "forbidOnly": false,
     "fullyParallel": true,
-    "globalSetup": "C:\\Users\\jkan\\e2e_auto\\tests\\global-setup.ts",
-    "globalTeardown": "C:\\Users\\jkan\\e2e_auto\\tests\\global-teardown.ts",
+    "globalSetup": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\global-setup.ts",
+    "globalTeardown": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\global-teardown.ts",
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
@@ -64,16 +64,16 @@
   },
   "suites": [
     {
-      "title": "rtsm-login.test.ts",
-      "file": "rtsm-login.test.ts",
+      "title": "auth\\login.test.ts",
+      "file": "auth/login.test.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "RTSM Maven Clinical 로그인 테스트",
-          "file": "rtsm-login.test.ts",
-          "line": 406,
+          "title": "RTSM 인증 테스트",
+          "file": "auth/login.test.ts",
+          "line": 15,
           "column": 6,
           "specs": [
             {
@@ -92,16 +92,19 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3444,
+                      "duration": 3214,
                       "errors": [],
                       "stdout": [
                         {
                           "text": "✅ 모든 환경 변수가 올바르게 설정되었습니다.\n"
+                        },
+                        {
+                          "text": "✅ 페이지 접속 및 로그인 폼 확인 완료\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-23T05:17:17.888Z",
+                      "startTime": "2025-09-25T01:43:39.472Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -109,9 +112,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "c84e81a56e7e20f61db2-22dee4f280e8bf441412",
-              "file": "rtsm-login.test.ts",
-              "line": 408,
+              "id": "932ff77a7ef026530189-07f45576d8c8a3e5f30b",
+              "file": "auth/login.test.ts",
+              "line": 17,
               "column": 7
             },
             {
@@ -130,7 +133,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9305,
+                      "duration": 7980,
                       "errors": [],
                       "stdout": [
                         {
@@ -140,7 +143,7 @@
                           "text": "✅ 중복 로그인 팝업 없음 - 정상 진행\n"
                         },
                         {
-                          "text": "현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiMzM1NTg1NjgtY2E4Ny00Nzk5LTgzYzEtYmU4NjFlYTAwYzEzIiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gc3dEUVlKS29aSWh2Y05BUUVCQlFBRFNnQXdSd0pBZTlRUW1ibW1keWpxZUdOMlJNVUQ0RW1xV3MvNWlaTlFcbk9HRFhJNmVJS0dOODFmWERlb3N6YTRqUW5nelBlcFRKY0JDS056RWU2aElXbVA3S29wQW9JUUlEQVFBQlxuLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tIn0%3D\n"
+                          "text": "현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiYzc1OTMyNWEtMTU4YS00YTkxLWI2NjktYTdkZmVmNzk4N2YxIiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gd3dEUVlKS29aSWh2Y05BUUVCQlFBRFN3QXdTQUpCQUtlUG1Ray9YZklINmJOSDZwUXMzYWxZOVRNV2lESWdcbnZYd1FCZFlOUVQyT3VIaTlYVEtZd2Q5NDI3dmd4ZVY2T3lFZGpMWnRHdEZza3FMZkJvZksyYVVDQXdFQUFRPT1cbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\n"
                         },
                         {
                           "text": "인증번호 입력이 필요한 상태입니다.\n"
@@ -148,7 +151,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-23T05:17:22.258Z",
+                      "startTime": "2025-09-25T01:43:44.315Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -156,14 +159,14 @@
                   "status": "expected"
                 }
               ],
-              "id": "c84e81a56e7e20f61db2-6207da27b96c6750236e",
-              "file": "rtsm-login.test.ts",
-              "line": 428,
+              "id": "932ff77a7ef026530189-602f57bdb45d8dc377fb",
+              "file": "auth/login.test.ts",
+              "line": 45,
               "column": 7
             },
             {
               "title": "디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우)",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -176,9 +179,28 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 17243,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 12378,
+                      "error": {
+                        "message": "Error: 로그아웃 버튼을 찾을 수 없습니다.",
+                        "stack": "Error: 로그아웃 버튼을 찾을 수 없습니다.\n    at PageHelpers.clickLogoutButton (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:514:13)\n    at PageHelpers.performLogout (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:530:7)\n    at performLogout (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:742:3)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\auth\\login.test.ts:102:7",
+                        "location": {
+                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
+                          "column": 13,
+                          "line": 514
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mhelpers\\page-helpers.ts:514\n\n\u001b[0m \u001b[90m 512 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m'현재 페이지 내용:'\u001b[39m\u001b[33m,\u001b[39m dropdownContent\u001b[33m?\u001b[39m\u001b[33m.\u001b[39msubstring(\u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m300\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m 513 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 514 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'로그아웃 버튼을 찾을 수 없습니다.'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 515 |\u001b[39m     }\n \u001b[90m 516 |\u001b[39m   }\n \u001b[90m 517 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
+                            "column": 13,
+                            "line": 514
+                          },
+                          "message": "Error: 로그아웃 버튼을 찾을 수 없습니다.\n\n\u001b[90m   at \u001b[39mhelpers\\page-helpers.ts:514\n\n\u001b[0m \u001b[90m 512 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m'현재 페이지 내용:'\u001b[39m\u001b[33m,\u001b[39m dropdownContent\u001b[33m?\u001b[39m\u001b[33m.\u001b[39msubstring(\u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m300\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m 513 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 514 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'로그아웃 버튼을 찾을 수 없습니다.'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 515 |\u001b[39m     }\n \u001b[90m 516 |\u001b[39m   }\n \u001b[90m 517 |\u001b[39m\u001b[0m\n\u001b[2m    at PageHelpers.clickLogoutButton (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:514:13)\u001b[22m\n\u001b[2m    at PageHelpers.performLogout (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:530:7)\u001b[22m\n\u001b[2m    at performLogout (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:742:3)\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\auth\\login.test.ts:102:7\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "🚀 디바이스 키 로그인 및 로그아웃 전체 플로우 테스트 시작\n"
@@ -199,187 +221,109 @@
                           "text": "🔍 중복 로그인 팝업 확인 중...\n"
                         },
                         {
-                          "text": "⚠️ 중복 로그인 팝업 발견됨\n"
-                        },
-                        {
-                          "text": "📝 감지 방법: 텍스트 기반 감지\n"
-                        },
-                        {
-                          "text": "✅ \"button:has-text(\"Confirm\")\" 버튼 클릭하여 중복 로그인 해결\n"
-                        },
-                        {
-                          "text": "✅ 중복 로그인 팝업 처리 완료\n"
-                        },
-                        {
-                          "text": "✅ 중복 로그인 팝업 처리 완료\n"
+                          "text": "✅ 중복 로그인 팝업 없음 - 정상 진행\n"
                         },
                         {
                           "text": "4️⃣ 로그인 성공 확인 중...\n"
                         },
                         {
-                          "text": "⏳ 스터디 목록 초기 로딩 대기 중...\n"
+                          "text": "현재 URL: https://staging.rtsm.mavenclinical.com/\n"
                         },
                         {
-                          "text": "✅ 로그인 성공 확인 완료 - 모든 주요 요소가 정상적으로 로드됨\n"
+                          "text": "페이지 제목: Maven RTSM\n"
+                        },
+                        {
+                          "text": "페이지 내용 미리보기: \n    English59:54Waken: Thu Sep 25 2025 10:44:00 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.1.23.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated atNo \n"
+                        },
+                        {
+                          "text": "✅ URL 기반으로 로그인 성공 확인됨\n"
                         },
                         {
                           "text": "✅ 디바이스 키를 사용한 로그인 성공 - 인증번호 단계 생략됨\n"
                         },
                         {
-                          "text": "5️⃣ 대시보드 기능 확인 중...\n"
-                        },
-                        {
-                          "text": "📊 대시보드 기능 확인 시작...\n"
-                        },
-                        {
-                          "text": "⏳ 스터디 목록 로딩 완료 대기 중...\n"
-                        },
-                        {
-                          "text": "✅ 스터디 목록 로딩 완료\n"
-                        },
-                        {
-                          "text": "✅ 스터디 목록에 3개의 스터디가 로드됨\n"
-                        },
-                        {
-                          "text": "📋 첫 번째 스터디: RTSM_JK3SN\n"
-                        },
-                        {
-                          "text": "✅ 환경 타입 \"SANDBOX\": 1개 발견\n"
-                        },
-                        {
-                          "text": "📊 총 1개의 환경 타입 확인됨\n"
-                        },
-                        {
-                          "text": "📊 스터디 상태 \"Unlocked\": 2개\n"
-                        },
-                        {
-                          "text": "📊 스터디 상태 \"Locked\": 3개\n"
-                        },
-                        {
-                          "text": "📊 스폰서 정보 확인됨: 1개\n"
-                        },
-                        {
-                          "text": "📊 대시보드 기능 확인 완료\n"
-                        },
-                        {
                           "text": "6️⃣ 로그아웃 시도 중...\n"
                         },
                         {
-                          "text": "7️⃣ 로그아웃 버튼 클릭 완료, 리다이렉트 대기 중...\n"
+                          "text": "사용자 메뉴 클릭 시도 중...\n"
                         },
                         {
-                          "text": "✅ 로그아웃 성공 - 로그인 페이지로 정상 리다이렉트됨\n"
+                          "text": "사용자 메뉴 버튼 발견: .css-unzqs5 button.GrButton:has(.GrIcon)\n"
                         },
                         {
-                          "text": "🏁 디바이스 키 로그인 및 로그아웃 전체 플로우 테스트 완료\n"
+                          "text": "버튼 텍스트: English\n"
+                        },
+                        {
+                          "text": "✅ 사용자 메뉴 클릭 성공\n"
+                        },
+                        {
+                          "text": "로그아웃 버튼 클릭 시도 중...\n"
+                        },
+                        {
+                          "text": "⚠️ 로그아웃 버튼을 찾을 수 없습니다.\n"
+                        },
+                        {
+                          "text": "현재 페이지 내용: \n    English59:51Waken: Thu Sep 25 2025 10:44:03 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.1.23.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated atNo \n"
+                        },
+                        {
+                          "text": "실패\n"
+                        },
+                        {
+                          "text": "현재 URL: https://staging.rtsm.mavenclinical.com/\n"
                         }
                       ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-09-23T05:17:31.583Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "c84e81a56e7e20f61db2-e8bd1f8996b6a20ea62e",
-              "file": "rtsm-login.test.ts",
-              "line": 457,
-              "column": 7
-            },
-            {
-              "title": "로그인 후 기본 기능 테스트",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 9055,
-                      "errors": [],
-                      "stdout": [
+                      "stderr": [
                         {
-                          "text": "✅ 디바이스 인증 키가 성공적으로 설정되었습니다.\n"
+                          "text": "로그아웃 프로세스 실패: Error: 로그아웃 버튼을 찾을 수 없습니다.\n    at PageHelpers.clickLogoutButton \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\page-helpers.ts:514:13\u001b[90m)\u001b[39m\n    at PageHelpers.performLogout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\page-helpers.ts:530:7\u001b[90m)\u001b[39m\n    at performLogout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\page-helpers.ts:742:3\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\auth\\login.test.ts:102:7\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:309:9\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:326:11\n    at TimeoutManager.withRunnable \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\timeoutManager.js:67:14\u001b[90m)\u001b[39m\n    at TestInfoImpl._runWithTimeout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:324:7\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:307:7\n    at WorkerMain._runTest \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:282:5\u001b[90m)\u001b[39m\n    at WorkerMain.runTestGroup \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:194:11\u001b[90m)\u001b[39m\n    at process.<anonymous> \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\common\\process.js:65:22\u001b[90m)\u001b[39m\n"
                         },
                         {
-                          "text": "🔍 중복 로그인 팝업 확인 중...\n"
-                        },
-                        {
-                          "text": "✅ 중복 로그인 팝업 없음 - 정상 진행\n"
-                        },
-                        {
-                          "text": "⏳ 스터디 목록 초기 로딩 대기 중...\n"
-                        },
-                        {
-                          "text": "✅ 로그인 성공 확인 완료 - 모든 주요 요소가 정상적으로 로드됨\n"
-                        },
-                        {
-                          "text": "📊 대시보드 기능 확인 시작...\n"
-                        },
-                        {
-                          "text": "⏳ 스터디 목록 로딩 완료 대기 중...\n"
-                        },
-                        {
-                          "text": "✅ 스터디 목록 로딩 완료\n"
-                        },
-                        {
-                          "text": "✅ 스터디 목록에 3개의 스터디가 로드됨\n"
-                        },
-                        {
-                          "text": "📋 첫 번째 스터디: RTSM_JK3SN\n"
-                        },
-                        {
-                          "text": "✅ 환경 타입 \"SANDBOX\": 1개 발견\n"
-                        },
-                        {
-                          "text": "📊 총 1개의 환경 타입 확인됨\n"
-                        },
-                        {
-                          "text": "📊 스터디 상태 \"Unlocked\": 2개\n"
-                        },
-                        {
-                          "text": "📊 스터디 상태 \"Locked\": 3개\n"
-                        },
-                        {
-                          "text": "📊 스폰서 정보 확인됨: 1개\n"
-                        },
-                        {
-                          "text": "📊 대시보드 기능 확인 완료\n"
-                        },
-                        {
-                          "text": "✅ 페이지네이션 요소 확인됨\n"
-                        },
-                        {
-                          "text": "✅ 기본 기능 테스트 완료\n"
+                          "text": "❌ 디바이스 키 로그인/로그아웃 테스트 실패: Error: 로그아웃 버튼을 찾을 수 없습니다.\n    at PageHelpers.clickLogoutButton \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\page-helpers.ts:514:13\u001b[90m)\u001b[39m\n    at PageHelpers.performLogout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\page-helpers.ts:530:7\u001b[90m)\u001b[39m\n    at performLogout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\page-helpers.ts:742:3\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\auth\\login.test.ts:102:7\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:309:9\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:326:11\n    at TimeoutManager.withRunnable \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\timeoutManager.js:67:14\u001b[90m)\u001b[39m\n    at TestInfoImpl._runWithTimeout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:324:7\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:307:7\n    at WorkerMain._runTest \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:282:5\u001b[90m)\u001b[39m\n    at WorkerMain.runTestGroup \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:194:11\u001b[90m)\u001b[39m\n    at process.<anonymous> \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\common\\process.js:65:22\u001b[90m)\u001b[39m\n"
                         }
                       ],
-                      "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-23T05:17:48.840Z",
+                      "startTime": "2025-09-25T01:43:52.309Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\auth-login-RTSM-인증-테스트-디바이스-키로-로그인-및-로그아웃-테스트-전체-플로우--chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
+                        "column": 13,
+                        "line": 514
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "c84e81a56e7e20f61db2-bb2ab5ef84113f8fb236",
-              "file": "rtsm-login.test.ts",
-              "line": 545,
+              "id": "932ff77a7ef026530189-4ad248621ef2fd395297",
+              "file": "auth/login.test.ts",
+              "line": 73,
               "column": 7
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "study\\navigation.test.ts",
+      "file": "study/navigation.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "RTSM 스터디 네비게이션 테스트",
+          "file": "study/navigation.test.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
             {
-              "title": "스터디 선택 및 상세 확인 테스트",
+              "title": "스터디 선택 및 Dashboard 이동 테스트",
               "ok": false,
               "tags": [],
               "tests": [
@@ -391,31 +335,34 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 22895,
+                      "duration": 40134,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('table tbody tr').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('table tbody tr').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\n    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts:606:35",
+                        "message": "Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('table') to be visible\u001b[22m\n",
+                        "stack": "Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('table') to be visible\u001b[22m\n\n    at PageHelpers.waitForTableLoading (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:249:13)\n    at waitForTableLoading (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:734:3)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:31:7",
                         "location": {
-                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts",
-                          "column": 35,
-                          "line": 606
+                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
+                          "column": 13,
+                          "line": 249
                         },
-                        "snippet": "\u001b[0m \u001b[90m 604 |\u001b[39m       \u001b[90m// 스터디 목록에서 첫 번째 스터디 확인\u001b[39m\n \u001b[90m 605 |\u001b[39m       \u001b[36mconst\u001b[39m firstStudyRow \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'table tbody tr'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 606 |\u001b[39m       \u001b[36mawait\u001b[39m expect(firstStudyRow)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 607 |\u001b[39m       \n \u001b[90m 608 |\u001b[39m       \u001b[90m// 스터디 상태 확인 (Unlocked 등)\u001b[39m\n \u001b[90m 609 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Unlocked'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[90m   at \u001b[39mhelpers\\page-helpers.ts:249\n\n\u001b[0m \u001b[90m 247 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`페이지 내용 미리보기: ${pageContent.substring(0, 300)}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 248 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 249 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`테이블을 찾을 수 없습니다: ${error}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 250 |\u001b[39m     }\n \u001b[90m 251 |\u001b[39m   }\n \u001b[90m 252 |\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts",
-                            "column": 35,
-                            "line": 606
+                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
+                            "column": 13,
+                            "line": 249
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('table tbody tr').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 604 |\u001b[39m       \u001b[90m// 스터디 목록에서 첫 번째 스터디 확인\u001b[39m\n \u001b[90m 605 |\u001b[39m       \u001b[36mconst\u001b[39m firstStudyRow \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'table tbody tr'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 606 |\u001b[39m       \u001b[36mawait\u001b[39m expect(firstStudyRow)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 607 |\u001b[39m       \n \u001b[90m 608 |\u001b[39m       \u001b[90m// 스터디 상태 확인 (Unlocked 등)\u001b[39m\n \u001b[90m 609 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Unlocked'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts:606:35\u001b[22m"
+                          "message": "Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('table') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39mhelpers\\page-helpers.ts:249\n\n\u001b[0m \u001b[90m 247 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`페이지 내용 미리보기: ${pageContent.substring(0, 300)}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 248 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 249 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`테이블을 찾을 수 없습니다: ${error}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 250 |\u001b[39m     }\n \u001b[90m 251 |\u001b[39m   }\n \u001b[90m 252 |\u001b[39m\u001b[0m\n\u001b[2m    at PageHelpers.waitForTableLoading (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:249:13)\u001b[22m\n\u001b[2m    at waitForTableLoading (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:734:3)\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:31:7\u001b[22m"
                         }
                       ],
                       "stdout": [
+                        {
+                          "text": "✅ 모든 환경 변수가 올바르게 설정되었습니다.\n"
+                        },
                         {
                           "text": "✅ 디바이스 인증 키가 성공적으로 설정되었습니다.\n"
                         },
@@ -438,40 +385,127 @@
                           "text": "✅ 중복 로그인 팝업 처리 완료\n"
                         },
                         {
-                          "text": "⏳ 스터디 목록 초기 로딩 대기 중...\n"
+                          "text": "현재 URL: https://staging.rtsm.mavenclinical.com/\n"
                         },
                         {
-                          "text": "✅ 로그인 성공 확인 완료 - 모든 주요 요소가 정상적으로 로드됨\n"
+                          "text": "페이지 제목: Maven RTSM\n"
+                        },
+                        {
+                          "text": "페이지 내용 미리보기: \n    English59:54Waken: Thu Sep 25 2025 10:44:17 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.1.23.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated atNo \n"
+                        },
+                        {
+                          "text": "✅ URL 기반으로 로그인 성공 확인됨\n"
+                        },
+                        {
+                          "text": "테이블 로딩 대기 중...\n"
+                        },
+                        {
+                          "text": "페이지 내용 미리보기: \n    English59:24Waken: Thu Sep 25 2025 10:44:47 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.1.23.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated atNo \n"
                         }
                       ],
                       "stderr": [
                         {
-                          "text": "스터디 목록 테스트 실패: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('table tbody tr').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\rtsm-login.test.ts:606:35 {\n  matcherResult: {\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m\"Locator:  locator('table tbody tr').first()\\n\"\u001b[39m +\n      \u001b[32m'Expected: visible\\n'\u001b[39m +\n      \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n      \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Call log:\\n'\u001b[39m +\n      \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m\"\\x1B[2m  - waiting for locator('table tbody tr').first()\\x1B[22m\\n\"\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m,\n    actual: \u001b[32m'<element(s) not found>'\u001b[39m,\n    name: \u001b[32m'toBeVisible'\u001b[39m,\n    expected: \u001b[32m'visible'\u001b[39m,\n    log: [\n      \u001b[32m'  - Expect \"toBeVisible\" with timeout 10000ms'\u001b[39m,\n      \u001b[32m\"  - waiting for locator('table tbody tr').first()\"\u001b[39m\n    ],\n    timeout: \u001b[33m10000\u001b[39m\n  },\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toBeVisible'\u001b[39m,\n    title: \u001b[32m'Expect \"toBeVisible\"'\u001b[39m,\n    params: \u001b[90mundefined\u001b[39m,\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'expect@47'\u001b[39m,\n    group: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\rtsm-login.test.ts'\u001b[39m,\n      line: \u001b[33m606\u001b[39m,\n      column: \u001b[33m35\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@47'\u001b[39m,\n      _title: \u001b[32m'Expect \"toBeVisible\"'\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    recoverFromStepError: \u001b[36m[AsyncFunction: recoverFromStepError]\u001b[39m,\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1758604700667\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m\"Locator:  locator('table tbody tr').first()\\n\"\u001b[39m +\n        \u001b[32m'Expected: visible\\n'\u001b[39m +\n        \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n        \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('table tbody tr').first()\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m\"Locator:  locator('table tbody tr').first()\\n\"\u001b[39m +\n        \u001b[32m'Expected: visible\\n'\u001b[39m +\n        \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n        \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m\"\\x1B[2m  - waiting for locator('table tbody tr').first()\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\rtsm-login.test.ts:606:35'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                          "text": "스터디 Dashboard 테스트 실패: Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('table') to be visible\u001b[22m\n\n    at PageHelpers.waitForTableLoading \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\page-helpers.ts:249:13\u001b[90m)\u001b[39m\n    at waitForTableLoading \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\page-helpers.ts:734:3\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\study\\navigation.test.ts:31:7\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:309:9\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:326:11\n    at TimeoutManager.withRunnable \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\timeoutManager.js:67:14\u001b[90m)\u001b[39m\n    at TestInfoImpl._runWithTimeout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:324:7\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:307:7\n    at WorkerMain._runTest \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:282:5\u001b[90m)\u001b[39m\n    at WorkerMain.runTestGroup \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:194:11\u001b[90m)\u001b[39m\n    at process.<anonymous> \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\common\\process.js:65:22\u001b[90m)\u001b[39m\n"
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2025-09-23T05:17:57.913Z",
+                      "startTime": "2025-09-25T01:44:07.094Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\rtsm-login-RTSM-Maven-Clinical-로그인-테스트-스터디-선택-및-상세-확인-테스트-chromium\\test-failed-1.png"
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\study-navigation-RTSM-스터디--330af-트-스터디-선택-및-Dashboard-이동-테스트-chromium\\test-failed-1.png"
                         }
                       ],
                       "errorLocation": {
-                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm-login.test.ts",
-                        "column": 35,
-                        "line": 606
+                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
+                        "column": 13,
+                        "line": 249
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "c84e81a56e7e20f61db2-de095279598408986af5",
-              "file": "rtsm-login.test.ts",
-              "line": 591,
+              "id": "9700440ef122f44dbb22-a17f5baf55915f51f11a",
+              "file": "study/navigation.test.ts",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "스터디 메뉴 네비게이션 테스트",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 31538,
+                      "error": {
+                        "message": "TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"email\"], input[type=\"email\"], #email') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"email\"], input[type=\"email\"], #email') to be visible\u001b[22m\n\n    at performLogin (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\test-helpers.ts:165:14)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:139:25",
+                        "location": {
+                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\test-helpers.ts",
+                          "column": 14,
+                          "line": 165
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mhelpers\\test-helpers.ts:165\n\n\u001b[0m \u001b[90m 163 |\u001b[39m   \u001b[90m// 이메일 입력\u001b[39m\n \u001b[90m 164 |\u001b[39m   \u001b[36mconst\u001b[39m emailSelector \u001b[33m=\u001b[39m \u001b[32m'input[name=\"email\"], input[type=\"email\"], #email'\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 165 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(emailSelector\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[33mTEST_CONFIG\u001b[39m\u001b[33m.\u001b[39mtimeout })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 166 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(emailSelector\u001b[33m,\u001b[39m \u001b[33mTEST_CONFIG\u001b[39m\u001b[33m.\u001b[39mcredentials\u001b[33m.\u001b[39memail)\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m\n \u001b[90m 168 |\u001b[39m   \u001b[90m// 패스워드 입력\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\test-helpers.ts",
+                            "column": 14,
+                            "line": 165
+                          },
+                          "message": "TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"email\"], input[type=\"email\"], #email') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39mhelpers\\test-helpers.ts:165\n\n\u001b[0m \u001b[90m 163 |\u001b[39m   \u001b[90m// 이메일 입력\u001b[39m\n \u001b[90m 164 |\u001b[39m   \u001b[36mconst\u001b[39m emailSelector \u001b[33m=\u001b[39m \u001b[32m'input[name=\"email\"], input[type=\"email\"], #email'\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 165 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(emailSelector\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[33mTEST_CONFIG\u001b[39m\u001b[33m.\u001b[39mtimeout })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 166 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(emailSelector\u001b[33m,\u001b[39m \u001b[33mTEST_CONFIG\u001b[39m\u001b[33m.\u001b[39mcredentials\u001b[33m.\u001b[39memail)\u001b[33m;\u001b[39m\n \u001b[90m 167 |\u001b[39m\n \u001b[90m 168 |\u001b[39m   \u001b[90m// 패스워드 입력\u001b[39m\u001b[0m\n\u001b[2m    at performLogin (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\test-helpers.ts:165:14)\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:139:25\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "✅ 모든 환경 변수가 올바르게 설정되었습니다.\n"
+                        },
+                        {
+                          "text": "✅ 디바이스 인증 키가 성공적으로 설정되었습니다.\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "스터디 메뉴 네비게이션 테스트 실패: page.waitForSelector: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"email\"], input[type=\"email\"], #email') to be visible\u001b[22m\n\n    at performLogin \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\test-helpers.ts:165:14\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\study\\navigation.test.ts:139:25 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\helpers\\\\test-helpers.ts'\u001b[39m,\n      line: \u001b[33m165\u001b[39m,\n      column: \u001b[33m14\u001b[39m,\n      function: \u001b[32m'performLogin'\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m`Wait for selector locator('input[name=\"email\"], input[type=\"email\"], #email')`\u001b[39m,\n    apiName: \u001b[32m'page.waitForSelector'\u001b[39m,\n    params: {\n      selector: \u001b[32m'input[name=\"email\"], input[type=\"email\"], #email'\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@80'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@80'\u001b[39m,\n      _title: \u001b[32m`Wait for selector locator('input[name=\"email\"], input[type=\"email\"], #email')`\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    recoverFromStepError: \u001b[36m[AsyncFunction: recoverFromStepError]\u001b[39m,\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1758764722255\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m`\\x1B[2m  - waiting for locator('input[name=\"email\"], input[type=\"email\"], #email') to be visible\\x1B[22m\\n`\u001b[39m,\n      stack: \u001b[32m'TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m`\\x1B[2m  - waiting for locator('input[name=\"email\"], input[type=\"email\"], #email') to be visible\\x1B[22m\\n`\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at performLogin (C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\helpers\\\\test-helpers.ts:165:14)\\n'\u001b[39m +\n        \u001b[32m'    at C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\study\\\\navigation.test.ts:139:25'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-09-25T01:44:50.380Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\study-navigation-RTSM-스터디-네비게이션-테스트-스터디-메뉴-네비게이션-테스트-chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\test-helpers.ts",
+                        "column": 14,
+                        "line": 165
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "9700440ef122f44dbb22-a4094945d349e39bc1bf",
+              "file": "study/navigation.test.ts",
+              "line": 131,
               "column": 7
             }
           ]
@@ -481,11 +515,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-23T05:17:14.548Z",
-    "duration": 66632.10399999999,
-    "expected": 4,
+    "startTime": "2025-09-25T01:43:36.927Z",
+    "duration": 106041.891,
+    "expected": 2,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 3,
     "flaky": 0
   }
 }
