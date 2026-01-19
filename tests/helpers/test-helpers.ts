@@ -166,3 +166,50 @@ export async function performLogin(page: Page): Promise<void> {
     await page.waitForTimeout(2000);
   }
 }
+
+// Version & Release 팝업 닫기 함수 추가
+export async function handleVersionReleasePopup(page: Page): Promise<boolean> {
+  try {
+    await page.waitForTimeout(2000); // 팝업 나타날 때까지 대기
+    
+    // 팝업 제목 감지
+    const popupVisible = await page.locator(
+      'text=Version & Release, text=Release Notes, text=버전 및 릴리스'
+    ).isVisible({ timeout: 3000 }).catch(() => false);
+    
+    if (!popupVisible) {
+      return false;
+    }
+    
+    // 닫기 버튼 시도 순서
+    const closeSelectors = [
+      'button[aria-label="Close"]',
+      '.modal-close',
+      '.btn-close',
+      'button:has-text("×")',
+      'button:has-text("Close")',
+      'button:has-text("닫기")'
+    ];
+    
+    for (const selector of closeSelectors) {
+      try {
+        const btn = page.locator(selector);
+        if (await btn.isVisible({ timeout: 1000 }).catch(() => false)) {
+          await btn.click();
+          await page.waitForTimeout(500);
+          return true;
+        }
+      } catch (e) {
+        continue;
+      }
+    }
+    
+    // ESC 키 시도
+    await page.keyboard.press('Escape');
+    await page.waitForTimeout(500);
+    return true;
+    
+  } catch (error) {
+    return false;
+  }
+}

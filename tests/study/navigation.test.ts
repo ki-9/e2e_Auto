@@ -2,7 +2,8 @@ import { test, expect } from '@playwright/test';
 import { 
   validateEnvironmentVariables, 
   setDeviceAuthenticationKey, 
-  performLogin, 
+  performLogin,
+  handleVersionReleasePopup, 
   TEST_CONFIG 
 } from '../helpers/test-helpers';
 import { waitForTableLoading, verifyLoginSuccess } from '../helpers/page-helpers';
@@ -26,6 +27,9 @@ test.describe('RTSM 스터디 네비게이션 테스트', () => {
       await setDeviceAuthenticationKey(page);
       await performLogin(page);
       await verifyLoginSuccess(page);
+
+      // Version & Release 팝업 창 닫기
+      await handleVersionReleasePopup(page);
       
       // 스터디 목록 로딩 대기
       await waitForTableLoading(page);

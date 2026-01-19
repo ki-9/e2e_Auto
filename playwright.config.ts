@@ -35,7 +35,7 @@ export default defineConfig({
     navigationTimeout: 30000,
     
     /* 뷰포트 설정 */
-    viewport: { width: 1280, height: 720 },
+    viewport: { width: 1920, height: 1080 },
     
     /* 무시할 HTTPS 에러 */
     ignoreHTTPSErrors: true,
