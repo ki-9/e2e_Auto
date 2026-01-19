@@ -92,12 +92,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3029,
+                      "duration": 3670,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T02:37:05.579Z",
+                      "startTime": "2026-01-19T06:52:36.758Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -126,11 +126,11 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7926,
+                      "duration": 8173,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiODE0MmI5NzEtYjcwMS00NWY3LWJkOTMtMWVlMTUyNjUwZWEzIiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gd3dEUVlKS29aSWh2Y05BUUVCQlFBRFN3QXdTQUpCQU5HMW9TVE13QjVnVGFDOVBuMWFJelJ5c0d2NnFtTFVcbkw4MFdWUlp6K0xhM0pSYXpVcG5ic3BLWDF5U04wWEZPbHlpcnVKdXhvcThVVDVsRWh2M1RoK0VDQXdFQUFRPT1cbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\n"
+                          "text": "현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiYzUxYmE0ZDItYmQ4NS00Y2QxLThlMTgtN2Y4NDdmZjgwMWFiIiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gd3dEUVlKS29aSWh2Y05BUUVCQlFBRFN3QXdTQUpCQUs1Y3pEYnljZFdhc1JpaHdtZ1RXL2ZQUjN5VlFPQ29cbkg1OVo1WTE1dk5FbXlVVjNLbUJxanZqdUQzNUM3aTRVUm1FS2xwSTJ3Z1g1ZnBvT2tYU3NLN1VDQXdFQUFRPT1cbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\n"
                         },
                         {
                           "text": "인증번호 입력이 필요한 상태입니다.\n"
@@ -138,7 +138,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T02:37:08.966Z",
+                      "startTime": "2026-01-19T06:52:46.673Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -153,7 +153,7 @@
             },
             {
               "title": "디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우)",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -166,28 +166,9 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 38121,
-                      "error": {
-                        "message": "Error: 사용자 메뉴 버튼을 찾을 수 없습니다.",
-                        "stack": "Error: 사용자 메뉴 버튼을 찾을 수 없습니다.\n    at PageHelpers.clickUserMenu (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:445:13)\n    at PageHelpers.performLogout (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:501:7)\n    at performLogout (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:716:3)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\auth\\login.test.ts:90:7",
-                        "location": {
-                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
-                          "column": 13,
-                          "line": 445
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39mhelpers\\page-helpers.ts:445\n\n\u001b[0m \u001b[90m 443 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mclicked) {\n \u001b[90m 444 |\u001b[39m       \u001b[90m// 모든 선택자 실패\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 445 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'사용자 메뉴 버튼을 찾을 수 없습니다.'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 446 |\u001b[39m     }\n \u001b[90m 447 |\u001b[39m   }\n \u001b[90m 448 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
-                            "column": 13,
-                            "line": 445
-                          },
-                          "message": "Error: 사용자 메뉴 버튼을 찾을 수 없습니다.\n\n\u001b[90m   at \u001b[39mhelpers\\page-helpers.ts:445\n\n\u001b[0m \u001b[90m 443 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mclicked) {\n \u001b[90m 444 |\u001b[39m       \u001b[90m// 모든 선택자 실패\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 445 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'사용자 메뉴 버튼을 찾을 수 없습니다.'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 446 |\u001b[39m     }\n \u001b[90m 447 |\u001b[39m   }\n \u001b[90m 448 |\u001b[39m\u001b[0m\n\u001b[2m    at PageHelpers.clickUserMenu (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:445:13)\u001b[22m\n\u001b[2m    at PageHelpers.performLogout (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:501:7)\u001b[22m\n\u001b[2m    at performLogout (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:716:3)\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\auth\\login.test.ts:90:7\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 30260,
+                      "errors": [],
                       "stdout": [
                         {
                           "text": "현재 URL: https://staging.rtsm.mavenclinical.com/\n"
@@ -196,43 +177,29 @@
                           "text": "페이지 제목: Maven RTSM\n"
                         },
                         {
-                          "text": "페이지 내용 미리보기: \n    English59:57Waken: Mon Jan 19 2026 11:37:21 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.0.0.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated Date2S\n"
+                          "text": "페이지 내용 미리보기: \n    English59:53Waken: Mon Jan 19 2026 15:53:03 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.0.0.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated Date2S\n"
                         },
                         {
                           "text": "사용자 메뉴 클릭 시도 중...\n"
                         },
                         {
-                          "text": "사용자 메뉴 버튼 발견: .css-unzqs5 button.GrButton:has(.GrIcon)\n"
+                          "text": "버튼 후보 발견 [0]: \"JK11\" (selector: button.GrButton:has-text(\"JK11\"))\n"
                         },
                         {
-                          "text": "버튼 텍스트: English\n"
+                          "text": "✅ 사용자 메뉴 버튼 선택: \"JK11\"\n"
                         },
                         {
-                          "text": "실패\n"
-                        },
-                        {
-                          "text": "현재 URL: https://staging.rtsm.mavenclinical.com/\n"
+                          "text": "페이지 내용 미리보기: You need to enable JavaScript to run this app.STGMaven SSOMaven SSOSign inAny problem? Ask us anything!Sign inSign inForgot Password?Don't have an account? Sign Up.Privacy PolicyCopyright © 2020-2026 \n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T02:37:16.912Z",
+                      "startTime": "2026-01-19T06:52:54.868Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\auth-login-RTSM-인증-테스트-디바이스-키로-로그인-및-로그아웃-테스트-전체-플로우--chromium\\test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
-                        "column": 13,
-                        "line": 445
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "932ff77a7ef026530189-4ad248621ef2fd395297",
@@ -254,7 +221,7 @@
         {
           "title": "RTSM 스터디 네비게이션 테스트",
           "file": "study/navigation.test.ts",
-          "line": 15,
+          "line": 16,
           "column": 6,
           "specs": [
             {
@@ -273,31 +240,28 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 40369,
+                      "duration": 18633,
                       "error": {
-                        "message": "Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('table') to be visible\u001b[22m\n",
-                        "stack": "Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('table') to be visible\u001b[22m\n\n    at PageHelpers.waitForTableLoading (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:238:13)\n    at waitForTableLoading (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:708:3)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:31:7",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n\n    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:41:34",
                         "location": {
-                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
-                          "column": 13,
-                          "line": 238
+                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts",
+                          "column": 34,
+                          "line": 41
                         },
-                        "snippet": "\u001b[90m   at \u001b[39mhelpers\\page-helpers.ts:238\n\n\u001b[0m \u001b[90m 236 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 237 |\u001b[39m       \u001b[90m// 테이블을 전혀 찾지 못한 경우\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 238 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`테이블을 찾을 수 없습니다: ${error}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 239 |\u001b[39m     }\n \u001b[90m 240 |\u001b[39m   }\n \u001b[90m 241 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 39 |\u001b[39m       \n \u001b[90m 40 |\u001b[39m       \u001b[36mconst\u001b[39m protocolLink \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a:has-text(\"RTSM_JK_MVN\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m       \u001b[36mawait\u001b[39m expect(protocolLink)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m       \n \u001b[90m 43 |\u001b[39m       \u001b[36mconst\u001b[39m linkText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m protocolLink\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`🔗 클릭할 Protocol 링크: ${linkText}`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
-                            "column": 13,
-                            "line": 238
+                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts",
+                            "column": 34,
+                            "line": 41
                           },
-                          "message": "Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('table') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39mhelpers\\page-helpers.ts:238\n\n\u001b[0m \u001b[90m 236 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 237 |\u001b[39m       \u001b[90m// 테이블을 전혀 찾지 못한 경우\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 238 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`테이블을 찾을 수 없습니다: ${error}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 239 |\u001b[39m     }\n \u001b[90m 240 |\u001b[39m   }\n \u001b[90m 241 |\u001b[39m\u001b[0m\n\u001b[2m    at PageHelpers.waitForTableLoading (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:238:13)\u001b[22m\n\u001b[2m    at waitForTableLoading (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:708:3)\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:31:7\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 39 |\u001b[39m       \n \u001b[90m 40 |\u001b[39m       \u001b[36mconst\u001b[39m protocolLink \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a:has-text(\"RTSM_JK_MVN\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m       \u001b[36mawait\u001b[39m expect(protocolLink)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m       \n \u001b[90m 43 |\u001b[39m       \u001b[36mconst\u001b[39m linkText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m protocolLink\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`🔗 클릭할 Protocol 링크: ${linkText}`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:41:34\u001b[22m"
                         }
                       ],
                       "stdout": [
-                        {
-                          "text": "중복 로그인 팝업 처리 완료\n"
-                        },
                         {
                           "text": "현재 URL: https://staging.rtsm.mavenclinical.com/\n"
                         },
@@ -305,19 +269,28 @@
                           "text": "페이지 제목: Maven RTSM\n"
                         },
                         {
-                          "text": "페이지 내용 미리보기: \n    English59:54Waken: Mon Jan 19 2026 11:38:08 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.0.0.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated Date2S\n"
+                          "text": "페이지 내용 미리보기: \n    English59:57Waken: Mon Jan 19 2026 15:53:34 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.0.0.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated Date2S\n"
                         },
                         {
                           "text": "테이블 로딩 대기 중...\n"
+                        },
+                        {
+                          "text": "✅ 테이블 발견: .basic-table\n"
+                        },
+                        {
+                          "text": "✅ 2개 행 발견. 첫 번째 행: 2SANDBOXRTSM_다중JK_^ㅅ^RTSM_다중JK_^ㅅ^UnlockedRTSM_다중JK_^ㅅ^Phase 2셀트리온서울CRO Inc.--2025-12-15 10:34:41 +0\n"
+                        },
+                        {
+                          "text": "📋 Protocol No. 링크를 클릭하여 스터디 Dashboard로 이동 시도...\n"
                         }
                       ],
                       "stderr": [
                         {
-                          "text": "스터디 Dashboard 테스트 실패: Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('table') to be visible\u001b[22m\n\n    at PageHelpers.waitForTableLoading \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\page-helpers.ts:238:13\u001b[90m)\u001b[39m\n\u001b[90m    at runNextTicks (node:internal/process/task_queues:60:5)\u001b[39m\n\u001b[90m    at processImmediate (node:internal/timers:447:9)\u001b[39m\n\u001b[90m    at process.callbackTrampoline (node:internal/async_hooks:128:17)\u001b[39m\n    at waitForTableLoading \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\page-helpers.ts:708:3\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\study\\navigation.test.ts:31:7\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:309:9\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:326:11\n    at TimeoutManager.withRunnable \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\timeoutManager.js:67:14\u001b[90m)\u001b[39m\n    at TestInfoImpl._runWithTimeout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:324:7\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:307:7\n    at WorkerMain._runTest \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:282:5\u001b[90m)\u001b[39m\n    at WorkerMain.runTestGroup \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:194:11\u001b[90m)\u001b[39m\n    at process.<anonymous> \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\common\\process.js:65:22\u001b[90m)\u001b[39m\n"
+                          "text": "스터디 Dashboard 테스트 실패: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\study\\navigation.test.ts:41:34 {\n  matcherResult: {\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m`Locator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\\n`\u001b[39m +\n      \u001b[32m'Expected: visible\\n'\u001b[39m +\n      \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n      \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Call log:\\n'\u001b[39m +\n      \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m`\\x1B[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\\x1B[22m\\n`\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m,\n    actual: \u001b[32m'<element(s) not found>'\u001b[39m,\n    name: \u001b[32m'toBeVisible'\u001b[39m,\n    expected: \u001b[32m'visible'\u001b[39m,\n    log: [\n      \u001b[32m'  - Expect \"toBeVisible\" with timeout 10000ms'\u001b[39m,\n      \u001b[32m`  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()`\u001b[39m\n    ],\n    timeout: \u001b[33m10000\u001b[39m\n  },\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toBeVisible'\u001b[39m,\n    title: \u001b[32m'Expect \"toBeVisible\"'\u001b[39m,\n    params: \u001b[90mundefined\u001b[39m,\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'expect@116'\u001b[39m,\n    group: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\study\\\\navigation.test.ts'\u001b[39m,\n      line: \u001b[33m41\u001b[39m,\n      column: \u001b[33m34\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@116'\u001b[39m,\n      _title: \u001b[32m'Expect \"toBeVisible\"'\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    recoverFromStepError: \u001b[36m[AsyncFunction: recoverFromStepError]\u001b[39m,\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1768805626938\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m`Locator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\\n`\u001b[39m +\n        \u001b[32m'Expected: visible\\n'\u001b[39m +\n        \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n        \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m`\\x1B[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\\x1B[22m\\n`\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m`Locator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\\n`\u001b[39m +\n        \u001b[32m'Expected: visible\\n'\u001b[39m +\n        \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n        \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m`\\x1B[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\\x1B[22m\\n`\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\study\\\\navigation.test.ts:41:34'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-01-19T02:37:57.811Z",
+                      "startTime": "2026-01-19T06:53:27.917Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -327,9 +300,9 @@
                         }
                       ],
                       "errorLocation": {
-                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
-                        "column": 13,
-                        "line": 238
+                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts",
+                        "column": 34,
+                        "line": 41
                       }
                     }
                   ],
@@ -338,7 +311,7 @@
               ],
               "id": "9700440ef122f44dbb22-a17f5baf55915f51f11a",
               "file": "study/navigation.test.ts",
-              "line": 17,
+              "line": 18,
               "column": 7
             },
             {
@@ -357,25 +330,25 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 40483,
+                      "duration": 41164,
                       "error": {
-                        "message": "Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('table') to be visible\u001b[22m\n",
-                        "stack": "Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('table') to be visible\u001b[22m\n\n    at PageHelpers.waitForTableLoading (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:238:13)\n    at waitForTableLoading (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:708:3)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:141:7",
+                        "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n\n    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:149:26",
                         "location": {
-                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
-                          "column": 13,
-                          "line": 238
+                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts",
+                          "column": 26,
+                          "line": 149
                         },
-                        "snippet": "\u001b[90m   at \u001b[39mhelpers\\page-helpers.ts:238\n\n\u001b[0m \u001b[90m 236 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 237 |\u001b[39m       \u001b[90m// 테이블을 전혀 찾지 못한 경우\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 238 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`테이블을 찾을 수 없습니다: ${error}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 239 |\u001b[39m     }\n \u001b[90m 240 |\u001b[39m   }\n \u001b[90m 241 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 147 |\u001b[39m       \u001b[90m// 스터디 Dashboard로 이동\u001b[39m\n \u001b[90m 148 |\u001b[39m       \u001b[36mconst\u001b[39m protocolLink \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a:has-text(\"RTSM_JK_MVN\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m       \u001b[36mawait\u001b[39m protocolLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 150 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 151 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 152 |\u001b[39m       \u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
-                            "column": 13,
-                            "line": 238
+                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts",
+                            "column": 26,
+                            "line": 149
                           },
-                          "message": "Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('table') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39mhelpers\\page-helpers.ts:238\n\n\u001b[0m \u001b[90m 236 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 237 |\u001b[39m       \u001b[90m// 테이블을 전혀 찾지 못한 경우\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 238 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`테이블을 찾을 수 없습니다: ${error}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 239 |\u001b[39m     }\n \u001b[90m 240 |\u001b[39m   }\n \u001b[90m 241 |\u001b[39m\u001b[0m\n\u001b[2m    at PageHelpers.waitForTableLoading (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:238:13)\u001b[22m\n\u001b[2m    at waitForTableLoading (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:708:3)\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:141:7\u001b[22m"
+                          "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 147 |\u001b[39m       \u001b[90m// 스터디 Dashboard로 이동\u001b[39m\n \u001b[90m 148 |\u001b[39m       \u001b[36mconst\u001b[39m protocolLink \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a:has-text(\"RTSM_JK_MVN\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m       \u001b[36mawait\u001b[39m protocolLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 150 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 151 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 152 |\u001b[39m       \u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:149:26\u001b[22m"
                         }
                       ],
                       "stdout": [
@@ -389,19 +362,25 @@
                           "text": "페이지 제목: Maven RTSM\n"
                         },
                         {
-                          "text": "페이지 내용 미리보기: \n    English59:54Waken: Mon Jan 19 2026 11:38:51 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.0.0.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated Date2S\n"
+                          "text": "페이지 내용 미리보기: \n    English59:54Waken: Mon Jan 19 2026 15:54:00 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.0.0.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated Date2S\n"
                         },
                         {
                           "text": "테이블 로딩 대기 중...\n"
+                        },
+                        {
+                          "text": "✅ 테이블 발견: .basic-table\n"
+                        },
+                        {
+                          "text": "✅ 2개 행 발견. 첫 번째 행: 2SANDBOXRTSM_다중JK_^ㅅ^RTSM_다중JK_^ㅅ^UnlockedRTSM_다중JK_^ㅅ^Phase 2셀트리온서울CRO Inc.--2025-12-15 10:34:41 +0\n"
                         }
                       ],
                       "stderr": [
                         {
-                          "text": "스터디 메뉴 네비게이션 테스트 실패: Error: 테이블을 찾을 수 없습니다: TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('table') to be visible\u001b[22m\n\n    at PageHelpers.waitForTableLoading \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\page-helpers.ts:238:13\u001b[90m)\u001b[39m\n\u001b[90m    at runNextTicks (node:internal/process/task_queues:60:5)\u001b[39m\n\u001b[90m    at processImmediate (node:internal/timers:447:9)\u001b[39m\n\u001b[90m    at process.callbackTrampoline (node:internal/async_hooks:128:17)\u001b[39m\n    at waitForTableLoading \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\helpers\\page-helpers.ts:708:3\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\study\\navigation.test.ts:141:7\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:309:9\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:326:11\n    at TimeoutManager.withRunnable \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\timeoutManager.js:67:14\u001b[90m)\u001b[39m\n    at TestInfoImpl._runWithTimeout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:324:7\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:307:7\n    at WorkerMain._runTest \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:282:5\u001b[90m)\u001b[39m\n    at WorkerMain.runTestGroup \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:194:11\u001b[90m)\u001b[39m\n    at process.<anonymous> \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\common\\process.js:65:22\u001b[90m)\u001b[39m\n"
+                          "text": "스터디 메뉴 네비게이션 테스트 실패: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\study\\navigation.test.ts:149:26 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\study\\\\navigation.test.ts'\u001b[39m,\n      line: \u001b[33m149\u001b[39m,\n      column: \u001b[33m26\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m`Click locator('a:has-text(\"RTSM_JK_MVN\")').first()`\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m'a:has-text(\"RTSM_JK_MVN\") >> nth=0'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@118'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@118'\u001b[39m,\n      _title: \u001b[32m`Click locator('a:has-text(\"RTSM_JK_MVN\")').first()`\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    recoverFromStepError: \u001b[36m[AsyncFunction: recoverFromStepError]\u001b[39m,\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1768805670780\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m`\\x1B[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\\x1B[22m\\n`\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m`\\x1B[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\\x1B[22m\\n`\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\study\\\\navigation.test.ts:149:26'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-01-19T02:38:41.309Z",
+                      "startTime": "2026-01-19T06:53:49.417Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -411,9 +390,9 @@
                         }
                       ],
                       "errorLocation": {
-                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
-                        "column": 13,
-                        "line": 238
+                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts",
+                        "column": 26,
+                        "line": 149
                       }
                     }
                   ],
@@ -422,7 +401,7 @@
               ],
               "id": "9700440ef122f44dbb22-a4094945d349e39bc1bf",
               "file": "study/navigation.test.ts",
-              "line": 131,
+              "line": 135,
               "column": 7
             }
           ]
@@ -432,11 +411,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-19T02:37:03.128Z",
-    "duration": 139228.561,
-    "expected": 2,
+    "startTime": "2026-01-19T06:52:33.492Z",
+    "duration": 118019.997,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 2,
     "flaky": 0
   }
 }

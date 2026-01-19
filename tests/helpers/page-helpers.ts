@@ -182,32 +182,34 @@ export class PageHelpers {
   async waitForTableLoading(tableSelector: string = 'table', timeout: number = 30000): Promise<void> {
     console.log('테이블 로딩 대기 중...');
     
-    // 기본 테이블 선택자들
+    // ✅ 실제 페이지 구조에 맞는 선택자들 (우선순위 순서)
     const tableSelectorVariants = [
-      tableSelector,
-      'table',
+      '.basic-table',                    // 1. 실제 클래스명 (최우선!)
+      '.basic-table .table-tbody',       // 2. 테이블 바디
+      '[class*="table-container"]',      // 3. 테이블 컨테이너
+      '[class*="basic-table"]',          // 4. 클래스명 패턴
+      '.data-grid',
       '[role="table"]',
-      '.table',
-      '[data-testid="table"]',
-      '.data-table',
-      '.grid',
-      '[role="grid"]'
+      '[role="grid"]',
+      tableSelector,                     // 마지막에 기본값
+      'table'
     ];
     
     try {
-      // 테이블 요소가 나타날 때까지 대기
+      // 테이블 컨테이너 찾기
       const foundTableSelector = await this.waitForAnySelector(tableSelectorVariants, timeout);
+      console.log(`✅ 테이블 발견: ${foundTableSelector}`);
       
       const table = this.page.locator(foundTableSelector);
-      
-      // 테이블이 실제로 보이는지 확인
       await expect(table).toBeVisible();
       
-      // 테이블 내용 로딩 대기 (행이 있는지 확인)
+      // ✅ div 기반 테이블의 행 선택자들
       const rowSelectors = [
-        `${foundTableSelector} tr`,
-        `${foundTableSelector} tbody tr`,
-        `${foundTableSelector} [role="row"]`
+        `${foundTableSelector} .table-row`,           // div 기반 행
+        `${foundTableSelector} [class*="row"]`,       // 클래스에 row 포함
+        `${foundTableSelector} [data-row]`,           // data 속성
+        `${foundTableSelector} tr`,                   // HTML table 행
+        `${foundTableSelector} [role="row"]`          // ARIA 역할
       ];
       
       for (const rowSelector of rowSelectors) {
@@ -215,26 +217,32 @@ export class PageHelpers {
           const rows = this.page.locator(rowSelector);
           const rowCount = await rows.count();
           
-          if (rowCount > 0) {           
-            // 첫 번째 행이 실제 데이터인지 확인 (헤더가 아닌)
+          if (rowCount > 0) {
             const firstRowText = await rows.first().textContent();
-            if (firstRowText && firstRowText.trim().length > 0) {
-              console.log(`첫 번째 행 내용: ${firstRowText.substring(0, 100)}`);
-            }
-            
+            console.log(`✅ ${rowCount}개 행 발견. 첫 번째 행: ${firstRowText?.substring(0, 100)}`);
             return;
           }
         } catch (error) {
-          // 현재 행 선택자로 찾지 못한 경우 다음 선택자 시도
           continue;
         }
       }
       
-      // 행을 찾지 못한 경우에도 테이블 자체는 존재하므로 경고만 출력
+      // 행을 찾지 못했지만 테이블은 존재 - 경고만
       console.log('⚠️ 테이블은 존재하지만 데이터 행을 찾을 수 없습니다.');
       
     } catch (error) {
-      // 테이블을 전혀 찾지 못한 경우
+      // 더 나은 에러 메시지
+      const pageText = await this.getPageText();
+      console.log(`페이지 내용 미리보기: ${pageText.substring(0, 500)}`);
+      
+      // Study 관련 텍스트가 있으면 페이지는 로드되었지만 테이블 구조가 다른 것
+      if (pageText.includes('Study') || pageText.includes('Protocol No.')) {
+        throw new Error(
+          '페이지는 로드되었지만 테이블 선택자를 찾을 수 없습니다. ' +
+          '실제 HTML 구조를 확인하여 .basic-table 클래스가 맞는지 검증 필요'
+        );
+      }
+      
       throw new Error(`테이블을 찾을 수 없습니다: ${error}`);
     }
   }
@@ -402,46 +410,67 @@ export class PageHelpers {
   async clickUserMenu(): Promise<void> {
     console.log('사용자 메뉴 클릭 시도 중...');
     
-    // 사용자 메뉴 버튼을 찾기 위한 다양한 선택자들
+    // 더 정확한 선택자들 (우선순위 순서)
     const userMenuSelectors = [
-      // 1. 상단 우측 사용자 버튼 (드롭다운 아이콘이 있는)
-      '.css-unzqs5 button.GrButton:has(.GrIcon)',
+      // 1. 사용자 아바타/프로필 아이콘 (가장 구체적)
+      '[data-testid="user-menu"]',
+      '[aria-label*="user" i][aria-label*="menu" i]',
+      'button[aria-label*="account" i]',
       
-      // 2. 사용자명이 포함된 버튼 (GrButton-content 클래스 사용)
-      'button.GrButton:has(.GrButton-content):not(:has(text=한국어)):not(:has(text=57:)):not(:has(text=시간))',
-
+      // 2. 사용자 이름이 포함된 버튼 (JK11 같은)
+      'button.GrButton:has-text("JK11")',  // 실제 사용자명으로 교체 필요
+      
+      // 3. 구조적 위치 기반 (우측 상단 마지막 버튼)
+      '.css-unzqs5 button.GrButton:last-child',
+      
+      // 4. 아이콘 타입 기반 (사용자 아이콘)
+      'button:has(svg[data-icon="user"])',
+      'button:has(.user-icon)',
+      
+      // 5. 기존 방식 (하지만 English 버튼 제외)
+      'button.GrButton:has(.GrButton-content):not(:has-text("English")):not(:has-text("한국어"))'
     ];
     
     let clicked = false;
     
     for (const selector of userMenuSelectors) {
       try {
-        const element = this.page.locator(selector);
-        const count = await element.count();
+        const elements = this.page.locator(selector);
+        const count = await elements.count();
         
-        if (count > 0) {
-          // 요소가 실제로 보이는지 확인
-          const isVisible = await element.first().isVisible();
+        for (let i = 0; i < count; i++) {
+          const element = elements.nth(i);
+          const isVisible = await element.isVisible();
+          
           if (isVisible) {
-            console.log(`사용자 메뉴 버튼 발견: ${selector}`);
+            const buttonText = await element.textContent();
+            console.log(`버튼 후보 발견 [${i}]: "${buttonText}" (selector: ${selector})`);
             
-            // 버튼의 텍스트 내용 확인 (디버깅용)
-            const buttonText = await element.first().textContent();
-            console.log(`버튼 텍스트: ${buttonText}`);
-            
-            await element.first().click();
-            clicked = true;
-            break;
+            // English, 한국어, 시간 버튼 제외
+            if (buttonText && 
+                !buttonText.includes('English') && 
+                !buttonText.includes('한국어') &&
+                !buttonText.match(/\d{2}:\d{2}/)) {
+              
+              console.log(`✅ 사용자 메뉴 버튼 선택: "${buttonText}"`);
+              await element.click();
+              clicked = true;
+              break;
+            }
           }
         }
+        
+        if (clicked) break;
+        
       } catch (error) {
-        // 현재 선택자로 클릭 실패시 다음 선택자 시도
         continue;
       }
     }
     
     if (!clicked) {
-      // 모든 선택자 실패
+      // 디버깅: 모든 버튼 출력
+      const allButtons = await this.page.locator('button.GrButton').allTextContents();
+      console.log('페이지의 모든 GrButton:', allButtons);
       throw new Error('사용자 메뉴 버튼을 찾을 수 없습니다.');
     }
   }

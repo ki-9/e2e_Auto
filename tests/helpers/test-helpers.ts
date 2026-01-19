@@ -165,6 +165,14 @@ export async function performLogin(page: Page): Promise<void> {
     // 팝업 처리 후 추가 대기
     await page.waitForTimeout(2000);
   }
+
+  const ReleasePopup = await handleVersionReleasePopup(page);
+
+  if (ReleasePopup) {
+    console.log('Version & Release 팝업 처리 완료');
+    // 팝업 처리 후 추가 대기
+    await page.waitForTimeout(2000);
+  }
 }
 
 // Version & Release 팝업 닫기 함수 추가

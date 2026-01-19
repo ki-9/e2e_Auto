@@ -27,9 +27,6 @@ test.describe('RTSM 스터디 네비게이션 테스트', () => {
       await setDeviceAuthenticationKey(page);
       await performLogin(page);
       await verifyLoginSuccess(page);
-
-      // Version & Release 팝업 창 닫기
-      await handleVersionReleasePopup(page);
       
       // 스터디 목록 로딩 대기
       await waitForTableLoading(page);
