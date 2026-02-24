@@ -417,17 +417,14 @@ export class PageHelpers {
       '[aria-label*="user" i][aria-label*="menu" i]',
       'button[aria-label*="account" i]',
       
-      // 2. 사용자 이름이 포함된 버튼 (JK11 같은)
-      'button.GrButton:has-text("JK11")',  // 실제 사용자명으로 교체 필요
-      
-      // 3. 구조적 위치 기반 (우측 상단 마지막 버튼)
+      // 2. 구조적 위치 기반 (우측 상단 마지막 버튼)
       '.css-unzqs5 button.GrButton:last-child',
       
-      // 4. 아이콘 타입 기반 (사용자 아이콘)
+      // 3. 아이콘 타입 기반 (사용자 아이콘)
       'button:has(svg[data-icon="user"])',
       'button:has(.user-icon)',
       
-      // 5. 기존 방식 (하지만 English 버튼 제외)
+      // 4. 기존 방식 (하지만 English 버튼 제외)
       'button.GrButton:has(.GrButton-content):not(:has-text("English")):not(:has-text("한국어"))'
     ];
     

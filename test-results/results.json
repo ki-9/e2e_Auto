@@ -73,7 +73,7 @@
         {
           "title": "RTSM 인증 테스트",
           "file": "auth/login.test.ts",
-          "line": 15,
+          "line": 12,
           "column": 6,
           "specs": [
             {
@@ -92,14 +92,20 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3670,
+                      "duration": 5302,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T06:52:36.758Z",
+                      "startTime": "2026-02-24T06:01:33.867Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\auth-login-RTSM-인증-테스트-페이지-접속-테스트-chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -107,7 +113,7 @@
               ],
               "id": "932ff77a7ef026530189-07f45576d8c8a3e5f30b",
               "file": "auth/login.test.ts",
-              "line": 17,
+              "line": 14,
               "column": 7
             },
             {
@@ -126,11 +132,11 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8173,
+                      "duration": 7382,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiYzUxYmE0ZDItYmQ4NS00Y2QxLThlMTgtN2Y4NDdmZjgwMWFiIiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gd3dEUVlKS29aSWh2Y05BUUVCQlFBRFN3QXdTQUpCQUs1Y3pEYnljZFdhc1JpaHdtZ1RXL2ZQUjN5VlFPQ29cbkg1OVo1WTE1dk5FbXlVVjNLbUJxanZqdUQzNUM3aTRVUm1FS2xwSTJ3Z1g1ZnBvT2tYU3NLN1VDQXdFQUFRPT1cbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\n"
+                          "text": "현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiYjZhZjc3ZDQtYzZjMC00NjRmLWEyOGEtNTQwOTYxZTk4OWM3Iiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gd3dEUVlKS29aSWh2Y05BUUVCQlFBRFN3QXdTQUpCQUpveTNXUFBSTWpMNUNlYmtDVHM0cUlIZzArT28wQmJcbjhVR1FFRkNkVStVT0RzcFd1SEE4TXpmSjcxcmVRbnE0Z09tZ2ZoQzhSTnlhVitqYlkzZnZiQ3NDQXdFQUFRPT1cbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\n"
                         },
                         {
                           "text": "인증번호 입력이 필요한 상태입니다.\n"
@@ -138,9 +144,15 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T06:52:46.673Z",
+                      "startTime": "2026-02-24T06:01:39.593Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\auth-login-RTSM-인증-테스트-디바이스-키-없이-로그인-테스트-인증번호-단계-포함--chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -148,7 +160,7 @@
               ],
               "id": "932ff77a7ef026530189-602f57bdb45d8dc377fb",
               "file": "auth/login.test.ts",
-              "line": 43,
+              "line": 36,
               "column": 7
             },
             {
@@ -167,36 +179,48 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 30260,
+                      "duration": 15504,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "현재 URL: https://staging.rtsm.mavenclinical.com/\n"
+                          "text": "중복 로그인 팝업 처리 완료\n"
                         },
                         {
-                          "text": "페이지 제목: Maven RTSM\n"
+                          "text": "팝업 2개 처리 완료\n"
                         },
                         {
-                          "text": "페이지 내용 미리보기: \n    English59:53Waken: Mon Jan 19 2026 15:53:03 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.0.0.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated Date2S\n"
+                          "text": "Version & Release 팝업 처리 완료\n"
+                        },
+                        {
+                          "text": "현재 URL: https://staging-sbx.cdms.mavenclinical.com/studies\n"
+                        },
+                        {
+                          "text": "페이지 제목: Maven CDMS :: Medical Data. Secured.\n"
+                        },
+                        {
+                          "text": "페이지 내용 미리보기: You need to enable JavaScript to run this app.STG한국어EnglishUser GuideStudyE-TrainingManage StudyManage CSSystem SettingsRelease NoteVersion 1.3.55.0Maven CDMSEnglish59:53Waken: Tue Feb 24 2026 15:01:57 GMT+0900 (Korean Standard Time)안재규HomeStudyStudyOverall study information. Select Protocol no. for\n"
                         },
                         {
                           "text": "사용자 메뉴 클릭 시도 중...\n"
                         },
                         {
-                          "text": "버튼 후보 발견 [0]: \"JK11\" (selector: button.GrButton:has-text(\"JK11\"))\n"
+                          "text": "버튼 후보 발견 [0]: \"안재규\" (selector: button.GrButton:has(.GrButton-content):not(:has-text(\"English\")):not(:has-text(\"한국어\")))\n"
                         },
                         {
-                          "text": "✅ 사용자 메뉴 버튼 선택: \"JK11\"\n"
-                        },
-                        {
-                          "text": "페이지 내용 미리보기: You need to enable JavaScript to run this app.STGMaven SSOMaven SSOSign inAny problem? Ask us anything!Sign inSign inForgot Password?Don't have an account? Sign Up.Privacy PolicyCopyright © 2020-2026 \n"
+                          "text": "✅ 사용자 메뉴 버튼 선택: \"안재규\"\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-19T06:52:54.868Z",
+                      "startTime": "2026-02-24T06:01:47.222Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\auth-login-RTSM-인증-테스트-디바이스-키로-로그인-및-로그아웃-테스트-전체-플로우--chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -204,7 +228,7 @@
               ],
               "id": "932ff77a7ef026530189-4ad248621ef2fd395297",
               "file": "auth/login.test.ts",
-              "line": 71,
+              "line": 57,
               "column": 7
             }
           ]
@@ -212,16 +236,16 @@
       ]
     },
     {
-      "title": "study\\navigation.test.ts",
-      "file": "study/navigation.test.ts",
+      "title": "rtsm\\navigation.test.ts",
+      "file": "rtsm/navigation.test.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "RTSM 스터디 네비게이션 테스트",
-          "file": "study/navigation.test.ts",
-          "line": 16,
+          "file": "rtsm/navigation.test.ts",
+          "line": 13,
           "column": 6,
           "specs": [
             {
@@ -240,78 +264,61 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 18633,
+                      "duration": 2526,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n\n    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:41:34",
+                        "message": "ReferenceError: setDeviceAuthenticationKey is not defined",
+                        "stack": "ReferenceError: setDeviceAuthenticationKey is not defined\n    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts:25:7",
                         "location": {
-                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts",
-                          "column": 34,
-                          "line": 41
+                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts",
+                          "column": 7,
+                          "line": 25
                         },
-                        "snippet": "\u001b[0m \u001b[90m 39 |\u001b[39m       \n \u001b[90m 40 |\u001b[39m       \u001b[36mconst\u001b[39m protocolLink \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a:has-text(\"RTSM_JK_MVN\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m       \u001b[36mawait\u001b[39m expect(protocolLink)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m       \n \u001b[90m 43 |\u001b[39m       \u001b[36mconst\u001b[39m linkText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m protocolLink\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`🔗 클릭할 Protocol 링크: ${linkText}`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m       \n \u001b[90m 24 |\u001b[39m       \u001b[90m// 디바이스 인증 키 설정 및 로그인\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m       \u001b[36mawait\u001b[39m setDeviceAuthenticationKey(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m       \u001b[36mawait\u001b[39m performLogin(page)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m       \u001b[36mawait\u001b[39m verifyLoginSuccess(page)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m       \u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts",
-                            "column": 34,
-                            "line": 41
+                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts",
+                            "column": 7,
+                            "line": 25
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 39 |\u001b[39m       \n \u001b[90m 40 |\u001b[39m       \u001b[36mconst\u001b[39m protocolLink \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a:has-text(\"RTSM_JK_MVN\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m       \u001b[36mawait\u001b[39m expect(protocolLink)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m       \n \u001b[90m 43 |\u001b[39m       \u001b[36mconst\u001b[39m linkText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m protocolLink\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`🔗 클릭할 Protocol 링크: ${linkText}`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:41:34\u001b[22m"
+                          "message": "ReferenceError: setDeviceAuthenticationKey is not defined\n\n\u001b[0m \u001b[90m 23 |\u001b[39m       \n \u001b[90m 24 |\u001b[39m       \u001b[90m// 디바이스 인증 키 설정 및 로그인\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m       \u001b[36mawait\u001b[39m setDeviceAuthenticationKey(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m       \u001b[36mawait\u001b[39m performLogin(page)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m       \u001b[36mawait\u001b[39m verifyLoginSuccess(page)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m       \u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts:25:7\u001b[22m"
                         }
                       ],
-                      "stdout": [
-                        {
-                          "text": "현재 URL: https://staging.rtsm.mavenclinical.com/\n"
-                        },
-                        {
-                          "text": "페이지 제목: Maven RTSM\n"
-                        },
-                        {
-                          "text": "페이지 내용 미리보기: \n    English59:57Waken: Mon Jan 19 2026 15:53:34 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.0.0.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated Date2S\n"
-                        },
-                        {
-                          "text": "테이블 로딩 대기 중...\n"
-                        },
-                        {
-                          "text": "✅ 테이블 발견: .basic-table\n"
-                        },
-                        {
-                          "text": "✅ 2개 행 발견. 첫 번째 행: 2SANDBOXRTSM_다중JK_^ㅅ^RTSM_다중JK_^ㅅ^UnlockedRTSM_다중JK_^ㅅ^Phase 2셀트리온서울CRO Inc.--2025-12-15 10:34:41 +0\n"
-                        },
-                        {
-                          "text": "📋 Protocol No. 링크를 클릭하여 스터디 Dashboard로 이동 시도...\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [
                         {
-                          "text": "스터디 Dashboard 테스트 실패: ExpectError: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\study\\navigation.test.ts:41:34 {\n  matcherResult: {\n    message: \u001b[32m'\\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m`Locator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\\n`\u001b[39m +\n      \u001b[32m'Expected: visible\\n'\u001b[39m +\n      \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n      \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n      \u001b[32m'\\n'\u001b[39m +\n      \u001b[32m'Call log:\\n'\u001b[39m +\n      \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n      \u001b[32m`\\x1B[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\\x1B[22m\\n`\u001b[39m,\n    pass: \u001b[33mfalse\u001b[39m,\n    actual: \u001b[32m'<element(s) not found>'\u001b[39m,\n    name: \u001b[32m'toBeVisible'\u001b[39m,\n    expected: \u001b[32m'visible'\u001b[39m,\n    log: [\n      \u001b[32m'  - Expect \"toBeVisible\" with timeout 10000ms'\u001b[39m,\n      \u001b[32m`  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()`\u001b[39m\n    ],\n    timeout: \u001b[33m10000\u001b[39m\n  },\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    category: \u001b[32m'expect'\u001b[39m,\n    apiName: \u001b[32m'expect.toBeVisible'\u001b[39m,\n    title: \u001b[32m'Expect \"toBeVisible\"'\u001b[39m,\n    params: \u001b[90mundefined\u001b[39m,\n    infectParentStepsWithError: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'expect@116'\u001b[39m,\n    group: \u001b[90mundefined\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    location: {\n      file: \u001b[32m'C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\study\\\\navigation.test.ts'\u001b[39m,\n      line: \u001b[33m41\u001b[39m,\n      column: \u001b[33m34\u001b[39m\n    },\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'expect@116'\u001b[39m,\n      _title: \u001b[32m'Expect \"toBeVisible\"'\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    recoverFromStepError: \u001b[36m[AsyncFunction: recoverFromStepError]\u001b[39m,\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1768805626938\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m`Locator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\\n`\u001b[39m +\n        \u001b[32m'Expected: visible\\n'\u001b[39m +\n        \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n        \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m`\\x1B[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\\x1B[22m\\n`\u001b[39m,\n      stack: \u001b[32m'Error: \\x1B[2mexpect(\\x1B[22m\\x1B[31mlocator\\x1B[39m\\x1B[2m).\\x1B[22mtoBeVisible\\x1B[2m()\\x1B[22m failed\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m`Locator:  locator('a:has-text(\"RTSM_JK_MVN\")').first()\\n`\u001b[39m +\n        \u001b[32m'Expected: visible\\n'\u001b[39m +\n        \u001b[32m'Received: <element(s) not found>\\n'\u001b[39m +\n        \u001b[32m'Timeout:  10000ms\\n'\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m'\\x1B[2m  - Expect \"toBeVisible\" with timeout 10000ms\\x1B[22m\\n'\u001b[39m +\n        \u001b[32m`\\x1B[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\\x1B[22m\\n`\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\study\\\\navigation.test.ts:41:34'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                          "text": "스터디 Dashboard 테스트 실패: ReferenceError: setDeviceAuthenticationKey is not defined\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\rtsm\\navigation.test.ts:25:7\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:309:9\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:326:11\n    at TimeoutManager.withRunnable \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\timeoutManager.js:67:14\u001b[90m)\u001b[39m\n    at TestInfoImpl._runWithTimeout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:324:7\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:307:7\n    at WorkerMain._runTest \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:282:5\u001b[90m)\u001b[39m\n    at WorkerMain.runTestGroup \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:194:11\u001b[90m)\u001b[39m\n    at process.<anonymous> \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\common\\process.js:65:22\u001b[90m)\u001b[39m\n"
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-01-19T06:53:27.917Z",
+                      "startTime": "2026-02-24T06:02:04.235Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\study-navigation-RTSM-스터디--330af-트-스터디-선택-및-Dashboard-이동-테스트-chromium\\test-failed-1.png"
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\rtsm-navigation-RTSM-스터디-네비게이션-테스트-스터디-선택-및-Dashboard-이동-테스트-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\rtsm-navigation-RTSM-스터디-네비게이션-테스트-스터디-선택-및-Dashboard-이동-테스트-chromium\\trace.zip"
                         }
                       ],
                       "errorLocation": {
-                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts",
-                        "column": 34,
-                        "line": 41
+                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts",
+                        "column": 7,
+                        "line": 25
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "9700440ef122f44dbb22-a17f5baf55915f51f11a",
-              "file": "study/navigation.test.ts",
-              "line": 18,
+              "id": "a29024a8f01bf05030c2-44b9f81e723964e061f4",
+              "file": "rtsm/navigation.test.ts",
+              "line": 16,
               "column": 7
             },
             {
@@ -330,78 +337,61 @@
                       "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 41164,
+                      "duration": 2583,
                       "error": {
-                        "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n",
-                        "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n\n    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:149:26",
+                        "message": "ReferenceError: setDeviceAuthenticationKey is not defined",
+                        "stack": "ReferenceError: setDeviceAuthenticationKey is not defined\n    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts:137:7",
                         "location": {
-                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts",
-                          "column": 26,
-                          "line": 149
+                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts",
+                          "column": 7,
+                          "line": 137
                         },
-                        "snippet": "\u001b[0m \u001b[90m 147 |\u001b[39m       \u001b[90m// 스터디 Dashboard로 이동\u001b[39m\n \u001b[90m 148 |\u001b[39m       \u001b[36mconst\u001b[39m protocolLink \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a:has-text(\"RTSM_JK_MVN\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m       \u001b[36mawait\u001b[39m protocolLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 150 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 151 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 152 |\u001b[39m       \u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 135 |\u001b[39m       \u001b[90m// 로그인 및 스터디 Dashboard로 이동\u001b[39m\n \u001b[90m 136 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTEST_CONFIG\u001b[39m\u001b[33m.\u001b[39mbaseURL\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 137 |\u001b[39m       \u001b[36mawait\u001b[39m setDeviceAuthenticationKey(page)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 138 |\u001b[39m       \u001b[36mawait\u001b[39m performLogin(page)\u001b[33m;\u001b[39m\n \u001b[90m 139 |\u001b[39m       \u001b[36mawait\u001b[39m verifyLoginSuccess(page)\u001b[33m;\u001b[39m\n \u001b[90m 140 |\u001b[39m       \u001b[36mawait\u001b[39m waitForTableLoading(page)\u001b[33m;\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts",
-                            "column": 26,
-                            "line": 149
+                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts",
+                            "column": 7,
+                            "line": 137
                           },
-                          "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 147 |\u001b[39m       \u001b[90m// 스터디 Dashboard로 이동\u001b[39m\n \u001b[90m 148 |\u001b[39m       \u001b[36mconst\u001b[39m protocolLink \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a:has-text(\"RTSM_JK_MVN\")'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m       \u001b[36mawait\u001b[39m protocolLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 150 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 151 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 152 |\u001b[39m       \u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:149:26\u001b[22m"
+                          "message": "ReferenceError: setDeviceAuthenticationKey is not defined\n\n\u001b[0m \u001b[90m 135 |\u001b[39m       \u001b[90m// 로그인 및 스터디 Dashboard로 이동\u001b[39m\n \u001b[90m 136 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTEST_CONFIG\u001b[39m\u001b[33m.\u001b[39mbaseURL\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 137 |\u001b[39m       \u001b[36mawait\u001b[39m setDeviceAuthenticationKey(page)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 138 |\u001b[39m       \u001b[36mawait\u001b[39m performLogin(page)\u001b[33m;\u001b[39m\n \u001b[90m 139 |\u001b[39m       \u001b[36mawait\u001b[39m verifyLoginSuccess(page)\u001b[33m;\u001b[39m\n \u001b[90m 140 |\u001b[39m       \u001b[36mawait\u001b[39m waitForTableLoading(page)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts:137:7\u001b[22m"
                         }
                       ],
-                      "stdout": [
-                        {
-                          "text": "중복 로그인 팝업 처리 완료\n"
-                        },
-                        {
-                          "text": "현재 URL: https://staging.rtsm.mavenclinical.com/\n"
-                        },
-                        {
-                          "text": "페이지 제목: Maven RTSM\n"
-                        },
-                        {
-                          "text": "페이지 내용 미리보기: \n    English59:54Waken: Mon Jan 19 2026 15:54:00 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.0.0.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated Date2S\n"
-                        },
-                        {
-                          "text": "테이블 로딩 대기 중...\n"
-                        },
-                        {
-                          "text": "✅ 테이블 발견: .basic-table\n"
-                        },
-                        {
-                          "text": "✅ 2개 행 발견. 첫 번째 행: 2SANDBOXRTSM_다중JK_^ㅅ^RTSM_다중JK_^ㅅ^UnlockedRTSM_다중JK_^ㅅ^Phase 2셀트리온서울CRO Inc.--2025-12-15 10:34:41 +0\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [
                         {
-                          "text": "스터디 메뉴 네비게이션 테스트 실패: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\u001b[22m\n\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\study\\navigation.test.ts:149:26 {\n  name: \u001b[32m'TimeoutError'\u001b[39m,\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    location: {\n      file: \u001b[32m'C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\study\\\\navigation.test.ts'\u001b[39m,\n      line: \u001b[33m149\u001b[39m,\n      column: \u001b[33m26\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m`Click locator('a:has-text(\"RTSM_JK_MVN\")').first()`\u001b[39m,\n    apiName: \u001b[32m'locator.click'\u001b[39m,\n    params: {\n      selector: \u001b[32m'a:has-text(\"RTSM_JK_MVN\") >> nth=0'\u001b[39m,\n      strict: \u001b[33mtrue\u001b[39m,\n      timeout: \u001b[33m30000\u001b[39m\n    },\n    group: \u001b[90mundefined\u001b[39m,\n    stepId: \u001b[32m'pw:api@118'\u001b[39m,\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    attachmentIndices: [],\n    info: TestStepInfoImpl {\n      annotations: [],\n      _testInfo: \u001b[36m[TestInfoImpl]\u001b[39m,\n      _stepId: \u001b[32m'pw:api@118'\u001b[39m,\n      _title: \u001b[32m`Click locator('a:has-text(\"RTSM_JK_MVN\")').first()`\u001b[39m,\n      _parentStep: \u001b[90mundefined\u001b[39m,\n      skip: \u001b[36m[Function (anonymous)]\u001b[39m\n    },\n    recoverFromStepError: \u001b[36m[AsyncFunction: recoverFromStepError]\u001b[39m,\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1768805670780\u001b[39m,\n    error: {\n      message: \u001b[32m'TimeoutError: locator.click: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m`\\x1B[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\\x1B[22m\\n`\u001b[39m,\n      stack: \u001b[32m'TimeoutError: locator.click: Timeout 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m`\\x1B[2m  - waiting for locator('a:has-text(\"RTSM_JK_MVN\")').first()\\x1B[22m\\n`\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at C:\\\\Users\\\\jkan\\\\e2e_auto\\\\tests\\\\study\\\\navigation.test.ts:149:26'\u001b[39m,\n      cause: \u001b[90mundefined\u001b[39m\n    }\n  }\n}\n"
+                          "text": "스터디 메뉴 네비게이션 테스트 실패: ReferenceError: setDeviceAuthenticationKey is not defined\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\rtsm\\navigation.test.ts:137:7\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:309:9\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:326:11\n    at TimeoutManager.withRunnable \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\timeoutManager.js:67:14\u001b[90m)\u001b[39m\n    at TestInfoImpl._runWithTimeout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:324:7\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:307:7\n    at WorkerMain._runTest \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:282:5\u001b[90m)\u001b[39m\n    at WorkerMain.runTestGroup \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:194:11\u001b[90m)\u001b[39m\n    at process.<anonymous> \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\common\\process.js:65:22\u001b[90m)\u001b[39m\n"
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-01-19T06:53:49.417Z",
+                      "startTime": "2026-02-24T06:02:08.157Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\study-navigation-RTSM-스터디-네비게이션-테스트-스터디-메뉴-네비게이션-테스트-chromium\\test-failed-1.png"
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\rtsm-navigation-RTSM-스터디-네비게이션-테스트-스터디-메뉴-네비게이션-테스트-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\rtsm-navigation-RTSM-스터디-네비게이션-테스트-스터디-메뉴-네비게이션-테스트-chromium\\trace.zip"
                         }
                       ],
                       "errorLocation": {
-                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts",
-                        "column": 26,
-                        "line": 149
+                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts",
+                        "column": 7,
+                        "line": 137
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "9700440ef122f44dbb22-a4094945d349e39bc1bf",
-              "file": "study/navigation.test.ts",
-              "line": 135,
+              "id": "a29024a8f01bf05030c2-eeb3018512f11a88d61d",
+              "file": "rtsm/navigation.test.ts",
+              "line": 130,
               "column": 7
             }
           ]
@@ -411,8 +401,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-19T06:52:33.492Z",
-    "duration": 118019.997,
+    "startTime": "2026-02-24T06:01:31.810Z",
+    "duration": 39502.253,
     "expected": 3,
     "skipped": 0,
     "unexpected": 2,
