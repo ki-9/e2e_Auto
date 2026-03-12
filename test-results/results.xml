@@ -1,251 +1,80 @@
-<testsuites id="" name="" tests="5" failures="2" skipped="0" errors="0" time="118.019997">
-<testsuite name="auth\login.test.ts" timestamp="2026-01-19T06:52:34.002Z" hostname="chromium" tests="3" failures="0" skipped="0" time="42.103" errors="0">
-<testcase name="RTSM 인증 테스트 › 페이지 접속 테스트" classname="auth\login.test.ts" time="3.67">
-</testcase>
-<testcase name="RTSM 인증 테스트 › 디바이스 키 없이 로그인 테스트 (인증번호 단계 포함)" classname="auth\login.test.ts" time="8.173">
+<testsuites id="" name="" tests="5" failures="1" skipped="2" errors="0" time="66.831197">
+<testsuite name="auth\login.test.ts" timestamp="2026-03-12T06:55:57.124Z" hostname="chromium" tests="3" failures="1" skipped="0" time="37.948" errors="0">
+<testcase name="RTSM 인증 테스트 › 페이지 접속 테스트" classname="auth\login.test.ts" time="9.068">
 <system-out>
-<![CDATA[현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiYzUxYmE0ZDItYmQ4NS00Y2QxLThlMTgtN2Y4NDdmZjgwMWFiIiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gd3dEUVlKS29aSWh2Y05BUUVCQlFBRFN3QXdTQUpCQUs1Y3pEYnljZFdhc1JpaHdtZ1RXL2ZQUjN5VlFPQ29cbkg1OVo1WTE1dk5FbXlVVjNLbUJxanZqdUQzNUM3aTRVUm1FS2xwSTJ3Z1g1ZnBvT2tYU3NLN1VDQXdFQUFRPT1cbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9
-인증번호 입력이 필요한 상태입니다.
+<![CDATA[
+[[ATTACHMENT|auth-login-RTSM-인증-테스트-페이지-접속-테스트-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="RTSM 인증 테스트 › 디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우)" classname="auth\login.test.ts" time="30.26">
+<testcase name="RTSM 인증 테스트 › 디바이스 키 없이 로그인 테스트 (인증번호 단계 포함)" classname="auth\login.test.ts" time="10.664">
 <system-out>
-<![CDATA[현재 URL: https://staging.rtsm.mavenclinical.com/
-페이지 제목: Maven RTSM
-페이지 내용 미리보기: 
-    English59:53Waken: Mon Jan 19 2026 15:53:03 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.0.0.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated Date2S
-사용자 메뉴 클릭 시도 중...
-버튼 후보 발견 [0]: "JK11" (selector: button.GrButton:has-text("JK11"))
-✅ 사용자 메뉴 버튼 선택: "JK11"
-페이지 내용 미리보기: You need to enable JavaScript to run this app.STGMaven SSOMaven SSOSign inAny problem? Ask us anything!Sign inSign inForgot Password?Don't have an account? Sign Up.Privacy PolicyCopyright © 2020-2026 
+<![CDATA[현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiMzdlMGE0NmYtZTI1ZC00NmMxLTk1YTktYjY1OTEzOGExMDY4Iiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gc3dEUVlKS29aSWh2Y05BUUVCQlFBRFNnQXdSd0pBZGt2VmdMNmpLOE55MnorVkU1Y280eTlYL0hTVGtDZXNcbmUydkw2N0NkcW1rcFhVd0h2Ky9ta0dzRW5xZFpxa2NEMDFKcEhZQ1NiT1YwTFdaSDgyUXp1UUlEQVFBQlxuLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tIn0%3D
+인증번호 입력이 필요한 상태입니다.
+
+[[ATTACHMENT|auth-login-RTSM-인증-테스트-디바이스-키-없이-로그인-테스트-인증번호-단계-포함--chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RTSM 인증 테스트 › 디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우)" classname="auth\login.test.ts" time="18.216">
+<failure message="login.test.ts:57:7 디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우)" type="FAILURE">
+<![CDATA[  [chromium] › auth\login.test.ts:57:7 › RTSM 인증 테스트 › 디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우) ─────────────
+
+    Error: expect(page).not.toHaveURL(expected) failed
+
+    Expected pattern: not /.*login.*|.*sign-in.*|.*auth.*\/sign-in.*/i
+    Received string: "https://cdms.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy1zYnguY2Rtcy5tYXZlbmNsaW5pY2FsLmNvbS9hdXRoIiwidXVpZCI6ImRlMjdjNzZiLWU1YmEtNDRlNC05ZjhkLTY3ZmJkZTE0ZDFkMiIsImtleSI6Ii0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tXG5NRnN3RFFZSktvWklodmNOQVFFQkJRQURTZ0F3UndKQVcrdFRaZEMyQVg3bEhrYytoQ1AvbWhnL29aT1VuRThEXG5NVWlFcHNua3hlbWZIOEJGRFNadCttY2IxZ3ZtZTNJL1IreTVHdjd4aUpkVXRTeUNUcGZTcVFJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9"
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "not toHaveURL" with timeout 10000ms
+        13 × unexpected value "https://cdms.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy1zYnguY2Rtcy5tYXZlbmNsaW5pY2FsLmNvbS9hdXRoIiwidXVpZCI6ImRlMjdjNzZiLWU1YmEtNDRlNC05ZjhkLTY3ZmJkZTE0ZDFkMiIsImtleSI6Ii0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tXG5NRnN3RFFZSktvWklodmNOQVFFQkJRQURTZ0F3UndKQVcrdFRaZEMyQVg3bEhrYytoQ1AvbWhnL29aT1VuRThEXG5NVWlFcHNua3hlbWZIOEJGRFNadCttY2IxZ3ZtZTNJL1IreTVHdjd4aUpkVXRTeUNUcGZTcVFJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9"
+
+
+       at helpers\page-helpers.ts:143
+
+      141 |     
+      142 |     // URL이 로그인 관련 페이지가 아닌지 확인
+    > 143 |     await expect(this.page).not.toHaveURL(/.*login.*|.*sign-in.*|.*auth.*\/sign-in.*/i);
+          |                                 ^
+      144 |     
+      145 |     // 기본적으로 body 요소가 존재하는지 확인
+      146 |     await expect(this.page.locator('body')).toBeVisible();
+        at PageHelpers.verifyLoginSuccess (C:\Users\jkan\e2e_auto\tests\helpers\page-helpers.ts:143:33)
+        at verifyLoginSuccess (C:\Users\jkan\e2e_auto\tests\helpers\page-helpers.ts:726:3)
+        at C:\Users\jkan\e2e_auto\tests\auth\login.test.ts:66:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\auth-login-RTSM-인증-테스트-디바이스-키로-로그인-및-로그아웃-테스트-전체-플로우--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\auth-login-RTSM-인증-테스트-디바이스-키로-로그인-및-로그아웃-테스트-전체-플로우--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\auth-login-RTSM-인증-테스트-디바이스-키로-로그인-및-로그아웃-테스트-전체-플로우--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[실패 - 현재 URL: https://cdms.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy1zYnguY2Rtcy5tYXZlbmNsaW5pY2FsLmNvbS9hdXRoIiwidXVpZCI6ImRlMjdjNzZiLWU1YmEtNDRlNC05ZjhkLTY3ZmJkZTE0ZDFkMiIsImtleSI6Ii0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tXG5NRnN3RFFZSktvWklodmNOQVFFQkJRQURTZ0F3UndKQVcrdFRaZEMyQVg3bEhrYytoQ1AvbWhnL29aT1VuRThEXG5NVWlFcHNua3hlbWZIOEJGRFNadCttY2IxZ3ZtZTNJL1IreTVHdjd4aUpkVXRTeUNUcGZTcVFJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9
+
+[[ATTACHMENT|auth-login-RTSM-인증-테스트-디바이스-키로-로그인-및-로그아웃-테스트-전체-플로우--chromium\test-failed-1.png]]
+
+[[ATTACHMENT|auth-login-RTSM-인증-테스트-디바이스-키로-로그인-및-로그아웃-테스트-전체-플로우--chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="study\navigation.test.ts" timestamp="2026-01-19T06:52:34.002Z" hostname="chromium" tests="2" failures="2" skipped="0" time="59.797" errors="0">
-<testcase name="RTSM 스터디 네비게이션 테스트 › 스터디 선택 및 Dashboard 이동 테스트" classname="study\navigation.test.ts" time="18.633">
-<failure message="navigation.test.ts:18:7 스터디 선택 및 Dashboard 이동 테스트" type="FAILURE">
-<![CDATA[  [chromium] › study\navigation.test.ts:18:7 › RTSM 스터디 네비게이션 테스트 › 스터디 선택 및 Dashboard 이동 테스트 ──────
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator:  locator('a:has-text("RTSM_JK_MVN")').first()
-    Expected: visible
-    Received: <element(s) not found>
-    Timeout:  10000ms
-
-    Call log:
-      - Expect "toBeVisible" with timeout 10000ms
-      - waiting for locator('a:has-text("RTSM_JK_MVN")').first()
-
-
-      39 |       
-      40 |       const protocolLink = page.locator('a:has-text("RTSM_JK_MVN")').first();
-    > 41 |       await expect(protocolLink).toBeVisible();
-         |                                  ^
-      42 |       
-      43 |       const linkText = await protocolLink.textContent();
-      44 |       console.log(`🔗 클릭할 Protocol 링크: ${linkText}`);
-        at C:\Users\jkan\e2e_auto\tests\study\navigation.test.ts:41:34
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\study-navigation-RTSM-스터디--330af-트-스터디-선택-및-Dashboard-이동-테스트-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[현재 URL: https://staging.rtsm.mavenclinical.com/
-페이지 제목: Maven RTSM
-페이지 내용 미리보기: 
-    English59:57Waken: Mon Jan 19 2026 15:53:34 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.0.0.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated Date2S
-테이블 로딩 대기 중...
-✅ 테이블 발견: .basic-table
-✅ 2개 행 발견. 첫 번째 행: 2SANDBOXRTSM_다중JK_^ㅅ^RTSM_다중JK_^ㅅ^UnlockedRTSM_다중JK_^ㅅ^Phase 2셀트리온서울CRO Inc.--2025-12-15 10:34:41 +0
-📋 Protocol No. 링크를 클릭하여 스터디 Dashboard로 이동 시도...
-
-[[ATTACHMENT|study-navigation-RTSM-스터디--330af-트-스터디-선택-및-Dashboard-이동-테스트-chromium\test-failed-1.png]]
-]]>
-</system-out>
-<system-err>
-<![CDATA[스터디 Dashboard 테스트 실패: ExpectError: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m failed
-
-Locator:  locator('a:has-text("RTSM_JK_MVN")').first()
-Expected: visible
-Received: <element(s) not found>
-Timeout:  10000ms
-
-Call log:
-[2m  - Expect "toBeVisible" with timeout 10000ms[22m
-[2m  - waiting for locator('a:has-text("RTSM_JK_MVN")').first()[22m
-
-    at [90mC:\Users\jkan\e2e_auto\[39mtests\study\navigation.test.ts:41:34 {
-  matcherResult: {
-    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m failed\n'[39m +
-      [32m'\n'[39m +
-      [32m`Locator:  locator('a:has-text("RTSM_JK_MVN")').first()\n`[39m +
-      [32m'Expected: visible\n'[39m +
-      [32m'Received: <element(s) not found>\n'[39m +
-      [32m'Timeout:  10000ms\n'[39m +
-      [32m'\n'[39m +
-      [32m'Call log:\n'[39m +
-      [32m'\x1B[2m  - Expect "toBeVisible" with timeout 10000ms\x1B[22m\n'[39m +
-      [32m`\x1B[2m  - waiting for locator('a:has-text("RTSM_JK_MVN")').first()\x1B[22m\n`[39m,
-    pass: [33mfalse[39m,
-    actual: [32m'<element(s) not found>'[39m,
-    name: [32m'toBeVisible'[39m,
-    expected: [32m'visible'[39m,
-    log: [
-      [32m'  - Expect "toBeVisible" with timeout 10000ms'[39m,
-      [32m`  - waiting for locator('a:has-text("RTSM_JK_MVN")').first()`[39m
-    ],
-    timeout: [33m10000[39m
-  },
-  [[32mSymbol(step)[39m]: {
-    category: [32m'expect'[39m,
-    apiName: [32m'expect.toBeVisible'[39m,
-    title: [32m'Expect "toBeVisible"'[39m,
-    params: [90mundefined[39m,
-    infectParentStepsWithError: [90mundefined[39m,
-    stepId: [32m'expect@116'[39m,
-    group: [90mundefined[39m,
-    boxedStack: [90mundefined[39m,
-    location: {
-      file: [32m'C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts'[39m,
-      line: [33m41[39m,
-      column: [33m34[39m
-    },
-    steps: [],
-    attachmentIndices: [],
-    info: TestStepInfoImpl {
-      annotations: [],
-      _testInfo: [36m[TestInfoImpl][39m,
-      _stepId: [32m'expect@116'[39m,
-      _title: [32m'Expect "toBeVisible"'[39m,
-      _parentStep: [90mundefined[39m,
-      skip: [36m[Function (anonymous)][39m
-    },
-    recoverFromStepError: [36m[AsyncFunction: recoverFromStepError][39m,
-    complete: [36m[Function: complete][39m,
-    endWallTime: [33m1768805626938[39m,
-    error: {
-      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m failed\n'[39m +
-        [32m'\n'[39m +
-        [32m`Locator:  locator('a:has-text("RTSM_JK_MVN")').first()\n`[39m +
-        [32m'Expected: visible\n'[39m +
-        [32m'Received: <element(s) not found>\n'[39m +
-        [32m'Timeout:  10000ms\n'[39m +
-        [32m'\n'[39m +
-        [32m'Call log:\n'[39m +
-        [32m'\x1B[2m  - Expect "toBeVisible" with timeout 10000ms\x1B[22m\n'[39m +
-        [32m`\x1B[2m  - waiting for locator('a:has-text("RTSM_JK_MVN")').first()\x1B[22m\n`[39m,
-      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mlocator\x1B[39m\x1B[2m).\x1B[22mtoBeVisible\x1B[2m()\x1B[22m failed\n'[39m +
-        [32m'\n'[39m +
-        [32m`Locator:  locator('a:has-text("RTSM_JK_MVN")').first()\n`[39m +
-        [32m'Expected: visible\n'[39m +
-        [32m'Received: <element(s) not found>\n'[39m +
-        [32m'Timeout:  10000ms\n'[39m +
-        [32m'\n'[39m +
-        [32m'Call log:\n'[39m +
-        [32m'\x1B[2m  - Expect "toBeVisible" with timeout 10000ms\x1B[22m\n'[39m +
-        [32m`\x1B[2m  - waiting for locator('a:has-text("RTSM_JK_MVN")').first()\x1B[22m\n`[39m +
-        [32m'\n'[39m +
-        [32m'    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:41:34'[39m,
-      cause: [90mundefined[39m
-    }
-  }
-}
-]]>
-</system-err>
+<testsuite name="rtsm\navigation.test.ts" timestamp="2026-03-12T06:55:57.124Z" hostname="chromium" tests="2" failures="0" skipped="2" time="1.484" errors="0">
+<testcase name="RTSM 스터디 네비게이션 테스트 › 스터디 선택 및 Dashboard 이동 테스트" classname="rtsm\navigation.test.ts" time="1.484">
+<skipped>
+</skipped>
 </testcase>
-<testcase name="RTSM 스터디 네비게이션 테스트 › 스터디 메뉴 네비게이션 테스트" classname="study\navigation.test.ts" time="41.164">
-<failure message="navigation.test.ts:135:7 스터디 메뉴 네비게이션 테스트" type="FAILURE">
-<![CDATA[  [chromium] › study\navigation.test.ts:135:7 › RTSM 스터디 네비게이션 테스트 › 스터디 메뉴 네비게이션 테스트 ──────────────
-
-    TimeoutError: locator.click: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('a:has-text("RTSM_JK_MVN")').first()
-
-
-      147 |       // 스터디 Dashboard로 이동
-      148 |       const protocolLink = page.locator('a:has-text("RTSM_JK_MVN")').first();
-    > 149 |       await protocolLink.click();
-          |                          ^
-      150 |       await page.waitForLoadState('networkidle');
-      151 |       await page.waitForTimeout(2000);
-      152 |       
-        at C:\Users\jkan\e2e_auto\tests\study\navigation.test.ts:149:26
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\study-navigation-RTSM-스터디-네비게이션-테스트-스터디-메뉴-네비게이션-테스트-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[중복 로그인 팝업 처리 완료
-현재 URL: https://staging.rtsm.mavenclinical.com/
-페이지 제목: Maven RTSM
-페이지 내용 미리보기: 
-    English59:54Waken: Mon Jan 19 2026 15:54:00 GMT+0900 (Korean Standard Time)JK11StudyRelease NoteVersion 1.0.0.0HomeStudyStudyView and select a study from your authorized list.OngoingClosedNo.EnvStudy NameProtocol No.DB StatusStudy TitleStudy PhaseSponsorCROLast LockedLast UnlockedCreated Date2S
-테이블 로딩 대기 중...
-✅ 테이블 발견: .basic-table
-✅ 2개 행 발견. 첫 번째 행: 2SANDBOXRTSM_다중JK_^ㅅ^RTSM_다중JK_^ㅅ^UnlockedRTSM_다중JK_^ㅅ^Phase 2셀트리온서울CRO Inc.--2025-12-15 10:34:41 +0
-
-[[ATTACHMENT|study-navigation-RTSM-스터디-네비게이션-테스트-스터디-메뉴-네비게이션-테스트-chromium\test-failed-1.png]]
-]]>
-</system-out>
-<system-err>
-<![CDATA[스터디 메뉴 네비게이션 테스트 실패: locator.click: Timeout 30000ms exceeded.
-Call log:
-[2m  - waiting for locator('a:has-text("RTSM_JK_MVN")').first()[22m
-
-    at [90mC:\Users\jkan\e2e_auto\[39mtests\study\navigation.test.ts:149:26 {
-  name: [32m'TimeoutError'[39m,
-  [[32mSymbol(step)[39m]: {
-    location: {
-      file: [32m'C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts'[39m,
-      line: [33m149[39m,
-      column: [33m26[39m
-    },
-    category: [32m'pw:api'[39m,
-    title: [32m`Click locator('a:has-text("RTSM_JK_MVN")').first()`[39m,
-    apiName: [32m'locator.click'[39m,
-    params: {
-      selector: [32m'a:has-text("RTSM_JK_MVN") >> nth=0'[39m,
-      strict: [33mtrue[39m,
-      timeout: [33m30000[39m
-    },
-    group: [90mundefined[39m,
-    stepId: [32m'pw:api@118'[39m,
-    boxedStack: [90mundefined[39m,
-    steps: [],
-    attachmentIndices: [],
-    info: TestStepInfoImpl {
-      annotations: [],
-      _testInfo: [36m[TestInfoImpl][39m,
-      _stepId: [32m'pw:api@118'[39m,
-      _title: [32m`Click locator('a:has-text("RTSM_JK_MVN")').first()`[39m,
-      _parentStep: [90mundefined[39m,
-      skip: [36m[Function (anonymous)][39m
-    },
-    recoverFromStepError: [36m[AsyncFunction: recoverFromStepError][39m,
-    complete: [36m[Function: complete][39m,
-    endWallTime: [33m1768805670780[39m,
-    error: {
-      message: [32m'TimeoutError: locator.click: Timeout 30000ms exceeded.\n'[39m +
-        [32m'Call log:\n'[39m +
-        [32m`\x1B[2m  - waiting for locator('a:has-text("RTSM_JK_MVN")').first()\x1B[22m\n`[39m,
-      stack: [32m'TimeoutError: locator.click: Timeout 30000ms exceeded.\n'[39m +
-        [32m'Call log:\n'[39m +
-        [32m`\x1B[2m  - waiting for locator('a:has-text("RTSM_JK_MVN")').first()\x1B[22m\n`[39m +
-        [32m'\n'[39m +
-        [32m'    at C:\\Users\\jkan\\e2e_auto\\tests\\study\\navigation.test.ts:149:26'[39m,
-      cause: [90mundefined[39m
-    }
-  }
-}
-]]>
-</system-err>
+<testcase name="RTSM 스터디 네비게이션 테스트 › 스터디 메뉴 네비게이션 테스트" classname="rtsm\navigation.test.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
 </testsuites>

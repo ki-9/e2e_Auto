@@ -92,12 +92,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5302,
+                      "duration": 9068,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-24T06:01:33.867Z",
+                      "startTime": "2026-03-12T06:55:59.418Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -132,11 +132,11 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7382,
+                      "duration": 10664,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiYjZhZjc3ZDQtYzZjMC00NjRmLWEyOGEtNTQwOTYxZTk4OWM3Iiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gd3dEUVlKS29aSWh2Y05BUUVCQlFBRFN3QXdTQUpCQUpveTNXUFBSTWpMNUNlYmtDVHM0cUlIZzArT28wQmJcbjhVR1FFRkNkVStVT0RzcFd1SEE4TXpmSjcxcmVRbnE0Z09tZ2ZoQzhSTnlhVitqYlkzZnZiQ3NDQXdFQUFRPT1cbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\n"
+                          "text": "현재 URL: https://rtsm.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy5ydHNtLm1hdmVuY2xpbmljYWwuY29tL2F1dGgiLCJ1dWlkIjoiMzdlMGE0NmYtZTI1ZC00NmMxLTk1YTktYjY1OTEzOGExMDY4Iiwia2V5IjoiLS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS1cbk1Gc3dEUVlKS29aSWh2Y05BUUVCQlFBRFNnQXdSd0pBZGt2VmdMNmpLOE55MnorVkU1Y280eTlYL0hTVGtDZXNcbmUydkw2N0NkcW1rcFhVd0h2Ky9ta0dzRW5xZFpxa2NEMDFKcEhZQ1NiT1YwTFdaSDgyUXp1UUlEQVFBQlxuLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tIn0%3D\n"
                         },
                         {
                           "text": "인증번호 입력이 필요한 상태입니다.\n"
@@ -144,7 +144,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-24T06:01:39.593Z",
+                      "startTime": "2026-03-12T06:56:20.803Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -165,7 +165,7 @@
             },
             {
               "title": "디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우)",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -178,52 +178,57 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 15504,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 18216,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: not \u001b[32m/.*login.*|.*sign-in.*|.*auth.*\\/sign-in.*/i\u001b[39m\nReceived string: \u001b[31m\"\u001b[7mhttps://cdms.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy1zYnguY2Rtcy5tYXZlbmNsaW5pY2FsLmNvbS9hdXRoIiwidXVpZCI6ImRlMjdjNzZiLWU1YmEtNDRlNC05ZjhkLTY3ZmJkZTE0ZDFkMiIsImtleSI6Ii0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tXG5NRnN3RFFZSktvWklodmNOQVFFQkJRQURTZ0F3UndKQVcrdFRaZEMyQVg3bEhrYytoQ1AvbWhnL29aT1VuRThEXG5NVWlFcHNua3hlbWZIOEJGRFNadCttY2IxZ3ZtZTNJL1IreTVHdjd4aUpkVXRTeUNUcGZTcVFJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\u001b[27m\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"not toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    13 × unexpected value \"https://cdms.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy1zYnguY2Rtcy5tYXZlbmNsaW5pY2FsLmNvbS9hdXRoIiwidXVpZCI6ImRlMjdjNzZiLWU1YmEtNDRlNC05ZjhkLTY3ZmJkZTE0ZDFkMiIsImtleSI6Ii0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tXG5NRnN3RFFZSktvWklodmNOQVFFQkJRQURTZ0F3UndKQVcrdFRaZEMyQVg3bEhrYytoQ1AvbWhnL29aT1VuRThEXG5NVWlFcHNua3hlbWZIOEJGRFNadCttY2IxZ3ZtZTNJL1IreTVHdjd4aUpkVXRTeUNUcGZTcVFJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: not \u001b[32m/.*login.*|.*sign-in.*|.*auth.*\\/sign-in.*/i\u001b[39m\nReceived string: \u001b[31m\"\u001b[7mhttps://cdms.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy1zYnguY2Rtcy5tYXZlbmNsaW5pY2FsLmNvbS9hdXRoIiwidXVpZCI6ImRlMjdjNzZiLWU1YmEtNDRlNC05ZjhkLTY3ZmJkZTE0ZDFkMiIsImtleSI6Ii0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tXG5NRnN3RFFZSktvWklodmNOQVFFQkJRQURTZ0F3UndKQVcrdFRaZEMyQVg3bEhrYytoQ1AvbWhnL29aT1VuRThEXG5NVWlFcHNua3hlbWZIOEJGRFNadCttY2IxZ3ZtZTNJL1IreTVHdjd4aUpkVXRTeUNUcGZTcVFJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\u001b[27m\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"not toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    13 × unexpected value \"https://cdms.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy1zYnguY2Rtcy5tYXZlbmNsaW5pY2FsLmNvbS9hdXRoIiwidXVpZCI6ImRlMjdjNzZiLWU1YmEtNDRlNC05ZjhkLTY3ZmJkZTE0ZDFkMiIsImtleSI6Ii0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tXG5NRnN3RFFZSktvWklodmNOQVFFQkJRQURTZ0F3UndKQVcrdFRaZEMyQVg3bEhrYytoQ1AvbWhnL29aT1VuRThEXG5NVWlFcHNua3hlbWZIOEJGRFNadCttY2IxZ3ZtZTNJL1IreTVHdjd4aUpkVXRTeUNUcGZTcVFJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\"\u001b[22m\n\n    at PageHelpers.verifyLoginSuccess (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:143:33)\n    at verifyLoginSuccess (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:726:3)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\auth\\login.test.ts:66:7",
+                        "location": {
+                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
+                          "column": 33,
+                          "line": 143
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mhelpers\\page-helpers.ts:143\n\n\u001b[0m \u001b[90m 141 |\u001b[39m     \n \u001b[90m 142 |\u001b[39m     \u001b[90m// URL이 로그인 관련 페이지가 아닌지 확인\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 143 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/.*login.*|.*sign-in.*|.*auth.*\\/sign-in.*/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 144 |\u001b[39m     \n \u001b[90m 145 |\u001b[39m     \u001b[90m// 기본적으로 body 요소가 존재하는지 확인\u001b[39m\n \u001b[90m 146 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'body'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
+                            "column": 33,
+                            "line": 143
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: not \u001b[32m/.*login.*|.*sign-in.*|.*auth.*\\/sign-in.*/i\u001b[39m\nReceived string: \u001b[31m\"\u001b[7mhttps://cdms.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy1zYnguY2Rtcy5tYXZlbmNsaW5pY2FsLmNvbS9hdXRoIiwidXVpZCI6ImRlMjdjNzZiLWU1YmEtNDRlNC05ZjhkLTY3ZmJkZTE0ZDFkMiIsImtleSI6Ii0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tXG5NRnN3RFFZSktvWklodmNOQVFFQkJRQURTZ0F3UndKQVcrdFRaZEMyQVg3bEhrYytoQ1AvbWhnL29aT1VuRThEXG5NVWlFcHNua3hlbWZIOEJGRFNadCttY2IxZ3ZtZTNJL1IreTVHdjd4aUpkVXRTeUNUcGZTcVFJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\u001b[27m\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"not toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    13 × unexpected value \"https://cdms.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy1zYnguY2Rtcy5tYXZlbmNsaW5pY2FsLmNvbS9hdXRoIiwidXVpZCI6ImRlMjdjNzZiLWU1YmEtNDRlNC05ZjhkLTY3ZmJkZTE0ZDFkMiIsImtleSI6Ii0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tXG5NRnN3RFFZSktvWklodmNOQVFFQkJRQURTZ0F3UndKQVcrdFRaZEMyQVg3bEhrYytoQ1AvbWhnL29aT1VuRThEXG5NVWlFcHNua3hlbWZIOEJGRFNadCttY2IxZ3ZtZTNJL1IreTVHdjd4aUpkVXRTeUNUcGZTcVFJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39mhelpers\\page-helpers.ts:143\n\n\u001b[0m \u001b[90m 141 |\u001b[39m     \n \u001b[90m 142 |\u001b[39m     \u001b[90m// URL이 로그인 관련 페이지가 아닌지 확인\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 143 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/.*login.*|.*sign-in.*|.*auth.*\\/sign-in.*/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 144 |\u001b[39m     \n \u001b[90m 145 |\u001b[39m     \u001b[90m// 기본적으로 body 요소가 존재하는지 확인\u001b[39m\n \u001b[90m 146 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'body'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at PageHelpers.verifyLoginSuccess (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:143:33)\u001b[22m\n\u001b[2m    at verifyLoginSuccess (C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts:726:3)\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\auth\\login.test.ts:66:7\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
-                          "text": "중복 로그인 팝업 처리 완료\n"
-                        },
-                        {
-                          "text": "팝업 2개 처리 완료\n"
-                        },
-                        {
-                          "text": "Version & Release 팝업 처리 완료\n"
-                        },
-                        {
-                          "text": "현재 URL: https://staging-sbx.cdms.mavenclinical.com/studies\n"
-                        },
-                        {
-                          "text": "페이지 제목: Maven CDMS :: Medical Data. Secured.\n"
-                        },
-                        {
-                          "text": "페이지 내용 미리보기: You need to enable JavaScript to run this app.STG한국어EnglishUser GuideStudyE-TrainingManage StudyManage CSSystem SettingsRelease NoteVersion 1.3.55.0Maven CDMSEnglish59:53Waken: Tue Feb 24 2026 15:01:57 GMT+0900 (Korean Standard Time)안재규HomeStudyStudyOverall study information. Select Protocol no. for\n"
-                        },
-                        {
-                          "text": "사용자 메뉴 클릭 시도 중...\n"
-                        },
-                        {
-                          "text": "버튼 후보 발견 [0]: \"안재규\" (selector: button.GrButton:has(.GrButton-content):not(:has-text(\"English\")):not(:has-text(\"한국어\")))\n"
-                        },
-                        {
-                          "text": "✅ 사용자 메뉴 버튼 선택: \"안재규\"\n"
+                          "text": "실패 - 현재 URL: https://cdms.sso.staging.mavenclinical.com/auth/sign-in?ssogw=eyJyZWRpcmVjdCI6Imh0dHBzOi8vc3RhZ2luZy1zYnguY2Rtcy5tYXZlbmNsaW5pY2FsLmNvbS9hdXRoIiwidXVpZCI6ImRlMjdjNzZiLWU1YmEtNDRlNC05ZjhkLTY3ZmJkZTE0ZDFkMiIsImtleSI6Ii0tLS0tQkVHSU4gUFVCTElDIEtFWS0tLS0tXG5NRnN3RFFZSktvWklodmNOQVFFQkJRQURTZ0F3UndKQVcrdFRaZEMyQVg3bEhrYytoQ1AvbWhnL29aT1VuRThEXG5NVWlFcHNua3hlbWZIOEJGRFNadCttY2IxZ3ZtZTNJL1IreTVHdjd4aUpkVXRTeUNUcGZTcVFJREFRQUJcbi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLSJ9\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-24T06:01:47.222Z",
+                      "startTime": "2026-03-12T06:56:32.532Z",
                       "annotations": [],
                       "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\auth-login-RTSM-인증-테스트-디바이스-키로-로그인-및-로그아웃-테스트-전체-플로우--chromium\\test-failed-1.png"
+                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
                           "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\auth-login-RTSM-인증-테스트-디바이스-키로-로그인-및-로그아웃-테스트-전체-플로우--chromium\\trace.zip"
                         }
-                      ]
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\helpers\\page-helpers.ts",
+                        "column": 33,
+                        "line": 143
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "932ff77a7ef026530189-4ad248621ef2fd395297",
@@ -245,12 +250,12 @@
         {
           "title": "RTSM 스터디 네비게이션 테스트",
           "file": "rtsm/navigation.test.ts",
-          "line": 13,
+          "line": 15,
           "column": 6,
           "specs": [
             {
               "title": "스터디 선택 및 Dashboard 이동 테스트",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -263,36 +268,36 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 2526,
+                      "status": "interrupted",
+                      "duration": 1484,
                       "error": {
-                        "message": "ReferenceError: setDeviceAuthenticationKey is not defined",
-                        "stack": "ReferenceError: setDeviceAuthenticationKey is not defined\n    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts:25:7",
+                        "message": "Error: browserContext.close: Target page, context or browser has been closed",
+                        "stack": "Error: browserContext.close: Target page, context or browser has been closed\n    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts:128:7",
                         "location": {
                           "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts",
                           "column": 7,
-                          "line": 25
+                          "line": 128
                         },
-                        "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m       \n \u001b[90m 24 |\u001b[39m       \u001b[90m// 디바이스 인증 키 설정 및 로그인\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m       \u001b[36mawait\u001b[39m setDeviceAuthenticationKey(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m       \u001b[36mawait\u001b[39m performLogin(page)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m       \u001b[36mawait\u001b[39m verifyLoginSuccess(page)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m       \u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 126 |\u001b[39m       \u001b[36mthrow\u001b[39m error\u001b[33m;\u001b[39m\n \u001b[90m 127 |\u001b[39m     } \u001b[36mfinally\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 128 |\u001b[39m       \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mclose()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 129 |\u001b[39m     }\n \u001b[90m 130 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 131 |\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts",
                             "column": 7,
-                            "line": 25
+                            "line": 128
                           },
-                          "message": "ReferenceError: setDeviceAuthenticationKey is not defined\n\n\u001b[0m \u001b[90m 23 |\u001b[39m       \n \u001b[90m 24 |\u001b[39m       \u001b[90m// 디바이스 인증 키 설정 및 로그인\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m       \u001b[36mawait\u001b[39m setDeviceAuthenticationKey(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m       \u001b[36mawait\u001b[39m performLogin(page)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m       \u001b[36mawait\u001b[39m verifyLoginSuccess(page)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m       \u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts:25:7\u001b[22m"
+                          "message": "Error: browserContext.close: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m 126 |\u001b[39m       \u001b[36mthrow\u001b[39m error\u001b[33m;\u001b[39m\n \u001b[90m 127 |\u001b[39m     } \u001b[36mfinally\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 128 |\u001b[39m       \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mclose()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 129 |\u001b[39m     }\n \u001b[90m 130 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 131 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts:128:7\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [
                         {
-                          "text": "스터디 Dashboard 테스트 실패: ReferenceError: setDeviceAuthenticationKey is not defined\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\rtsm\\navigation.test.ts:25:7\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:309:9\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:326:11\n    at TimeoutManager.withRunnable \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\timeoutManager.js:67:14\u001b[90m)\u001b[39m\n    at TestInfoImpl._runWithTimeout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:324:7\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:307:7\n    at WorkerMain._runTest \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:282:5\u001b[90m)\u001b[39m\n    at WorkerMain.runTestGroup \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:194:11\u001b[90m)\u001b[39m\n    at process.<anonymous> \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\common\\process.js:65:22\u001b[90m)\u001b[39m\n"
+                          "text": "스터디 Dashboard 테스트 실패: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"https://staging.rtsm.mavenclinical.com/\", waiting until \"networkidle\"\u001b[22m\n\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\rtsm\\navigation.test.ts:24:18\n"
                         }
                       ],
                       "retry": 0,
-                      "startTime": "2026-02-24T06:02:04.235Z",
+                      "startTime": "2026-03-12T06:56:54.938Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -309,21 +314,21 @@
                       "errorLocation": {
                         "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts",
                         "column": 7,
-                        "line": 25
+                        "line": 128
                       }
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "skipped"
                 }
               ],
               "id": "a29024a8f01bf05030c2-44b9f81e723964e061f4",
               "file": "rtsm/navigation.test.ts",
-              "line": 16,
+              "line": 18,
               "column": 7
             },
             {
               "title": "스터디 메뉴 네비게이션 테스트",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -332,66 +337,13 @@
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 2583,
-                      "error": {
-                        "message": "ReferenceError: setDeviceAuthenticationKey is not defined",
-                        "stack": "ReferenceError: setDeviceAuthenticationKey is not defined\n    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts:137:7",
-                        "location": {
-                          "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts",
-                          "column": 7,
-                          "line": 137
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 135 |\u001b[39m       \u001b[90m// 로그인 및 스터디 Dashboard로 이동\u001b[39m\n \u001b[90m 136 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTEST_CONFIG\u001b[39m\u001b[33m.\u001b[39mbaseURL\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 137 |\u001b[39m       \u001b[36mawait\u001b[39m setDeviceAuthenticationKey(page)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 138 |\u001b[39m       \u001b[36mawait\u001b[39m performLogin(page)\u001b[33m;\u001b[39m\n \u001b[90m 139 |\u001b[39m       \u001b[36mawait\u001b[39m verifyLoginSuccess(page)\u001b[33m;\u001b[39m\n \u001b[90m 140 |\u001b[39m       \u001b[36mawait\u001b[39m waitForTableLoading(page)\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts",
-                            "column": 7,
-                            "line": 137
-                          },
-                          "message": "ReferenceError: setDeviceAuthenticationKey is not defined\n\n\u001b[0m \u001b[90m 135 |\u001b[39m       \u001b[90m// 로그인 및 스터디 Dashboard로 이동\u001b[39m\n \u001b[90m 136 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTEST_CONFIG\u001b[39m\u001b[33m.\u001b[39mbaseURL\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 137 |\u001b[39m       \u001b[36mawait\u001b[39m setDeviceAuthenticationKey(page)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 138 |\u001b[39m       \u001b[36mawait\u001b[39m performLogin(page)\u001b[33m;\u001b[39m\n \u001b[90m 139 |\u001b[39m       \u001b[36mawait\u001b[39m verifyLoginSuccess(page)\u001b[33m;\u001b[39m\n \u001b[90m 140 |\u001b[39m       \u001b[36mawait\u001b[39m waitForTableLoading(page)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts:137:7\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [
-                        {
-                          "text": "스터디 메뉴 네비게이션 테스트 실패: ReferenceError: setDeviceAuthenticationKey is not defined\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mtests\\rtsm\\navigation.test.ts:137:7\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:309:9\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:326:11\n    at TimeoutManager.withRunnable \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\timeoutManager.js:67:14\u001b[90m)\u001b[39m\n    at TestInfoImpl._runWithTimeout \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\testInfo.js:324:7\u001b[90m)\u001b[39m\n    at \u001b[90mC:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:307:7\n    at WorkerMain._runTest \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:282:5\u001b[90m)\u001b[39m\n    at WorkerMain.runTestGroup \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\worker\\workerMain.js:194:11\u001b[90m)\u001b[39m\n    at process.<anonymous> \u001b[90m(C:\\Users\\jkan\\e2e_auto\\\u001b[39mnode_modules\\\u001b[4mplaywright\u001b[24m\\lib\\common\\process.js:65:22\u001b[90m)\u001b[39m\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "startTime": "2026-02-24T06:02:08.157Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\rtsm-navigation-RTSM-스터디-네비게이션-테스트-스터디-메뉴-네비게이션-테스트-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\rtsm-navigation-RTSM-스터디-네비게이션-테스트-스터디-메뉴-네비게이션-테스트-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\jkan\\e2e_auto\\tests\\rtsm\\navigation.test.ts",
-                        "column": 7,
-                        "line": 137
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
+                  "results": [],
+                  "status": "skipped"
                 }
               ],
               "id": "a29024a8f01bf05030c2-eeb3018512f11a88d61d",
               "file": "rtsm/navigation.test.ts",
-              "line": 130,
+              "line": 132,
               "column": 7
             }
           ]
@@ -401,11 +353,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-24T06:01:31.810Z",
-    "duration": 39502.253,
-    "expected": 3,
-    "skipped": 0,
-    "unexpected": 2,
+    "startTime": "2026-03-12T06:55:52.889Z",
+    "duration": 66831.197,
+    "expected": 2,
+    "skipped": 2,
+    "unexpected": 1,
     "flaky": 0
   }
 }

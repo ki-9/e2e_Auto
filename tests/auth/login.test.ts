@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { LoginPage, CDMS_LOGIN_CONFIG, RTSM_LOGIN_CONFIG } from '../../pages/common/LoginPage';
 import { validateEnvironmentVariables } from '../helpers/test-helpers';
 import { verifyLoginSuccess, performLogout } from '../helpers/page-helpers';
-import { setDeviceAuthenticationKey, performLogin } from '../helpers/login-helpers';
+import { performLogin } from '../helpers/login-helpers';
 
 // 테스트 시작 전 환경 변수 검증
 test.beforeAll(async () => {
@@ -33,28 +33,7 @@ test.describe('RTSM 인증 테스트', () => {
     }
   });
 
-  test('디바이스 키 없이 로그인 테스트 (인증번호 단계 포함)', async ({ browser }) => {
-    const context = await browser.newContext();
-    const page = await context.newPage();
-
-    try {
-      await page.goto(RTSM_LOGIN_CONFIG.baseURL, { waitUntil: 'networkidle' });
-
-      await performLogin(page, RTSM_LOGIN_CONFIG.accounts.admin);
-
-      await page.waitForTimeout(3000);
-      console.log('현재 URL:', page.url());
-      console.log('인증번호 입력이 필요한 상태입니다.');
-
-    } catch (error) {
-      console.error('로그인 테스트 실패:', error);
-      throw error;
-    } finally {
-      await context.close();
-    }
-  });
-
-  test('디바이스 키로 로그인 및 로그아웃 테스트 (전체 플로우)', async ({ browser }) => {
+  test('로그인 및 로그아웃 테스트 (전체 플로우)', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
 

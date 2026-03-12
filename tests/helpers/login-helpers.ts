@@ -124,26 +124,6 @@ export async function handleVersionReleasePopup(page: Page): Promise<boolean> {
   return false;
 }
 
-// 디바이스 키 설정 헬퍼 함수
-export async function setDeviceAuthenticationKey(
-  page: Page,
-  deviceKey: string,
-  cookieName: string
-): Promise<void> {
-  await page.evaluate(({cookieName, deviceKey}) => {
-    document.cookie = `${cookieName}=${deviceKey}; ...`;
-  }, {cookieName, deviceKey});
-  
-  // 설정 확인
-  const cookieSet = await page.evaluate((cookieName) => {
-    return document.cookie.includes(`${cookieName}`);
-  }, cookieName);
-  
-  if (!cookieSet) {
-    throw new Error('디바이스 키 쿠키 설정 실패');
-  }
-}
-
 // 로그인 헬퍼 함수 (중복 로그인 팝업 처리 포함)
 export async function performLogin(
   page: Page,

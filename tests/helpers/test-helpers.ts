@@ -20,7 +20,6 @@ export function validateEnvironmentVariables(): void {
   const requiredVars = [
     { key: 'TEST_EMAIL_ADMIN',      value: process.env.TEST_EMAIL_ADMIN },
     { key: 'TEST_PASSWORD_ADMIN',   value: process.env.TEST_PASSWORD_ADMIN },
-    { key: 'TEST_DEVICE_KEY_ADMIN', value: process.env.TEST_DEVICE_KEY_ADMIN },
   ];
 
   const missingVars = requiredVars.filter(({ value }) => !value);

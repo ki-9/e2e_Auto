@@ -1,9 +1,11 @@
 import { test, expect } from '@playwright/test';
+import { LoginPage, RTSM_LOGIN_CONFIG } from '../../pages/common/LoginPage';
 import { 
   validateEnvironmentVariables,
   TEST_CONFIG 
 } from '../helpers/test-helpers';
 import { waitForTableLoading, verifyLoginSuccess } from '../helpers/page-helpers';
+import { performLogin } from '../helpers/login-helpers';
 
 // 테스트 시작 전 환경 변수 검증
 test.beforeAll(async () => {
@@ -22,8 +24,8 @@ test.describe('RTSM 스터디 네비게이션 테스트', () => {
       await page.goto(TEST_CONFIG.baseURL, { waitUntil: 'networkidle' });
       
       // 디바이스 인증 키 설정 및 로그인
-      await setDeviceAuthenticationKey(page);
-      await performLogin(page);
+      // await setDeviceAuthenticationKey(page);
+      await performLogin(page, RTSM_LOGIN_CONFIG.accounts.admin);
       await verifyLoginSuccess(page);
       
       // 스터디 목록 로딩 대기
@@ -134,8 +136,8 @@ test.describe('RTSM 스터디 네비게이션 테스트', () => {
     try {
       // 로그인 및 스터디 Dashboard로 이동
       await page.goto(TEST_CONFIG.baseURL, { waitUntil: 'networkidle' });
-      await setDeviceAuthenticationKey(page);
-      await performLogin(page);
+      // await setDeviceAuthenticationKey(page);
+      await performLogin(page, RTSM_LOGIN_CONFIG.accounts.admin);
       await verifyLoginSuccess(page);
       await waitForTableLoading(page);
       

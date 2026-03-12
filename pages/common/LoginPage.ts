@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { setDeviceAuthenticationKey, performLogin } from '../../tests/helpers/login-helpers';
+import { performLogin } from '../../tests/helpers/login-helpers';
 import * as dotenv from 'dotenv';
 dotenv.config();
 
@@ -7,12 +7,10 @@ dotenv.config();
 export interface AccountCredentials {
   email: string;
   password: string;
-  deviceKey: string;
 }
 
 // 공통 설정 (제품 무관)
 export interface CommonLoginConfig {
-  deviceKeyCookieName: string;
   timeout: number;
   accounts: {
     [role: string]: AccountCredentials;
@@ -26,18 +24,15 @@ export interface LoginConfig extends CommonLoginConfig {
 
 // 공통 설정을 한 곳에서 정의
 const COMMON_CONFIG: CommonLoginConfig = {
-  deviceKeyCookieName: 'cream:auth:device:key:staging',
   timeout: parseInt(process.env.TEST_TIMEOUT || '30000'),
   accounts: {
     admin: {
       email: process.env.TEST_EMAIL_ADMIN || '',
       password: process.env.TEST_PASSWORD_ADMIN || '',
-      deviceKey: process.env.TEST_DEVICE_KEY_ADMIN || '',
     },
     site: {
       email: process.env.TEST_EMAIL_SITE || '',
       password: process.env.TEST_PASSWORD_SITE || '',
-      deviceKey: process.env.TEST_DEVICE_KEY_SITE || '',
     },
   },
 };
@@ -65,7 +60,6 @@ export class LoginPage {
     if (!account) throw new Error(`정의되지 않은 role입니다: ${role}`);
 
     await this.navigate();
-    await setDeviceAuthenticationKey(this.page, account.deviceKey, this.config.deviceKeyCookieName);
     await performLogin(this.page, account);
   }
 }
