@@ -1,95 +1,59 @@
-<testsuites id="" name="" tests="4" failures="1" skipped="2" errors="0" time="41.92686000000127">
-<testsuite name="cdms\JP-MVN2025-ALL\date.test.ts" timestamp="2026-03-27T07:53:19.928Z" hostname="cdms" tests="4" failures="1" skipped="2" time="19.384" errors="0">
-<testcase name="[EDC] Date Item &gt; format : DD-MMM-YYYY › [EDC] IE Data Capture Test › 사용자가 SV 페이지를 저장하면 IE 페이지가 활성화된다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="5.074">
-<system-out>
-<![CDATA[중복 로그인 팝업 처리 완료
-팝업 1개 처리 완료
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="27.062498999999995">
+<testsuite name="cdms\JP-MVN2025-ALL\date.test.ts" timestamp="2026-03-27T09:02:29.843Z" hostname="cdms" tests="1" failures="1" skipped="0" time="2.537" errors="0">
+<testcase name="[EDC]  › [EDC] Background Color Test › 설정한 Background 색상이 표시된다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="2.537">
+<failure message="date.test.ts:178:9 설정한 Background 색상이 표시된다" type="FAILURE">
+<![CDATA[  [cdms] › cdms\JP-MVN2025-ALL\date.test.ts:178:9 › [EDC]  › [EDC] Background Color Test › 설정한 Background 색상이 표시된다 › 설정한 셀의 Background 색상 확인 
 
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---e62c4--SV-페이지를-저장하면-IE-페이지가-활성화된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] Date Item &gt; format : DD-MMM-YYYY › [EDC] IE Data Capture Test › 사용자가 confirmMessage[ADD]가 설정된 아이템을 최초 저장하려고 할 때, 확인 메시지(Dialog)가 보인다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="14.31">
-<failure message="date.test.ts:97:9 사용자가 confirmMessage[ADD]가 설정된 아이템을 최초 저장하려고 할 때, 확인 메시지(Dialog)가 보인다" type="FAILURE">
-<![CDATA[  [cdms] › cdms\JP-MVN2025-ALL\date.test.ts:97:9 › [EDC] Date Item > format : DD-MMM-YYYY › [EDC] IE Data Capture Test › 사용자가 confirmMessage[ADD]가 설정된 아이템을 최초 저장하려고 할 때, 확인 메시지(Dialog)가 보인다 › 페이지 저장 후 Confirm Message Dialog 표시 확인 
+    Error: expect(received).toBe(expected) // Object.is equality
 
-    Error: expect(locator).toContainText(expected) failed
+    Expected: "rgb(2, 242, 247)"
+    Received: "rgb(237, 242, 247)"
 
-    Locator: locator('.MuiPaper-root').last()
-    Expected string: "34523비대상성 간질환"
-    Received string: "Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm"
-    Timeout: 10000ms
-
-    Call log:
-      - Expect "toContainText" with timeout 10000ms
-      - waiting for locator('.MuiPaper-root').last()
-        13 × locator resolved to <div role="dialog" aria-labelledby="mui-440" class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthXl css-hppdow">…</div>
-           - unexpected value "Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm"
-
-
-       at ..\pages\cdms\JP-MVN2025-ALL\DatePage.ts:17
-
-      15 |   async verifyDialogVisible(expectedText: string): Promise<void> {
-      16 |     await this.page.waitForTimeout(1000);
-    > 17 |     await expect(this.page.locator('.MuiPaper-root').last()).toContainText(expectedText);
-         |                                                              ^
-      18 |   }
-      19 |
-      20 |   // Auto Query 갯수 비교
-        at DatePage.verifyDialogVisible (C:\Users\jkan\e2e_auto\pages\cdms\JP-MVN2025-ALL\DatePage.ts:17:62)
-        at C:\Users\jkan\e2e_auto\tests\cdms\JP-MVN2025-ALL\date.test.ts:104:9
-        at C:\Users\jkan\e2e_auto\tests\cdms\JP-MVN2025-ALL\date.test.ts:102:7
+      186 |         const tableItemBgColor = await datePage.getBackgroundColor("div.item-appendable-table-row > :first-child > :first-child");
+      187 |
+    > 188 |         expect(itemBgColor).toBe(ITEM_BACKGROUND_COLOR_GRAY);
+          |                             ^
+      189 |         expect(tableItemBgColor).toBe(ITEM_BACKGROUND_COLOR_GRAY);
+      190 |       });
+      191 |     });
+        at C:\Users\jkan\e2e_auto\tests\cdms\JP-MVN2025-ALL\date.test.ts:188:29
+        at C:\Users\jkan\e2e_auto\tests\cdms\JP-MVN2025-ALL\date.test.ts:184:7
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\cdms-JP-MVN2025-ALL-date---032a2-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\test-failed-1.png
+    ..\test-results\cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ..\test-results\cdms-JP-MVN2025-ALL-date---032a2-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\error-context.md
+    Error Context: ..\test-results\cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\error-context.md
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-results\cdms-JP-MVN2025-ALL-date---032a2-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\trace.zip
+    ..\test-results\cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\trace.zip
     Usage:
 
-        npx playwright show-trace ..\test-results\cdms-JP-MVN2025-ALL-date---032a2-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\trace.zip
+        npx playwright show-trace ..\test-results\cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
-<![CDATA[
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---032a2-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\test-failed-1.png]]
+<![CDATA[중복 로그인 팝업 처리 완료
+팝업 1개 처리 완료
 
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---032a2-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\error-context.md]]
+[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\test-failed-1.png]]
 
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---032a2-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\trace.zip]]
+[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\error-context.md]]
+
+[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\trace.zip]]
 ]]>
 </system-out>
 <system-err>
-<![CDATA[❌ 실패한 테스트: 사용자가 confirmMessage[ADD]가 설정된 아이템을 최초 저장하려고 할 때, 확인 메시지(Dialog)가 보인다
-   실패 원인: Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+<![CDATA[❌ 실패한 테스트: 설정한 Background 색상이 표시된다
+   실패 원인: Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
 
-Locator: locator('.MuiPaper-root').last()
-Expected string: [32m"34523비대상성 간질환"[39m
-Received string: [31m"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm"[39m
-Timeout: 10000ms
-
-Call log:
-[2m  - Expect "toContainText" with timeout 10000ms[22m
-[2m  - waiting for locator('.MuiPaper-root').last()[22m
-[2m    13 × locator resolved to <div role="dialog" aria-labelledby="mui-440" class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthXl css-hppdow">…</div>[22m
-[2m       - unexpected value "Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm"[22m
-
-   스크린샷: test-results/screenshots/사용자가 confirmMessage[ADD]가 설정된 아이템을 최초 저장하려고 할 때, 확인 메시지(Dialog)가 보인다.png
+Expected: [32m"rgb(2, 242, 247)"[39m
+Received: [31m"rgb(2[7m37[27m, 242, 247)"[39m
+   스크린샷: test-results/screenshots/설정한 Background 색상이 표시된다.png
 ]]>
 </system-err>
-</testcase>
-<testcase name="[EDC] Date Item &gt; format : DD-MMM-YYYY › [EDC] IE Data Capture Test › 사용자가 confirmMessage[MODIFY]가 설정된 아이템을 수정하려고 할 때, 확인 메시지(Dialog)가 보인다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="0">
-<skipped>
-</skipped>
-</testcase>
-<testcase name="[EDC] Date Item &gt; format : DD-MMM-YYYY › [EDC] IE Data Capture Test › 저장된 IE 페이지에서 미입력 Field에 Auto Query가 보인다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="0">
-<skipped>
-</skipped>
 </testcase>
 </testsuite>
 </testsuites>

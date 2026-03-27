@@ -11,8 +11,10 @@ const LANG = 'en';
 const STUDY_PROTOCOL_NO = 'JP-MVN2025-ALL_Auto';
 const VISIT_1 = 'Visit 1';
 const VISIT_5 = 'Visit 5';
+const ALL_VISIT = 'All Visit';
 const SV_PAGE_NAME = '방문일';
 const SV_PAGE_VISITDATE_LABEL = '방문일';
+const MH_PAGE_NAME = '병력/수술력/약물투여력 확인';
 const IE_PAGE_NAME = '선정/제외기준 확인';
 const IE_SINGLE_SELECT_LABEL = '3. 다음과 같은 검사 수치를 모두 나타내거나, 복수, 황달, 간성뇌증, 정맥류 출혈 등이 있는 비대상성 간질환(Decompensated liver disease) 환자';
 const IE_CONFIRM_MESSAGE_TEXT = '비대상성 간질환';
@@ -20,6 +22,8 @@ const DATE_PAGE_NAME = 'Date Item';
 const DATE_PAGE_DATEDATEUK_LABEL = 'Day UK';
 const DATE_PAGE_DATEMONTHUK_LABEL = 'Month UK';
 const DATE_PAGE_DATEYEARUK_LABEL = 'All UK';
+const WHODC3_PAGE_NAME = '병용약물 For WHODrug C3';
+const ITEM_BACKGROUND_COLOR_GRAY: `rgb(${number}, ${number}, ${number})` = "rgb(237, 242, 247)";
 
 const randomDate = dayjs()
   .subtract(Math.floor(Math.random() * 365), 'day');
@@ -28,7 +32,7 @@ test.beforeAll(async () => {
   validateEnvironmentVariables();
 });
 
-test.describe('[EDC] Date Item > format : DD-MMM-YYYY', () => {
+test.describe('[EDC] ', () => {
 
   let context: BrowserContext;
   let datePage: DatePage;
@@ -169,4 +173,22 @@ test.describe('[EDC] Date Item > format : DD-MMM-YYYY', () => {
       });
     });
   });
+
+  test.describe.serial('[EDC] Background Color Test', () => {
+    test('설정한 Background 색상이 표시된다', async () => {
+      await test.step('WHODrug C3 페이지로 이동', async () => {
+        await datePage.scrollToVisit(ALL_VISIT);
+        await datePage.goToCrfPage(ALL_VISIT, WHODC3_PAGE_NAME);
+      });
+
+      await test.step('설정한 셀의 Background 색상 확인', async () => {
+        const itemBgColor = await datePage.getBackgroundColor("td.item.type--check.--background-gray");
+        const tableItemBgColor = await datePage.getBackgroundColor("div.item-appendable-table-row > :first-child > :first-child");
+
+        expect(itemBgColor).toBe(ITEM_BACKGROUND_COLOR_GRAY);
+        expect(tableItemBgColor).toBe(ITEM_BACKGROUND_COLOR_GRAY);
+      });
+    });
+  });
+
 });

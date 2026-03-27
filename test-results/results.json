@@ -103,81 +103,20 @@
       "specs": [],
       "suites": [
         {
-          "title": "[EDC] Date Item > format : DD-MMM-YYYY",
+          "title": "[EDC] ",
           "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-          "line": 31,
+          "line": 35,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "[EDC] IE Data Capture Test",
+              "title": "[EDC] Background Color Test",
               "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-              "line": 72,
+              "line": 177,
               "column": 17,
               "specs": [
                 {
-                  "title": "사용자가 SV 페이지를 저장하면 IE 페이지가 활성화된다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 22,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 5074,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "중복 로그인 팝업 처리 완료\n"
-                            },
-                            {
-                              "text": "팝업 1개 처리 완료\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "SV CRF 페이지로 이동",
-                              "duration": 1557
-                            },
-                            {
-                              "title": "날짜 입력 및 저장",
-                              "duration": 3449
-                            },
-                            {
-                              "title": "IE 페이지 활성화 확인",
-                              "duration": 61
-                            }
-                          ],
-                          "startTime": "2026-03-27T07:53:20.949Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---e62c4--SV-페이지를-저장하면-IE-페이지가-활성화된다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "e570a71fee3fd918bafd-b759ef05b4062cadc113",
-                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 74,
-                  "column": 9
-                },
-                {
-                  "title": "사용자가 confirmMessage[ADD]가 설정된 아이템을 최초 저장하려고 할 때, 확인 메시지(Dialog)가 보인다",
+                  "title": "설정한 Background 색상이 표시된다",
                   "ok": false,
                   "tags": [],
                   "tests": [
@@ -189,163 +128,102 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 22,
+                          "workerIndex": 1,
                           "parallelIndex": 0,
                           "status": "failed",
-                          "duration": 14310,
+                          "duration": 2537,
                           "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.MuiPaper-root').last()\nExpected string: \u001b[32m\"34523비대상성 간질환\"\u001b[39m\nReceived string: \u001b[31m\"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiPaper-root').last()\u001b[22m\n\u001b[2m    13 × locator resolved to <div role=\"dialog\" aria-labelledby=\"mui-440\" class=\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthXl css-hppdow\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm\"\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.MuiPaper-root').last()\nExpected string: \u001b[32m\"34523비대상성 간질환\"\u001b[39m\nReceived string: \u001b[31m\"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiPaper-root').last()\u001b[22m\n\u001b[2m    13 × locator resolved to <div role=\"dialog\" aria-labelledby=\"mui-440\" class=\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthXl css-hppdow\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm\"\u001b[22m\n\n    at DatePage.verifyDialogVisible (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\DatePage.ts:17:62)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:104:9\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:102:7",
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"rgb(2, 242, 247)\"\u001b[39m\nReceived: \u001b[31m\"rgb(2\u001b[7m37\u001b[27m, 242, 247)\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"rgb(2, 242, 247)\"\u001b[39m\nReceived: \u001b[31m\"rgb(2\u001b[7m37\u001b[27m, 242, 247)\"\u001b[39m\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:188:29\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:184:7",
                             "location": {
-                              "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\DatePage.ts",
-                              "column": 62,
-                              "line": 17
+                              "file": "C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts",
+                              "column": 29,
+                              "line": 188
                             },
-                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\cdms\\JP-MVN2025-ALL\\DatePage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m   \u001b[36masync\u001b[39m verifyDialogVisible(expectedText\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'.MuiPaper-root'\u001b[39m)\u001b[33m.\u001b[39mlast())\u001b[33m.\u001b[39mtoContainText(expectedText)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[90m// Auto Query 갯수 비교\u001b[39m\u001b[0m"
+                            "snippet": "\u001b[0m \u001b[90m 186 |\u001b[39m         \u001b[36mconst\u001b[39m tableItemBgColor \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m datePage\u001b[33m.\u001b[39mgetBackgroundColor(\u001b[32m\"div.item-appendable-table-row > :first-child > :first-child\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 187 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 188 |\u001b[39m         expect(itemBgColor)\u001b[33m.\u001b[39mtoBe(\u001b[33mITEM_BACKGROUND_COLOR_GRAY\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 189 |\u001b[39m         expect(tableItemBgColor)\u001b[33m.\u001b[39mtoBe(\u001b[33mITEM_BACKGROUND_COLOR_GRAY\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 190 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 191 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
                           },
                           "errors": [
                             {
                               "location": {
-                                "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\DatePage.ts",
-                                "column": 62,
-                                "line": 17
+                                "file": "C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts",
+                                "column": 29,
+                                "line": 188
                               },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.MuiPaper-root').last()\nExpected string: \u001b[32m\"34523비대상성 간질환\"\u001b[39m\nReceived string: \u001b[31m\"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiPaper-root').last()\u001b[22m\n\u001b[2m    13 × locator resolved to <div role=\"dialog\" aria-labelledby=\"mui-440\" class=\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthXl css-hppdow\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\cdms\\JP-MVN2025-ALL\\DatePage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m   \u001b[36masync\u001b[39m verifyDialogVisible(expectedText\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'.MuiPaper-root'\u001b[39m)\u001b[33m.\u001b[39mlast())\u001b[33m.\u001b[39mtoContainText(expectedText)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[90m// Auto Query 갯수 비교\u001b[39m\u001b[0m\n\u001b[2m    at DatePage.verifyDialogVisible (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\DatePage.ts:17:62)\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:104:9\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:102:7\u001b[22m"
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"rgb(2, 242, 247)\"\u001b[39m\nReceived: \u001b[31m\"rgb(2\u001b[7m37\u001b[27m, 242, 247)\"\u001b[39m\n\n\u001b[0m \u001b[90m 186 |\u001b[39m         \u001b[36mconst\u001b[39m tableItemBgColor \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m datePage\u001b[33m.\u001b[39mgetBackgroundColor(\u001b[32m\"div.item-appendable-table-row > :first-child > :first-child\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 187 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 188 |\u001b[39m         expect(itemBgColor)\u001b[33m.\u001b[39mtoBe(\u001b[33mITEM_BACKGROUND_COLOR_GRAY\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 189 |\u001b[39m         expect(tableItemBgColor)\u001b[33m.\u001b[39mtoBe(\u001b[33mITEM_BACKGROUND_COLOR_GRAY\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 190 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 191 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:188:29\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:184:7\u001b[22m"
                             }
                           ],
-                          "stdout": [],
+                          "stdout": [
+                            {
+                              "text": "중복 로그인 팝업 처리 완료\n"
+                            },
+                            {
+                              "text": "팝업 1개 처리 완료\n"
+                            }
+                          ],
                           "stderr": [
                             {
-                              "text": "❌ 실패한 테스트: 사용자가 confirmMessage[ADD]가 설정된 아이템을 최초 저장하려고 할 때, 확인 메시지(Dialog)가 보인다\n"
+                              "text": "❌ 실패한 테스트: 설정한 Background 색상이 표시된다\n"
                             },
                             {
-                              "text": "   실패 원인: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.MuiPaper-root').last()\nExpected string: \u001b[32m\"34523비대상성 간질환\"\u001b[39m\nReceived string: \u001b[31m\"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiPaper-root').last()\u001b[22m\n\u001b[2m    13 × locator resolved to <div role=\"dialog\" aria-labelledby=\"mui-440\" class=\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthXl css-hppdow\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm\"\u001b[22m\n\n"
+                              "text": "   실패 원인: Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"rgb(2, 242, 247)\"\u001b[39m\nReceived: \u001b[31m\"rgb(2\u001b[7m37\u001b[27m, 242, 247)\"\u001b[39m\n"
                             },
                             {
-                              "text": "   스크린샷: test-results/screenshots/사용자가 confirmMessage[ADD]가 설정된 아이템을 최초 저장하려고 할 때, 확인 메시지(Dialog)가 보인다.png\n"
+                              "text": "   스크린샷: test-results/screenshots/설정한 Background 색상이 표시된다.png\n"
                             }
                           ],
                           "retry": 0,
                           "steps": [
                             {
-                              "title": "IE 페이지 이동 및 항목 선택",
-                              "duration": 2102
+                              "title": "WHODrug C3 페이지로 이동",
+                              "duration": 1873
                             },
                             {
-                              "title": "페이지 저장 후 Confirm Message Dialog 표시 확인",
-                              "duration": 11847,
+                              "title": "설정한 셀의 Background 색상 확인",
+                              "duration": 134,
                               "error": {
-                                "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.MuiPaper-root').last()\nExpected string: \u001b[32m\"34523비대상성 간질환\"\u001b[39m\nReceived string: \u001b[31m\"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiPaper-root').last()\u001b[22m\n\u001b[2m    13 × locator resolved to <div role=\"dialog\" aria-labelledby=\"mui-440\" class=\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthXl css-hppdow\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm\"\u001b[22m\n",
-                                "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.MuiPaper-root').last()\nExpected string: \u001b[32m\"34523비대상성 간질환\"\u001b[39m\nReceived string: \u001b[31m\"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiPaper-root').last()\u001b[22m\n\u001b[2m    13 × locator resolved to <div role=\"dialog\" aria-labelledby=\"mui-440\" class=\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthXl css-hppdow\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Maven CDMS비대상성 간질환(Decompensated liver disease) 환자 항목이 예[1]로 입력되었습니다.기준에 따라 예, 아니오로 입력되어야 합니다.CancelConfirm\"\u001b[22m\n\n    at DatePage.verifyDialogVisible (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\DatePage.ts:17:62)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:104:9\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:102:7",
+                                "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"rgb(2, 242, 247)\"\u001b[39m\nReceived: \u001b[31m\"rgb(2\u001b[7m37\u001b[27m, 242, 247)\"\u001b[39m",
+                                "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"rgb(2, 242, 247)\"\u001b[39m\nReceived: \u001b[31m\"rgb(2\u001b[7m37\u001b[27m, 242, 247)\"\u001b[39m\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:188:29\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:184:7",
                                 "location": {
-                                  "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\DatePage.ts",
-                                  "column": 62,
-                                  "line": 17
+                                  "file": "C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts",
+                                  "column": 29,
+                                  "line": 188
                                 },
-                                "snippet": "\u001b[90m   at \u001b[39m..\\pages\\cdms\\JP-MVN2025-ALL\\DatePage.ts:17\n\n\u001b[0m \u001b[90m 15 |\u001b[39m   \u001b[36masync\u001b[39m verifyDialogVisible(expectedText\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'.MuiPaper-root'\u001b[39m)\u001b[33m.\u001b[39mlast())\u001b[33m.\u001b[39mtoContainText(expectedText)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   }\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[90m// Auto Query 갯수 비교\u001b[39m\u001b[0m"
+                                "snippet": "\u001b[0m \u001b[90m 186 |\u001b[39m         \u001b[36mconst\u001b[39m tableItemBgColor \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m datePage\u001b[33m.\u001b[39mgetBackgroundColor(\u001b[32m\"div.item-appendable-table-row > :first-child > :first-child\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 187 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 188 |\u001b[39m         expect(itemBgColor)\u001b[33m.\u001b[39mtoBe(\u001b[33mITEM_BACKGROUND_COLOR_GRAY\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 189 |\u001b[39m         expect(tableItemBgColor)\u001b[33m.\u001b[39mtoBe(\u001b[33mITEM_BACKGROUND_COLOR_GRAY\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 190 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 191 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
                               }
                             }
                           ],
-                          "startTime": "2026-03-27T07:53:45.071Z",
+                          "startTime": "2026-03-27T09:02:30.721Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "screenshot",
                               "contentType": "image/png",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---032a2-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\\test-failed-1.png"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\\test-failed-1.png"
                             },
                             {
                               "name": "error-context",
                               "contentType": "text/markdown",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---032a2-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\\error-context.md"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\\error-context.md"
                             },
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---032a2-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\\trace.zip"
                             }
                           ],
                           "errorLocation": {
-                            "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\DatePage.ts",
-                            "column": 62,
-                            "line": 17
+                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts",
+                            "column": 29,
+                            "line": 188
                           }
                         }
                       ],
                       "status": "unexpected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-bbeccddaab19db324861",
+                  "id": "e570a71fee3fd918bafd-a0052a0060c51da9a2f5",
                   "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 97,
-                  "column": 9
-                },
-                {
-                  "title": "사용자가 confirmMessage[MODIFY]가 설정된 아이템을 수정하려고 할 때, 확인 메시지(Dialog)가 보인다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": -1,
-                          "parallelIndex": -1,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-03-27T07:54:00.809Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "e570a71fee3fd918bafd-d25a8ad2e5c76171f338",
-                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 109,
-                  "column": 9
-                },
-                {
-                  "title": "저장된 IE 페이지에서 미입력 Field에 Auto Query가 보인다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": -1,
-                          "parallelIndex": -1,
-                          "status": "skipped",
-                          "duration": 0,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-03-27T07:54:00.811Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "skipped"
-                    }
-                  ],
-                  "id": "e570a71fee3fd918bafd-911d7d8c159b333dcc85",
-                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 118,
+                  "line": 178,
                   "column": 9
                 }
               ]
@@ -357,10 +235,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-27T07:53:18.974Z",
-    "duration": 41926.86000000127,
-    "expected": 1,
-    "skipped": 2,
+    "startTime": "2026-03-27T09:02:29.000Z",
+    "duration": 27062.498999999996,
+    "expected": 0,
+    "skipped": 0,
     "unexpected": 1,
     "flaky": 0
   }

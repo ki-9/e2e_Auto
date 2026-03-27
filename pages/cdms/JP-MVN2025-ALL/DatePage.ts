@@ -49,4 +49,11 @@ export class DatePage extends BaseCDMSPage {
       this.page.locator(".ms-Callout .ms-List-cell:has-text('Data')").first()
     ).toContainText(value);
   }
+
+  // Background Color 추출
+  async getBackgroundColor(locator: string): Promise<string> {
+    const itemBgColor = await this.page.locator(locator).evaluate(el => window.getComputedStyle(el).backgroundColor);
+    return itemBgColor;
+  }
+
 }
