@@ -47,8 +47,19 @@ export default defineConfig({
   /* 프로젝트별 브라우저 설정 */
   projects: [
     {
-      name: 'chromium',
+      name: 'auth',
       use: { ...devices['Desktop Chrome'] },
+      testMatch: ['**/auth/**/*.test.ts'],
+    },
+    {
+      name: 'cdms',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch: ['**/cdms/**/*.test.ts'],
+    },
+    {
+      name: 'rtsm',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch: ['**/rtsm/**/*.test.ts'],
     },
 
     // {

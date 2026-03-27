@@ -30,9 +30,9 @@ const COMMON_CONFIG: CommonLoginConfig = {
       email: process.env.TEST_EMAIL_ADMIN || '',
       password: process.env.TEST_PASSWORD_ADMIN || '',
     },
-    site: {
-      email: process.env.TEST_EMAIL_SITE || '',
-      password: process.env.TEST_PASSWORD_SITE || '',
+    owner: {
+      email: process.env.TEST_EMAIL_OWNER || '',
+      password: process.env.TEST_PASSWORD_OWNER || '',
     },
   },
 };

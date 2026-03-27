@@ -9,9 +9,9 @@ test.beforeAll(async () => {
   validateEnvironmentVariables();
 });
 
-test.describe('RTSM 인증 테스트', () => {
+test.describe('Maven 로그인 테스트', () => {
 
-  test('페이지 접속 테스트', async ({ browser }) => {
+  test('로그인 페이지 접속 테스트', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
 
@@ -26,7 +26,7 @@ test.describe('RTSM 인증 테스트', () => {
       await expect(page.locator('input[type="password"], input[name="password"]')).toBeVisible();
 
     } catch (error) {
-      console.error('페이지 접속 테스트 실패:', error);
+      console.error('로그인 페이지 접속 테스트 실패:', error);
       throw error;
     } finally {
       await context.close();
@@ -41,9 +41,9 @@ test.describe('RTSM 인증 테스트', () => {
       const loginPage = new LoginPage(page, CDMS_LOGIN_CONFIG);
 
       // === 로그인 단계 ===
-      await loginPage.loginWithDeviceKey('admin');
+      await loginPage.loginWithDeviceKey('owner');
       await verifyLoginSuccess(page);
-      await page.waitForTimeout(2000);
+      await page.waitForTimeout(1000);
 
       // === 로그아웃 단계 ===
       await performLogout(page);

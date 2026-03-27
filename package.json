@@ -27,5 +27,7 @@
     "dotenv": "^16.0.0",
     "typescript": "^5.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "dayjs": "^1.11.20"
+  }
 }
