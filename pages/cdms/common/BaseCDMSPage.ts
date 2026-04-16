@@ -135,10 +135,15 @@ export class BaseCDMSPage {
 
   // CRF 페이지 활성화
   async activateCrf(): Promise<void> {
-    if(await this.page.getByRole('button', { name: 'Activate CRF' }).isVisible({timeout: 1000})) {
+    await this.waitForPageReady();
+    if(await this.page.getByRole('button', { name: 'Activate CRF' }).isVisible({timeout: 3000})) {
       await this.page
         .getByRole('button', { name: 'Activate CRF' })
         .click();
+      
+      await this.page.fill("[placeholder='Please enter the reason for Activate CRF.']", "Activate CRF Test");
+      await this.page.getByRole('button', { name: 'Confirm' }).click();
+      
       await this.page.waitForResponse(
         resp =>
           resp.url().includes('/subjects/summary?type=SUBJECT') &&
@@ -164,7 +169,6 @@ export class BaseCDMSPage {
         resp.url().includes('/subjects/summary?type=SUBJECT') &&
         resp.status() === 200
     );
-    await this.page.waitForTimeout(500);
   }
 
   // 특정 페이지가 사이드바에서 활성화될 때까지 대기
@@ -176,5 +180,16 @@ export class BaseCDMSPage {
         !el.classList.contains('--is-not-available')
       );
     }, pageName);
+  }
+
+  // EDC 로딩 사라질 때까지 대기
+  async waitForPageReady(): Promise<void> {
+    await this.page.waitForFunction(() =>
+      document.querySelectorAll("[role='progressbar']").length > 0, { timeout: 2000}
+    ).catch(() => {});
+
+    await this.page.waitForFunction(() =>
+      document.querySelectorAll("[role='progressbar']").length === 0, { timeout: 10000}
+    );
   }
 }

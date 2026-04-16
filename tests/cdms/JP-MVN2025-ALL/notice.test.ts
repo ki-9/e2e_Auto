@@ -4,10 +4,11 @@ import { LoginPage, CDMS_LOGIN_CONFIG } from '../../../pages/common/LoginPage';
 import { StudyListPage } from '../../../pages/cdms/common/StudyListPage';
 import { NoticePage } from '../../../pages/cdms/JP-MVN2025-ALL/NoticePage';
 import { validateEnvironmentVariables } from '../../helpers/test-helpers';
+import { StaticPageHelpers } from '../../helpers/page-helpers';
 
 const STUDY_PROTOCOL_NO = 'JP-MVN2025-ALL_Auto';
 const LANG = 'en'; // 'ko' | 'en'
-const noticeTitle = 'Test Notice Title';
+const noticeTitle = StaticPageHelpers.getCurrentDateString('YYYYMMDD') + StaticPageHelpers.generateRandomString(5);
 const noticeContent = 'Test Notice Content';
 const changedNoticeTitle = 'Changed Notice Title';
 const changedContent = 'Changed Notice Content';

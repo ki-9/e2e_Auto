@@ -146,7 +146,6 @@ export async function performLogin(
   const hadPopup = await handleDuplicateLoginPopup(page);
   
   if (hadPopup) {
-    console.log('중복 로그인 팝업 처리 완료');
     // 팝업 처리 후 추가 대기
     await page.waitForTimeout(1000);
   }

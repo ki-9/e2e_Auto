@@ -96,6 +96,119 @@
   },
   "suites": [
     {
+      "title": "cdms\\JP-MVN2025-ALL\\addSubject.test.ts",
+      "file": "cdms/JP-MVN2025-ALL/addSubject.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Subject 추가 테스트",
+          "file": "cdms/JP-MVN2025-ALL/addSubject.test.ts",
+          "line": 17,
+          "column": 15,
+          "specs": [
+            {
+              "title": "1. Subject가 성공적으로 추가되면 성공 토스트가 보인다",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "cdms",
+                  "projectName": "cdms",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5171,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "팝업 1개 처리 완료\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Subject 메뉴 진입 및 추가 폼 열기",
+                          "duration": 1505
+                        },
+                        {
+                          "title": "Subject 정보 입력 및 저장",
+                          "duration": 3636
+                        },
+                        {
+                          "title": "성공 토스트 확인",
+                          "duration": 18
+                        }
+                      ],
+                      "startTime": "2026-04-16T05:26:35.048Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "55b2d1ba91416515d606-160f1774e444dea0b036",
+              "file": "cdms/JP-MVN2025-ALL/addSubject.test.ts",
+              "line": 53,
+              "column": 9
+            },
+            {
+              "title": "2. Subject가 성공적으로 추가되면 해당 Subject의 Schedule 화면으로 이동한다",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "cdms",
+                  "projectName": "cdms",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "생성된 Subject ID: 6763172094308905454\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Subject ID 저장",
+                          "duration": 1
+                        }
+                      ],
+                      "startTime": "2026-04-16T05:26:51.455Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "55b2d1ba91416515d606-d0fe2bb4b723c708396a",
+              "file": "cdms/JP-MVN2025-ALL/addSubject.test.ts",
+              "line": 67,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "cdms\\JP-MVN2025-ALL\\date.test.ts",
       "file": "cdms/JP-MVN2025-ALL/date.test.ts",
       "column": 0,
@@ -110,14 +223,14 @@
           "specs": [],
           "suites": [
             {
-              "title": "[EDC] Background Color Test",
+              "title": "[EDC] IE Data Capture Test",
               "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-              "line": 177,
+              "line": 76,
               "column": 17,
               "specs": [
                 {
-                  "title": "설정한 Background 색상이 표시된다",
-                  "ok": false,
+                  "title": "사용자가 SV 페이지를 저장하면 IE 페이지가 활성화된다",
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -128,97 +241,366 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 1,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 2537,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"rgb(2, 242, 247)\"\u001b[39m\nReceived: \u001b[31m\"rgb(2\u001b[7m37\u001b[27m, 242, 247)\"\u001b[39m",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"rgb(2, 242, 247)\"\u001b[39m\nReceived: \u001b[31m\"rgb(2\u001b[7m37\u001b[27m, 242, 247)\"\u001b[39m\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:188:29\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:184:7",
-                            "location": {
-                              "file": "C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts",
-                              "column": 29,
-                              "line": 188
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 186 |\u001b[39m         \u001b[36mconst\u001b[39m tableItemBgColor \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m datePage\u001b[33m.\u001b[39mgetBackgroundColor(\u001b[32m\"div.item-appendable-table-row > :first-child > :first-child\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 187 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 188 |\u001b[39m         expect(itemBgColor)\u001b[33m.\u001b[39mtoBe(\u001b[33mITEM_BACKGROUND_COLOR_GRAY\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 189 |\u001b[39m         expect(tableItemBgColor)\u001b[33m.\u001b[39mtoBe(\u001b[33mITEM_BACKGROUND_COLOR_GRAY\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 190 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 191 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts",
-                                "column": 29,
-                                "line": 188
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"rgb(2, 242, 247)\"\u001b[39m\nReceived: \u001b[31m\"rgb(2\u001b[7m37\u001b[27m, 242, 247)\"\u001b[39m\n\n\u001b[0m \u001b[90m 186 |\u001b[39m         \u001b[36mconst\u001b[39m tableItemBgColor \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m datePage\u001b[33m.\u001b[39mgetBackgroundColor(\u001b[32m\"div.item-appendable-table-row > :first-child > :first-child\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 187 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 188 |\u001b[39m         expect(itemBgColor)\u001b[33m.\u001b[39mtoBe(\u001b[33mITEM_BACKGROUND_COLOR_GRAY\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 189 |\u001b[39m         expect(tableItemBgColor)\u001b[33m.\u001b[39mtoBe(\u001b[33mITEM_BACKGROUND_COLOR_GRAY\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 190 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 191 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:188:29\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:184:7\u001b[22m"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 6253,
+                          "errors": [],
                           "stdout": [
-                            {
-                              "text": "중복 로그인 팝업 처리 완료\n"
-                            },
                             {
                               "text": "팝업 1개 처리 완료\n"
                             }
                           ],
-                          "stderr": [
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
                             {
-                              "text": "❌ 실패한 테스트: 설정한 Background 색상이 표시된다\n"
+                              "title": "SV CRF 페이지로 이동",
+                              "duration": 1336
                             },
                             {
-                              "text": "   실패 원인: Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"rgb(2, 242, 247)\"\u001b[39m\nReceived: \u001b[31m\"rgb(2\u001b[7m37\u001b[27m, 242, 247)\"\u001b[39m\n"
+                              "title": "날짜 입력 및 저장",
+                              "duration": 4857
                             },
                             {
-                              "text": "   스크린샷: test-results/screenshots/설정한 Background 색상이 표시된다.png\n"
+                              "title": "IE 페이지 활성화 확인",
+                              "duration": 56
                             }
                           ],
+                          "startTime": "2026-04-16T05:26:51.671Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "e570a71fee3fd918bafd-5475eca80364faf471bc",
+                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
+                  "line": 78,
+                  "column": 9
+                },
+                {
+                  "title": "사용자가 confirmMessage[ADD]가 설정된 아이템을 최초 저장하려고 할 때, 확인 메시지(Dialog)가 보인다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4101,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "IE 페이지 이동 및 항목 선택",
+                              "duration": 2413
+                            },
+                            {
+                              "title": "페이지 저장 후 Confirm Message Dialog 표시 확인",
+                              "duration": 1684
+                            }
+                          ],
+                          "startTime": "2026-04-16T05:27:12.489Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "e570a71fee3fd918bafd-6dfca02abbd31702de04",
+                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
+                  "line": 101,
+                  "column": 9
+                },
+                {
+                  "title": "사용자가 confirmMessage[MODIFY]가 설정된 아이템을 수정하려고 할 때, 확인 메시지(Dialog)가 보인다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5208,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "항목 수정하고 페이지 저장 후 Confirm Message Dialog 표시 확인",
+                              "duration": 5207
+                            }
+                          ],
+                          "startTime": "2026-04-16T05:27:16.604Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "e570a71fee3fd918bafd-54e9861b6a4256b30f6c",
+                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
+                  "line": 113,
+                  "column": 9
+                },
+                {
+                  "title": "저장된 IE 페이지에서 미입력 Field에 Auto Query가 보인다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "Auto Query 21개 Open 검증",
+                              "duration": 5
+                            }
+                          ],
+                          "startTime": "2026-04-16T05:27:21.822Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "e570a71fee3fd918bafd-199d19c4b4f3791573f3",
+                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
+                  "line": 122,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "[EDC] Date Item UK Format Capture Test",
+              "file": "cdms/JP-MVN2025-ALL/date.test.ts",
+              "line": 129,
+              "column": 17,
+              "specs": [
+                {
+                  "title": "Day UK 입력 저장 시 Audit에서 UK-MMM-YYYY 포맷으로 기록된다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6755,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "팝업 1개 처리 완료\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "Date Item CRF 페이지로 이동",
+                              "duration": 3826
+                            },
+                            {
+                              "title": "Day UK 값 입력 및 저장",
+                              "duration": 2456
+                            },
+                            {
+                              "title": "Audit에서 UK-MMM-YYYY 포맷 확인",
+                              "duration": 471
+                            }
+                          ],
+                          "startTime": "2026-04-16T05:27:21.961Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "e570a71fee3fd918bafd-d4e2f538a02557f61887",
+                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
+                  "line": 131,
+                  "column": 9
+                },
+                {
+                  "title": "Month UK 입력 저장 시 Audit에서 DD-UNK-YYYY 포맷으로 기록된다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3734,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "Month UK 값 입력 및 수정 저장",
+                              "duration": 2421
+                            },
+                            {
+                              "title": "Audit에서 DD-UNK-YYYY 포맷 확인",
+                              "duration": 1312
+                            }
+                          ],
+                          "startTime": "2026-04-16T05:27:44.099Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "e570a71fee3fd918bafd-f47e32b0e683395198be",
+                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
+                  "line": 150,
+                  "column": 9
+                },
+                {
+                  "title": "모든 UK 입력 저장 시 Audit에서 UK-UNK-UKUK으로 기록된다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3415,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "Year UK 값 입력 및 수정 저장",
+                              "duration": 2941
+                            },
+                            {
+                              "title": "Audit에서 UK-UNK-UKUK 확인",
+                              "duration": 471
+                            }
+                          ],
+                          "startTime": "2026-04-16T05:27:47.840Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "e570a71fee3fd918bafd-325a55b2a6aba56b4a87",
+                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
+                  "line": 163,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "[EDC] Background Color Test",
+              "file": "cdms/JP-MVN2025-ALL/date.test.ts",
+              "line": 177,
+              "column": 17,
+              "specs": [
+                {
+                  "title": "설정한 Background 색상이 표시된다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2866,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "팝업 1개 처리 완료\n"
+                            }
+                          ],
+                          "stderr": [],
                           "retry": 0,
                           "steps": [
                             {
                               "title": "WHODrug C3 페이지로 이동",
-                              "duration": 1873
+                              "duration": 1487
                             },
                             {
                               "title": "설정한 셀의 Background 색상 확인",
-                              "duration": 134,
-                              "error": {
-                                "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"rgb(2, 242, 247)\"\u001b[39m\nReceived: \u001b[31m\"rgb(2\u001b[7m37\u001b[27m, 242, 247)\"\u001b[39m",
-                                "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"rgb(2, 242, 247)\"\u001b[39m\nReceived: \u001b[31m\"rgb(2\u001b[7m37\u001b[27m, 242, 247)\"\u001b[39m\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:188:29\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts:184:7",
-                                "location": {
-                                  "file": "C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts",
-                                  "column": 29,
-                                  "line": 188
-                                },
-                                "snippet": "\u001b[0m \u001b[90m 186 |\u001b[39m         \u001b[36mconst\u001b[39m tableItemBgColor \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m datePage\u001b[33m.\u001b[39mgetBackgroundColor(\u001b[32m\"div.item-appendable-table-row > :first-child > :first-child\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 187 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 188 |\u001b[39m         expect(itemBgColor)\u001b[33m.\u001b[39mtoBe(\u001b[33mITEM_BACKGROUND_COLOR_GRAY\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 189 |\u001b[39m         expect(tableItemBgColor)\u001b[33m.\u001b[39mtoBe(\u001b[33mITEM_BACKGROUND_COLOR_GRAY\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 190 |\u001b[39m       })\u001b[33m;\u001b[39m\n \u001b[90m 191 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
-                              }
+                              "duration": 1377
                             }
                           ],
-                          "startTime": "2026-03-27T09:02:30.721Z",
+                          "startTime": "2026-04-16T05:27:51.454Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\\test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\\error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---73fd7-est-설정한-Background-색상이-표시된다-cdms\\trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\date.test.ts",
-                            "column": 29,
-                            "line": 188
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "e570a71fee3fd918bafd-a0052a0060c51da9a2f5",
@@ -231,15 +613,220 @@
           ]
         }
       ]
+    },
+    {
+      "title": "cdms\\JP-MVN2025-ALL\\notice.test.ts",
+      "file": "cdms/JP-MVN2025-ALL/notice.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Study Notice",
+          "file": "cdms/JP-MVN2025-ALL/notice.test.ts",
+          "line": 20,
+          "column": 15,
+          "specs": [
+            {
+              "title": "1. 사용자가 새 공지사항을 작성하면 Notice 목록에 반영되어야 한다",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "cdms",
+                  "projectName": "cdms",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3339,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "팝업 1개 처리 완료\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Notice 추가 버튼 클릭 및 내용 입력",
+                          "duration": 2272
+                        },
+                        {
+                          "title": "Notice 목록 반영 확인",
+                          "duration": 1065
+                        }
+                      ],
+                      "startTime": "2026-04-16T05:28:09.851Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a650075360bc0d36d20a-e971d7e63a822bdffe03",
+              "file": "cdms/JP-MVN2025-ALL/notice.test.ts",
+              "line": 56,
+              "column": 7
+            },
+            {
+              "title": "2. 사용자가 파일을 업로드하면 파일 이름이 화면에 표기된다",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "cdms",
+                  "projectName": "cdms",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5727,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Notice 상세 진입 및 수정 모드 전환",
+                          "duration": 53
+                        },
+                        {
+                          "title": "파일 업로드",
+                          "duration": 1732
+                        },
+                        {
+                          "title": "첨부파일명 확인",
+                          "duration": 3939
+                        }
+                      ],
+                      "startTime": "2026-04-16T05:28:26.218Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a650075360bc0d36d20a-4cd41776a0f53b4c9f6b",
+              "file": "cdms/JP-MVN2025-ALL/notice.test.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "3. 사용자가 공지사항을 수정하면 해당 Notice Detail 페이지에 반영되어야 한다",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "cdms",
+                  "projectName": "cdms",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2399,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "저장 토스트 메시지 확인 후 닫음\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "제목 및 내용 수정",
+                          "duration": 2182
+                        },
+                        {
+                          "title": "수정된 내용 확인",
+                          "duration": 215
+                        }
+                      ],
+                      "startTime": "2026-04-16T05:28:31.956Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a650075360bc0d36d20a-68a686b4ac3d765a42c5",
+              "file": "cdms/JP-MVN2025-ALL/notice.test.ts",
+              "line": 79,
+              "column": 7
+            },
+            {
+              "title": "4. 사용자가 공지사항을 삭제하면 해당 Notice는 List에서 보이지 않는다",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "cdms",
+                  "projectName": "cdms",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1202,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Notice 탭 이동 및 삭제",
+                          "duration": 1047
+                        },
+                        {
+                          "title": "삭제된 Notice 미노출 확인",
+                          "duration": 150
+                        }
+                      ],
+                      "startTime": "2026-04-16T05:28:34.385Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a650075360bc0d36d20a-4ce49deb2f6f06f1bab6",
+              "file": "cdms/JP-MVN2025-ALL/notice.test.ts",
+              "line": 88,
+              "column": 7
+            }
+          ]
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-27T09:02:29.000Z",
-    "duration": 27062.498999999996,
-    "expected": 0,
+    "startTime": "2026-04-16T05:26:32.944Z",
+    "duration": 122881.68999999999,
+    "expected": 14,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

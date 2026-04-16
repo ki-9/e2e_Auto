@@ -40,7 +40,7 @@ test.describe.serial('Subject 추가 테스트', () => {
             const page = subjectPage.getPage();
             const screenshotPath = `test-results/screenshots/${testInfo.title}.png`;
             await page.screenshot({ path: screenshotPath, fullPage: true });
-            console.error(`❌ 실패한 테스트: ${testInfo.title}`);
+            console.error(`   실패한 테스트: ${testInfo.title}`);
             console.error(`   실패 원인: ${testInfo.error?.message}`);
             console.error(`   스크린샷: ${screenshotPath}`);
         }

@@ -1,4 +1,3 @@
-// tests/helpers/page-helpers.ts
 import { Page, expect, Locator } from '@playwright/test';
 
 /**
@@ -662,7 +661,7 @@ export class StaticPageHelpers {
   /**
    * 현재 날짜 문자열 생성
    */
-  static getCurrentDateString(format: 'YYYY-MM-DD' | 'DD/MM/YYYY' | 'MM/DD/YYYY' = 'YYYY-MM-DD'): string {
+  static getCurrentDateString(format: 'YYYY-MM-DD' | 'DD/MM/YYYY' | 'YYYYMMDD' | 'MM/DD/YYYY' = 'YYYY-MM-DD'): string {
     const now = new Date();
     const year = now.getFullYear();
     const month = String(now.getMonth() + 1).padStart(2, '0');
@@ -673,6 +672,8 @@ export class StaticPageHelpers {
         return `${day}/${month}/${year}`;
       case 'MM/DD/YYYY':
         return `${month}/${day}/${year}`;
+      case 'YYYYMMDD':
+        return `${year}${month}${day}`;
       default:
         return `${year}-${month}-${day}`;
     }
