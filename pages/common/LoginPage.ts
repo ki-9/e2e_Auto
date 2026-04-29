@@ -7,6 +7,8 @@ dotenv.config();
 export interface AccountCredentials {
   email: string;
   password: string;
+  role: string;
+  name: string;
 }
 
 // 공통 설정 (제품 무관)
@@ -29,10 +31,14 @@ const COMMON_CONFIG: CommonLoginConfig = {
     admin: {
       email: process.env.TEST_EMAIL_ADMIN || '',
       password: process.env.TEST_PASSWORD_ADMIN || '',
+      role: '',
+      name: '',
     },
     owner: {
       email: process.env.TEST_EMAIL_OWNER || '',
       password: process.env.TEST_PASSWORD_OWNER || '',
+      role: 'Owner',
+      name: 'Auto Owner1',
     },
   },
 };

@@ -17,8 +17,8 @@ const SECOND_ESIGN = 'Second E-Sign';
 const CANCEL_SECOND_ESIGN = 'Cancel Second E-Sign';
 const ESIGN_REASON = 'Second E-Sign Test';
 const ESIGN_CANCELLATION_REASON = 'Cancel Second E-Sign Test';
-const SECOND_ESIGN_ON_AUDIT = 'Second Signed';
-const SECOND_ESIGN_OFF_AUDIT = 'Second Unsigned';
+const SECOND_ESIGN_ON_AUDIT = 'Second E-Sign ON';
+const SECOND_ESIGN_OFF_AUDIT = 'Second E-Sign OFF';
 
 test.beforeAll(async () => {
   validateEnvironmentVariables();
@@ -75,35 +75,32 @@ test.describe('[EDC] Second E-sign 테스트', () => {
         await eSignPage.setItemSingleSelectRadio(DS_ITEM_DSREAS_LABEL, DS_ITEM_DSREAS_ITEM_CODE_LABEL);
         await eSignPage.clickSave();
       });
-      await test.step('Second E-Sign 서명 완료', async () => {
+      await test.step('Second E-Sign 서명 진행', async () => {
         await eSignPage.clickESignButton(SECOND_ESIGN, ESIGN_REASON, CDMS_LOGIN_CONFIG.accounts['owner'].email, CDMS_LOGIN_CONFIG.accounts['owner'].password);
       });
-      await test.step('서명 날짜 표기 확인', async () => {
-        await eSignPage.verifySecondESignDateVisible();
+      await test.step('Second E-Sign 서명 표기 확인', async () => {
+        await eSignPage.verifySecondESignVisible(CDMS_LOGIN_CONFIG.accounts['owner'].role, CDMS_LOGIN_CONFIG.accounts['owner'].name);
       });
     });
 
     test(`2. 사용자가 ${SECOND_ESIGN} 버튼을 클릭하여 전자 서명이 완료되면 Audit Trail에 ${SECOND_ESIGN_ON_AUDIT}로 표기된다`, async () => {
       await test.step(`Audit Trail에서 ${SECOND_ESIGN_ON_AUDIT} 텍스트 확인`, async () => {
-        await eSignPage.verifyAuditTrailInAllRows(ESIGN_REASON, SECOND_ESIGN_ON_AUDIT);
+        await eSignPage.verifyAuditTrailInAllRows(SECOND_ESIGN_ON_AUDIT, ESIGN_REASON);
       });
     });
 
     test(`3. 사용자가 ${CANCEL_SECOND_ESIGN} 버튼을 클릭하면, 전자 서명이 취소되며, 해당 페이지의 서명 날짜가 표기되지 않는다`, async () => {
-      await test.step('서명 영역 클릭하여 취소 버튼 노출', async () => {
-        await eSignPage.clickSignatureArea();
-      });
-      await test.step('Second E-Sign 서명 취소', async () => {
+      await test.step('Second E-Sign 서명 취소 진행', async () => {
         await eSignPage.clickCancelESignButton(CANCEL_SECOND_ESIGN, ESIGN_CANCELLATION_REASON, CDMS_LOGIN_CONFIG.accounts['owner'].email, CDMS_LOGIN_CONFIG.accounts['owner'].password);
       });
-      await test.step('서명 날짜 미표기 확인', async () => {
-        await eSignPage.verifySecondESignDateNotVisible();
+      await test.step('Second E-Sign 서명 날짜 미표기 확인', async () => {
+        await eSignPage.verifySecondESignNotVisible(CDMS_LOGIN_CONFIG.accounts['owner'].role, CDMS_LOGIN_CONFIG.accounts['owner'].name);
       });
     });
 
     test(`4. 사용자가 ${CANCEL_SECOND_ESIGN} 버튼을 클릭하면, 전자 서명이 취소되며, Audit Trail에 ${SECOND_ESIGN_OFF_AUDIT}로 표기된다`, async () => {
       await test.step(`Audit Trail에서 ${SECOND_ESIGN_OFF_AUDIT} 텍스트 확인`, async () => {
-        await eSignPage.verifyAuditTrailInAllRows(ESIGN_CANCELLATION_REASON, SECOND_ESIGN_OFF_AUDIT);
+        await eSignPage.verifyAuditTrailInAllRows(SECOND_ESIGN_OFF_AUDIT, ESIGN_CANCELLATION_REASON);
       });
     });
 

@@ -24,20 +24,18 @@ export class ESignPage extends BaseCDMSPage {
     await this.page.getByPlaceholder('Please enter the reason for canceling the E-Sign.').fill(reason);
     await this.page.getByRole('button', { name: 'Confirm & Sign', exact: true }).click();
     await this.page.waitForTimeout(500);
-    await this.page.waitForResponse(
-      resp => resp.url().includes('/statuses') && resp.status() === 200
-    );
   }
 
-  // 서명 날짜 표기 여부 확인
-  async verifySecondESignDateVisible(): Promise<void> {
-    await this.page.waitForSelector('.app-study-crf-second-signed-at');
-    await expect(this.page.locator('.app-study-crf-second-signed-at')).toBeVisible();
+  // 서명 완료 표기 여부 확인
+  async verifySecondESignVisible(role: string, name: string): Promise<void> {
+    await expect(this.page.getByText(`Second E-Signed by.`)).toBeVisible();
+    await expect(this.page.locator('span').filter({ hasText: `[${role}] ${name}` })).toBeVisible();
   }
 
-  // 서명 날짜 미표기 확인
-  async verifySecondESignDateNotVisible(): Promise<void> {
-    await expect(this.page.locator('.app-study-crf-second-signed-at')).toHaveCount(0);
+  // 서명 완료 미표기 확인
+  async verifySecondESignNotVisible(role: string, name: string): Promise<void> {
+    await expect(this.page.getByText(`Second E-Signed by.`)).toHaveCount(0);
+    await expect(this.page.locator('span').filter({ hasText: `[${role}] ${name}` })).toHaveCount(0);
   }
 
   // 서명 영역 클릭 (취소 버튼 노출용)
@@ -46,17 +44,23 @@ export class ESignPage extends BaseCDMSPage {
   }
 
   // .misc 행 전체에서 Audit Trail을 열고 특정 텍스트 포함 여부 확인
-  async verifyAuditTrailInAllRows(reason: string, expectedAuditText: string): Promise<void> {
+  async verifyAuditTrailInAllRows(expectedAuditText: string, expectedReasonText: string): Promise<void> {
     const rows = this.page.locator('.misc');
     const rowCount = await rows.count();
 
     for (let i = 0; i < rowCount; i++) {
       const currentRow = rows.nth(i);
-      const auditTrailButton = currentRow.locator('.GrIconButton').last();
-      await auditTrailButton.click();
-
-      const rowLocator = this.page.getByRole('row', { name: reason });
-      await expect(rowLocator).toContainText(expectedAuditText);
+      const auditTrailButton = currentRow.getByLabel('Audit Trail').getByRole('button');
+      if(await auditTrailButton.isVisible()){
+        await auditTrailButton.click();
+      } else {
+        break;
+      }
+      
+      const auditLocator = this.page.getByRole("presentation").locator("[data-list-index='0'] [data-automation-key='2']");
+      await expect(auditLocator).toContainText(expectedAuditText);
+      const reasonLocator = this.page.getByRole("presentation").locator("[data-list-index='0'] [data-automation-key='5']");
+      await expect(reasonLocator).toContainText(expectedReasonText);
     }
   }
 }

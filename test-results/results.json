@@ -128,30 +128,11 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 1,
+                          "workerIndex": 5,
                           "parallelIndex": 0,
-                          "status": "interrupted",
-                          "duration": 16421,
-                          "error": {
-                            "message": "Error: page.waitForSelector: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('.app-study-crf-second-signed-at') to be visible\u001b[22m\n",
-                            "stack": "Error: page.waitForSelector: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('.app-study-crf-second-signed-at') to be visible\u001b[22m\n\n    at ESignPage.verifySecondESignDateVisible (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\ESignPage.ts:34:21)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\eSign.test.ts:82:25\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\eSign.test.ts:81:18",
-                            "location": {
-                              "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\ESignPage.ts",
-                              "column": 21,
-                              "line": 34
-                            },
-                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\cdms\\JP-MVN2025-ALL\\ESignPage.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m   \u001b[90m// 서명 날짜 표기 여부 확인\u001b[39m\n \u001b[90m 33 |\u001b[39m   \u001b[36masync\u001b[39m verifySecondESignDateVisible()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'.app-study-crf-second-signed-at'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'.app-study-crf-second-signed-at'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m   }\n \u001b[90m 37 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\ESignPage.ts",
-                                "column": 21,
-                                "line": 34
-                              },
-                              "message": "Error: page.waitForSelector: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('.app-study-crf-second-signed-at') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\cdms\\JP-MVN2025-ALL\\ESignPage.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m   \u001b[90m// 서명 날짜 표기 여부 확인\u001b[39m\n \u001b[90m 33 |\u001b[39m   \u001b[36masync\u001b[39m verifySecondESignDateVisible()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'.app-study-crf-second-signed-at'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'.app-study-crf-second-signed-at'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m   }\n \u001b[90m 37 |\u001b[39m\u001b[0m\n\u001b[2m    at ESignPage.verifySecondESignDateVisible (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\ESignPage.ts:34:21)\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\eSign.test.ts:82:25\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\eSign.test.ts:81:18\u001b[22m"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 9255,
+                          "errors": [],
                           "stdout": [
                             {
                               "text": "팝업 1개 처리 완료\n"
@@ -162,49 +143,29 @@
                           "steps": [
                             {
                               "title": "DS CRF 페이지로 이동 및 필수 항목 입력",
-                              "duration": 5791
+                              "duration": 5884
                             },
                             {
-                              "title": "Second E-Sign 서명 완료",
-                              "duration": 1255
+                              "title": "Second E-Sign 서명 진행",
+                              "duration": 1328
                             },
                             {
-                              "title": "서명 날짜 표기 확인",
-                              "duration": 10374,
-                              "error": {
-                                "message": "Error: page.waitForSelector: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('.app-study-crf-second-signed-at') to be visible\u001b[22m\n",
-                                "stack": "Error: page.waitForSelector: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('.app-study-crf-second-signed-at') to be visible\u001b[22m\n\n    at ESignPage.verifySecondESignDateVisible (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\ESignPage.ts:34:21)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\eSign.test.ts:82:25\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\eSign.test.ts:81:18",
-                                "location": {
-                                  "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\ESignPage.ts",
-                                  "column": 21,
-                                  "line": 34
-                                },
-                                "snippet": "\u001b[90m   at \u001b[39m..\\pages\\cdms\\JP-MVN2025-ALL\\ESignPage.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m   \u001b[90m// 서명 날짜 표기 여부 확인\u001b[39m\n \u001b[90m 33 |\u001b[39m   \u001b[36masync\u001b[39m verifySecondESignDateVisible()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'.app-study-crf-second-signed-at'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'.app-study-crf-second-signed-at'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m   }\n \u001b[90m 37 |\u001b[39m\u001b[0m"
-                              }
+                              "title": "Second E-Sign 서명 표기 확인",
+                              "duration": 2037
                             }
                           ],
-                          "startTime": "2026-04-24T04:10:49.922Z",
+                          "startTime": "2026-04-29T06:48:19.328Z",
                           "annotations": [],
                           "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--6522e-명이-완료되며-해당-페이지에-서명-날짜가-표기된다-cdms\\test-failed-1.png"
-                            },
                             {
                               "name": "trace",
                               "contentType": "application/zip",
                               "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--6522e-명이-완료되며-해당-페이지에-서명-날짜가-표기된다-cdms\\trace.zip"
                             }
-                          ],
-                          "errorLocation": {
-                            "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\ESignPage.ts",
-                            "column": 21,
-                            "line": 34
-                          }
+                          ]
                         }
                       ],
-                      "status": "skipped"
+                      "status": "expected"
                     }
                   ],
                   "id": "c0514f904eafe22d3216-d024262152cd977478bc",
@@ -213,7 +174,7 @@
                   "column": 9
                 },
                 {
-                  "title": "2. 사용자가 Second E-Sign 버튼을 클릭하여 전자 서명이 완료되면 Audit Trail에 Second Signed로 표기된다",
+                  "title": "2. 사용자가 Second E-Sign 버튼을 클릭하여 전자 서명이 완료되면 Audit Trail에 Second E-Sign ON로 표기된다",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -225,23 +186,35 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": -1,
-                          "parallelIndex": -1,
-                          "status": "skipped",
-                          "duration": 0,
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2171,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-04-24T04:11:25.885Z",
+                          "steps": [
+                            {
+                              "title": "Audit Trail에서 Second E-Sign ON 텍스트 확인",
+                              "duration": 2166
+                            }
+                          ],
+                          "startTime": "2026-04-29T06:48:43.691Z",
                           "annotations": [],
-                          "attachments": []
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--de62b-ail에-Second-E-Sign-ON로-표기된다-cdms\\trace.zip"
+                            }
+                          ]
                         }
                       ],
-                      "status": "skipped"
+                      "status": "expected"
                     }
                   ],
-                  "id": "c0514f904eafe22d3216-facafb3bbbc8c7f9829b",
+                  "id": "c0514f904eafe22d3216-59a9085573844f206c0e",
                   "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
                   "line": 86,
                   "column": 9
@@ -259,20 +232,36 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": -1,
-                          "parallelIndex": -1,
-                          "status": "skipped",
-                          "duration": 0,
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1214,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-04-24T04:11:25.889Z",
+                          "steps": [
+                            {
+                              "title": "Second E-Sign 서명 취소 진행",
+                              "duration": 1167
+                            },
+                            {
+                              "title": "Second E-Sign 서명 날짜 미표기 확인",
+                              "duration": 43
+                            }
+                          ],
+                          "startTime": "2026-04-29T06:48:48.466Z",
                           "annotations": [],
-                          "attachments": []
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--e4494-소되며-해당-페이지의-서명-날짜가-표기되지-않는다-cdms\\trace.zip"
+                            }
+                          ]
                         }
                       ],
-                      "status": "skipped"
+                      "status": "expected"
                     }
                   ],
                   "id": "c0514f904eafe22d3216-583a9780180fe7752781",
@@ -281,7 +270,7 @@
                   "column": 9
                 },
                 {
-                  "title": "4. 사용자가 Cancel Second E-Sign 버튼을 클릭하면, 전자 서명이 취소되며, Audit Trail에 Second Unsigned로 표기된다",
+                  "title": "4. 사용자가 Cancel Second E-Sign 버튼을 클릭하면, 전자 서명이 취소되며, Audit Trail에 Second E-Sign OFF로 표기된다",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -293,25 +282,37 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": -1,
-                          "parallelIndex": -1,
-                          "status": "skipped",
-                          "duration": 0,
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2115,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-04-24T04:11:25.892Z",
+                          "steps": [
+                            {
+                              "title": "Audit Trail에서 Second E-Sign OFF 텍스트 확인",
+                              "duration": 2113
+                            }
+                          ],
+                          "startTime": "2026-04-29T06:48:51.514Z",
                           "annotations": [],
-                          "attachments": []
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--9069f-il에-Second-E-Sign-OFF로-표기된다-cdms\\trace.zip"
+                            }
+                          ]
                         }
                       ],
-                      "status": "skipped"
+                      "status": "expected"
                     }
                   ],
-                  "id": "c0514f904eafe22d3216-e083e1124a96412adbcf",
+                  "id": "c0514f904eafe22d3216-6d182506b1302b553429",
                   "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-                  "line": 104,
+                  "line": 101,
                   "column": 9
                 }
               ]
@@ -323,10 +324,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-24T04:10:48.360Z",
-    "duration": 37622.851,
-    "expected": 0,
-    "skipped": 4,
+    "startTime": "2026-04-29T06:48:17.105Z",
+    "duration": 39604.21499999985,
+    "expected": 4,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }
