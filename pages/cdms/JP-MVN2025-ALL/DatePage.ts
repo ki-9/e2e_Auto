@@ -19,6 +19,7 @@ export class DatePage extends BaseCDMSPage {
 
   // Auto Query 갯수 비교
   async verifyAutoQueryOnEmptyFields(expectedCount: number): Promise<void> {
+    await this.waitForPageReady();
     const actualCount = await this.page.locator('[class="message"]').count();
     expect(actualCount).toBe(expectedCount);
   }

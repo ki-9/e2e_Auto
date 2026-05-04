@@ -7,7 +7,7 @@ export class NoticePage extends BaseCDMSPage {
   // Notice 탭으로 이동
   async navigateToNoticeTab(): Promise<void> {
     await this.page.getByRole('tab', { name: 'Notice' }).click();
-    await this.page.waitForResponse('/notices');
+    await this.page.waitForSelector("[class*='basic-table']");
   }
 
   // 공지사항 생성

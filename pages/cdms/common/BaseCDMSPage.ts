@@ -33,6 +33,18 @@ export class BaseCDMSPage {
   }
   ////////////////////////////////
 
+  ////// Text Item //////
+  async setItemTextField(label: string, value: string, nth: number = 0): Promise<void> {
+    const input = this.page
+      .locator(`td:text-is('${label}') + td`)
+      .nth(nth)
+      .locator("input[type='text']")
+      .first();
+    await input.clear();
+    await input.fill(value);
+  }
+  ///////////////////////
+
   ////// Date Item //////
   protected getItemDateFieldLocator(label: string, nth: number = 0): Locator {
     return this.page.locator(`td:text-is("${label}") + td`).nth(nth);
@@ -120,6 +132,16 @@ export class BaseCDMSPage {
     await this.page.locator(`button:has-text("${getLabel('close', this.lang)}")`).click();
   }
 
+  // Refresh 버튼 클릭 및 서명 사유 입력
+  async clickRefreshButton(reason: string, id: string, pw: string): Promise<void> {
+    await this.page.getByRole('button', { name: 'Refresh', exact: true }).click();
+    await this.page.getByPlaceholder('Enter Your Email').fill(id);
+    await this.page.getByPlaceholder('Enter Your Password').fill(pw);
+    await this.page.getByPlaceholder('Please enter the reason for Refresh.').fill(reason);
+    await this.page.waitForTimeout(500);
+    await this.page.getByRole('button', { name: 'Confirm', exact: true }).click();
+  }
+
   // Subject 메뉴로 이동
   async navigateToSubject(): Promise<void> {
     await this.page.getByRole('link', { name: 'Subject', exact: true }).click();
@@ -169,6 +191,7 @@ export class BaseCDMSPage {
         resp.url().includes('/subjects/summary?type=SUBJECT') &&
         resp.status() === 200
     );
+    await this.page.waitForTimeout(500);
   }
 
   // 특정 페이지가 사이드바에서 활성화될 때까지 대기

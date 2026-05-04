@@ -32,7 +32,7 @@ test.beforeAll(async () => {
   validateEnvironmentVariables();
 });
 
-test.describe('[EDC] ', () => {
+test.describe('[EDC] Date Item UK 날짜 입력 테스트', () => {
 
   let context: BrowserContext;
   let datePage: DatePage;
