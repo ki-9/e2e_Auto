@@ -64,7 +64,6 @@ export class ESignPage extends BaseCDMSPage {
     for(let i = 1; i < rowCount; i++) {
       const currentRow = rows.nth(i);
       if(await this.page.locator('.label').nth(i-1).innerText() === label) {
-        console.log(await this.page.locator('.label').nth(i-1).innerText());
         const auditTrailButton = currentRow.getByLabel('Audit Trail').getByRole('button');
         await auditTrailButton.click();
 
@@ -97,7 +96,6 @@ export class ESignPage extends BaseCDMSPage {
         await this.page.getByRole('option', { name: type }).click();
         await this.page.waitForTimeout(500);
         const auditLocator = this.page.getByRole("presentation").locator("[data-list-index='0'] [data-automation-key='2']");
-        console.log(auditLocator);
         await expect(auditLocator).toContainText(expectedAuditText);
         const reasonLocator = this.page.getByRole("presentation").locator("[data-list-index='0'] [data-automation-key='5']");
         await expect(reasonLocator).toContainText(expectedReasonText);
