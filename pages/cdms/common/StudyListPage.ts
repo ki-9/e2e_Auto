@@ -24,13 +24,13 @@ export class StudyListPage extends BaseCDMSPage {
   // 프로토콜 번호로 스터디 검색 및 진입
   async selectStudy(protocolNo: string): Promise<void> {
     // 검색 버튼 클릭
-    const searchButton = this.page.locator('span:has-text("Protocol No.") + div');
-    await searchButton.locator('button').click();
+    const searchButton = this.page.locator('div').filter({ hasText: /^Protocol No\.$/ }).getByRole('button');
+    await searchButton.click();
 
     // 스터디 검색
-    await this.page.locator('.ms-Callout').locator('input').fill(protocolNo);
+    await this.page.getByRole('textbox').fill(protocolNo);
     await this.page.waitForTimeout(1000);
-    await this.page.locator('.ms-Callout').locator('button').click();
+    await this.page.getByRole('button', { name: 'Search' }).click();
 
     // 검색 결과 클릭
     await this.page.getByText(protocolNo).waitFor();

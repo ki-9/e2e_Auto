@@ -21,11 +21,6 @@ export class SubjectPage extends BaseCDMSPage {
     await this.clickSave();
   }
 
-  // 성공 토스트 확인
-  async verifySuccessToast(): Promise<void> {
-    await expect(this.page.locator('.fx-notification.--succ')).toBeVisible();
-  }
-
   // Subject 생성 후 Schedule 페이지 이동 확인
   async verifySubjectPage(): Promise<void> {
     await expect(

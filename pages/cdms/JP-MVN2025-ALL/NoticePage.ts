@@ -16,12 +16,9 @@ export class NoticePage extends BaseCDMSPage {
       .getByRole('button', { name: getLabel('noticeAdd', this.lang) })
       .click();
 
-    await this.page.waitForSelector('iframe.tox-edit-area__iframe', { state: 'visible' });
+    await expect(this.page.getByRole('button', { name: 'Undo' })).toBeVisible({ timeout: 10000 });
     await this.page.locator("div input").first().fill(title);
-    await this.page
-      .frameLocator('iframe.tox-edit-area__iframe')
-      .locator('body')
-      .fill(content);
+    await this.page.frameLocator('iframe.tox-edit-area__iframe').locator('body').fill(content);
     await this.page.getByText("Title").click();
 
     await this.page.getByRole('button', { name: getLabel('save', 'en') }).click();

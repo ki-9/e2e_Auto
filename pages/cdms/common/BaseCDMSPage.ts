@@ -1,8 +1,10 @@
 import { Page, Locator } from '@playwright/test';
+import { expect } from '@playwright/test';
 import dayjs from 'dayjs';
 import { Language, getLabel } from '../../common/LanguageConfig';
 
 export type ModifyReason = 'New Data' | 'Input Error' | 'Modified Data' | 'Others';
+export type ItemType = 'dictionary' | 'date';
 export class BaseCDMSPage {
   constructor(
     protected page: Page,
@@ -66,6 +68,49 @@ export class BaseCDMSPage {
     const dateItem = this.getItemDateFieldLocator(label, nth);
     await this.selectDateItem(dateItem, day);
   }
+  ////////////////////////
+
+  /////// in Appendable Table
+
+  // Appendable Table 내에서 아이템 위치 특정
+  async getAppendableTableLocator(type: ItemType, column: string, row: number = 0): Promise<Locator> {
+    const targetRow = this.page.getByLabel('Appendable Table Body Data').nth(row);
+    const targetColumn = await this.getColumnIndex(column);
+
+    if(type === "dictionary"){
+      return targetRow.locator("[class*='item type--dictionary']").nth(targetColumn-1);
+    } else if(type === "date"){
+      return targetRow.locator("[class*='type--date'] [class='cr-calendar-input']").nth(targetColumn-1);
+    } else {
+      return this.page.locator("[class='type--appendable-table']");
+    }
+  }
+
+  // 열 위치 특정
+  protected async getColumnIndex(headerText: string): Promise<number> {
+    const headers = this.page.locator("[aria-label='Appendable Table'] [class*='th ']");
+    const allHeaders = await headers.all();
+
+    for (let i = 0; i < allHeaders.length-1; i++) {
+      const text = await allHeaders[i].textContent();
+      if (text?.trim() === headerText) {
+        return i;
+      }
+    }
+
+    throw new Error(`"${headerText}" 헤더를 찾을 수 없습니다.`);
+  }
+
+  async setDictionaryFieldInAppendable(value: string, column: string): Promise<void> {
+    const dictionaryItem = await this.getAppendableTableLocator("dictionary", column);
+    await dictionaryItem.click();
+    await this.page.waitForSelector(".search");
+    await this.page.locator(".search").getByRole("combobox").click();
+    await this.page.getByRole('option', { name: 'Verbatim Input' }).click();
+    await this.page.locator('[class="input-box"] input').fill(value);
+    await this.page.getByRole('button', { name: 'Enter' }).click();
+  }
+
   ////////////////////////
 
   getSegmentAfter(keyword: string): string {
@@ -171,7 +216,7 @@ export class BaseCDMSPage {
           resp.url().includes('/subjects/summary?type=SUBJECT') &&
           resp.status() === 200
       );
-      await this.page.waitForTimeout(500);
+      await this.page.waitForTimeout(1000);
     } else {
       console.log("이미 활성화 된 페이지");
     }
@@ -194,8 +239,8 @@ export class BaseCDMSPage {
     await this.page.waitForTimeout(500);
   }
 
-  // 특정 페이지가 사이드바에서 활성화될 때까지 대기
-  async waitForIEPageActive(pageName: string): Promise<void> {
+  // 특정 페이지가 페이지 트리에서 활성화될 때까지 대기
+  async waitForPageActive(pageName: string): Promise<void> {
     await this.page.waitForFunction((name) => {
       const elements = Array.from(document.querySelectorAll('.cr-nav-wrapped'));
       return elements.some(el =>
@@ -214,5 +259,23 @@ export class BaseCDMSPage {
     await this.page.waitForFunction(() =>
       document.querySelectorAll("[role='progressbar']").length === 0, { timeout: 10000}
     );
+  }
+
+  // 성공 토스트 확인
+  async verifySuccessToast(): Promise<void> {
+    await expect(this.page.locator('.fx-notification.--succ')).toBeVisible();
+    await this.page.getByRole('button', { name: 'Close' }).click();
+  }
+
+  // 문자 길이 측정
+  async getTextLength(locator: Locator): Promise<number> {
+    const text = await locator.textContent();
+    return text?.trim().length ?? 0;
+  }
+
+  // 문자 길이 측정 (입력창)
+  async getInputValueLength(locator: Locator): Promise<number> {
+    const value = await locator.inputValue();
+    return value.trim().length;
   }
 }

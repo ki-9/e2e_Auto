@@ -121,29 +121,33 @@
                   "projectName": "cdms",
                   "results": [
                     {
-                      "workerIndex": 23,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3698,
+                      "duration": 4640,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "팝업 1개 처리 완료\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
                           "title": "Subject 메뉴 진입 및 추가 폼 열기",
-                          "duration": 254
+                          "duration": 851
                         },
                         {
                           "title": "Subject 정보 입력 및 저장",
-                          "duration": 3418
+                          "duration": 3705
                         },
                         {
                           "title": "성공 토스트 확인",
-                          "duration": 22
+                          "duration": 80
                         }
                       ],
-                      "startTime": "2026-05-04T09:35:09.109Z",
+                      "startTime": "2026-06-01T06:36:48.181Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -175,14 +179,14 @@
                   "projectName": "cdms",
                   "results": [
                     {
-                      "workerIndex": 23,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2,
+                      "duration": 4,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "생성된 Subject ID: 6778873225439731781\n"
+                          "text": "생성된 Subject ID: 6802958328472455696\n"
                         }
                       ],
                       "stderr": [],
@@ -190,10 +194,10 @@
                       "steps": [
                         {
                           "title": "Subject ID 저장",
-                          "duration": 1
+                          "duration": 3
                         }
                       ],
-                      "startTime": "2026-05-04T09:35:26.103Z",
+                      "startTime": "2026-06-01T06:37:16.168Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -224,16 +228,16 @@
       "specs": [],
       "suites": [
         {
-          "title": "[EDC] Date Item UK 날짜 입력 테스트",
+          "title": "[EDC] Data Capture 테스트",
           "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-          "line": 35,
+          "line": 36,
           "column": 6,
           "specs": [],
           "suites": [
             {
               "title": "[EDC] IE Data Capture Test",
               "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-              "line": 76,
+              "line": 77,
               "column": 17,
               "specs": [
                 {
@@ -249,10 +253,10 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4900,
+                          "duration": 5240,
                           "errors": [],
                           "stdout": [
                             {
@@ -264,24 +268,24 @@
                           "steps": [
                             {
                               "title": "SV CRF 페이지로 이동",
-                              "duration": 1692
+                              "duration": 1524
                             },
                             {
                               "title": "날짜 입력 및 저장",
-                              "duration": 3162
+                              "duration": 3676
                             },
                             {
                               "title": "IE 페이지 활성화 확인",
-                              "duration": 44
+                              "duration": 37
                             }
                           ],
-                          "startTime": "2026-05-04T09:35:27.482Z",
+                          "startTime": "2026-06-01T06:37:17.366Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---59663--SV-페이지를-저장하면-IE-페이지가-활성화된다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---79025--SV-페이지를-저장하면-IE-페이지가-활성화된다-cdms\\trace.zip"
                             }
                           ]
                         }
@@ -289,9 +293,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-03b19132ad52c9307664",
+                  "id": "e570a71fee3fd918bafd-00cebd4950c71fcf4e4e",
                   "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 78,
+                  "line": 79,
                   "column": 9
                 },
                 {
@@ -307,10 +311,10 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3878,
+                          "duration": 3635,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
@@ -318,20 +322,20 @@
                           "steps": [
                             {
                               "title": "IE 페이지 이동 및 항목 선택",
-                              "duration": 2104
+                              "duration": 1870
                             },
                             {
                               "title": "페이지 저장 후 Confirm Message Dialog 표시 확인",
-                              "duration": 1772
+                              "duration": 1763
                             }
                           ],
-                          "startTime": "2026-05-04T09:35:49.612Z",
+                          "startTime": "2026-06-01T06:37:39.235Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---467a6-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---2c5f5-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\\trace.zip"
                             }
                           ]
                         }
@@ -339,9 +343,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-d3bfcf3cd2337fae481b",
+                  "id": "e570a71fee3fd918bafd-3a17d2b13ebd0326d203",
                   "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 101,
+                  "line": 102,
                   "column": 9
                 },
                 {
@@ -357,10 +361,10 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3503,
+                          "duration": 3602,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
@@ -368,16 +372,16 @@
                           "steps": [
                             {
                               "title": "항목 수정하고 페이지 저장 후 Confirm Message Dialog 표시 확인",
-                              "duration": 3500
+                              "duration": 3598
                             }
                           ],
-                          "startTime": "2026-05-04T09:35:54.532Z",
+                          "startTime": "2026-06-01T06:37:43.894Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---a1031-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---d9fee-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\\trace.zip"
                             }
                           ]
                         }
@@ -385,9 +389,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-fcabc70bd17a4f8b70c2",
+                  "id": "e570a71fee3fd918bafd-cd03b973b3583f25b198",
                   "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 113,
+                  "line": 114,
                   "column": 9
                 },
                 {
@@ -403,10 +407,10 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1551,
+                          "duration": 787,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
@@ -414,16 +418,16 @@
                           "steps": [
                             {
                               "title": "Auto Query 21개 Open 검증",
-                              "duration": 1549
+                              "duration": 786
                             }
                           ],
-                          "startTime": "2026-05-04T09:35:59.285Z",
+                          "startTime": "2026-06-01T06:37:48.667Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---55cc1--미입력-Field에-Auto-Query가-보인다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---ba095--미입력-Field에-Auto-Query가-보인다-cdms\\trace.zip"
                             }
                           ]
                         }
@@ -431,9 +435,78 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-4545c1bc7c6522ee21d7",
+                  "id": "e570a71fee3fd918bafd-3d89ac0434983b0e9f07",
                   "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 122,
+                  "line": 123,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "[EDC] MH Dictionary Capture Test",
+              "file": "cdms/JP-MVN2025-ALL/date.test.ts",
+              "line": 130,
+              "column": 17,
+              "specs": [
+                {
+                  "title": "MH 페이지의 Dictionary 아이템 입력 길이가 제한된다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9124,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "팝업 1개 처리 완료\n"
+                            },
+                            {
+                              "text": "이미 활성화 된 페이지\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "MH CRF 페이지로 이동",
+                              "duration": 1740
+                            },
+                            {
+                              "title": "Dictionary 아이템에 최대 길이 이하로 입력",
+                              "duration": 3674
+                            },
+                            {
+                              "title": "Dictionary 아이템에 최대 길이 초과로 입력",
+                              "duration": 3708
+                            }
+                          ],
+                          "startTime": "2026-06-01T06:37:50.833Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---a39fd--Dictionary-아이템-입력-길이가-제한된다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "e570a71fee3fd918bafd-519c125ff51b4c97e9ea",
+                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
+                  "line": 132,
                   "column": 9
                 }
               ]
@@ -441,7 +514,7 @@
             {
               "title": "[EDC] Date Item UK Format Capture Test",
               "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-              "line": 129,
+              "line": 155,
               "column": 17,
               "specs": [
                 {
@@ -457,10 +530,10 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 36587,
+                          "duration": 7533,
                           "errors": [],
                           "stdout": [
                             {
@@ -472,24 +545,24 @@
                           "steps": [
                             {
                               "title": "Date Item CRF 페이지로 이동",
-                              "duration": 33817
+                              "duration": 4398
                             },
                             {
                               "title": "Day UK 값 입력 및 저장",
-                              "duration": 1916
+                              "duration": 2665
                             },
                             {
                               "title": "Audit에서 UK-MMM-YYYY 포맷 확인",
-                              "duration": 850
+                              "duration": 466
                             }
                           ],
-                          "startTime": "2026-05-04T09:36:02.546Z",
+                          "startTime": "2026-06-01T06:38:18.613Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---801b6-dit에서-UK-MMM-YYYY-포맷으로-기록된다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---d517d-dit에서-UK-MMM-YYYY-포맷으로-기록된다-cdms\\trace.zip"
                             }
                           ]
                         }
@@ -497,9 +570,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-06f9e4aa5b84c5a61aad",
+                  "id": "e570a71fee3fd918bafd-4642c6c5804e5f14e212",
                   "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 131,
+                  "line": 157,
                   "column": 9
                 },
                 {
@@ -515,10 +588,10 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3597,
+                          "duration": 2435,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
@@ -526,20 +599,20 @@
                           "steps": [
                             {
                               "title": "Month UK 값 입력 및 수정 저장",
-                              "duration": 3125
+                              "duration": 1957
                             },
                             {
                               "title": "Audit에서 DD-UNK-YYYY 포맷 확인",
-                              "duration": 469
+                              "duration": 468
                             }
                           ],
-                          "startTime": "2026-05-04T09:36:56.569Z",
+                          "startTime": "2026-06-01T06:38:42.950Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---9c473-dit에서-DD-UNK-YYYY-포맷으로-기록된다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---91b8d-dit에서-DD-UNK-YYYY-포맷으로-기록된다-cdms\\trace.zip"
                             }
                           ]
                         }
@@ -547,9 +620,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-4314b3cf98dea5a00a48",
+                  "id": "e570a71fee3fd918bafd-ee2fe17198dbf041f7a8",
                   "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 150,
+                  "line": 176,
                   "column": 9
                 },
                 {
@@ -565,10 +638,10 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3579,
+                          "duration": 3948,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
@@ -576,20 +649,20 @@
                           "steps": [
                             {
                               "title": "Year UK 값 입력 및 수정 저장",
-                              "duration": 3037
+                              "duration": 3400
                             },
                             {
                               "title": "Audit에서 UK-UNK-UKUK 확인",
-                              "duration": 539
+                              "duration": 545
                             }
                           ],
-                          "startTime": "2026-05-04T09:37:01.684Z",
+                          "startTime": "2026-06-01T06:38:46.329Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---1cfe9--Audit에서-UK-UNK-UKUK으로-기록된다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---b8a13--Audit에서-UK-UNK-UKUK으로-기록된다-cdms\\trace.zip"
                             }
                           ]
                         }
@@ -597,9 +670,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-e39631eb8d3a19e3c412",
+                  "id": "e570a71fee3fd918bafd-9ee188414eb45e0f7b26",
                   "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 163,
+                  "line": 189,
                   "column": 9
                 }
               ]
@@ -607,7 +680,7 @@
             {
               "title": "[EDC] Background Color Test",
               "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-              "line": 177,
+              "line": 203,
               "column": 17,
               "specs": [
                 {
@@ -623,10 +696,10 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1837,
+                          "duration": 2232,
                           "errors": [],
                           "stdout": [
                             {
@@ -638,20 +711,20 @@
                           "steps": [
                             {
                               "title": "WHODrug C3 페이지로 이동",
-                              "duration": 1793
+                              "duration": 1343
                             },
                             {
                               "title": "설정한 셀의 Background 색상 확인",
-                              "duration": 39
+                              "duration": 886
                             }
                           ],
-                          "startTime": "2026-05-04T09:37:08.213Z",
+                          "startTime": "2026-06-01T06:38:51.696Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---8121b-est-설정한-Background-색상이-표시된다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---8207e-est-설정한-Background-색상이-표시된다-cdms\\trace.zip"
                             }
                           ]
                         }
@@ -659,9 +732,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-9ec67d943111115f990e",
+                  "id": "e570a71fee3fd918bafd-b97de966251ec44e1597",
                   "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 178,
+                  "line": 204,
                   "column": 9
                 }
               ]
@@ -703,32 +776,14 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 21003,
+                          "duration": 18337,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "팝업 1개 처리 완료\n"
-                            },
-                            {
-                              "text": "getByRole('presentation').locator('[data-list-index=\\'0\\'] [data-automation-key=\\'2\\']')\n"
-                            },
-                            {
-                              "text": "getByRole('presentation').locator('[data-list-index=\\'0\\'] [data-automation-key=\\'2\\']')\n"
-                            },
-                            {
-                              "text": "getByRole('presentation').locator('[data-list-index=\\'0\\'] [data-automation-key=\\'2\\']')\n"
-                            },
-                            {
-                              "text": "getByRole('presentation').locator('[data-list-index=\\'0\\'] [data-automation-key=\\'2\\']')\n"
-                            },
-                            {
-                              "text": "getByRole('presentation').locator('[data-list-index=\\'0\\'] [data-automation-key=\\'2\\']')\n"
-                            },
-                            {
-                              "text": "getByRole('presentation').locator('[data-list-index=\\'0\\'] [data-automation-key=\\'2\\']')\n"
                             }
                           ],
                           "stderr": [],
@@ -736,18 +791,18 @@
                           "steps": [
                             {
                               "title": "Profile CRF 페이지 이동 및 데이터 입력",
-                              "duration": 6356
+                              "duration": 4269
                             },
                             {
                               "title": "E-Sign 서명 완료 및 서명 상태 확인",
-                              "duration": 3578
+                              "duration": 3740
                             },
                             {
                               "title": "Audit Trail에서 E-Sign On 텍스트 확인",
-                              "duration": 11067
+                              "duration": 10326
                             }
                           ],
-                          "startTime": "2026-05-04T09:37:29.031Z",
+                          "startTime": "2026-06-01T06:39:11.499Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -779,33 +834,29 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6137,
+                          "duration": 4842,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Name\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
                           "steps": [
                             {
                               "title": "데이터 수정 저장",
-                              "duration": 3945
+                              "duration": 3014
                             },
                             {
                               "title": "E-Sign 해제 확인",
-                              "duration": 205
+                              "duration": 57
                             },
                             {
                               "title": "Audit Trail에서 E-Sign Off 텍스트 확인",
-                              "duration": 1980
+                              "duration": 1770
                             }
                           ],
-                          "startTime": "2026-05-04T09:38:12.086Z",
+                          "startTime": "2026-06-01T06:39:48.320Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -837,37 +888,33 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 12529,
+                          "duration": 12151,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "Name\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
                           "steps": [
                             {
                               "title": "E-Sign 재서명",
-                              "duration": 3359
+                              "duration": 3190
                             },
                             {
                               "title": "Assign Trigger 적용 항목 수정",
-                              "duration": 5236
+                              "duration": 5382
                             },
                             {
                               "title": "Profile 페이지 복귀 후 E-Sign 해제 확인",
-                              "duration": 2057
+                              "duration": 1849
                             },
                             {
                               "title": "Audit Trail에서 E-Sign Off 텍스트 확인",
-                              "duration": 1874
+                              "duration": 1728
                             }
                           ],
-                          "startTime": "2026-05-04T09:38:20.752Z",
+                          "startTime": "2026-06-01T06:39:55.016Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -899,10 +946,10 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6640,
+                          "duration": 6045,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
@@ -910,14 +957,14 @@
                           "steps": [
                             {
                               "title": "E-Sign 재서명",
-                              "duration": 3541
+                              "duration": 3233
                             },
                             {
                               "title": "Refresh 실행 후 E-Sign 유지 확인",
-                              "duration": 3094
+                              "duration": 2809
                             }
                           ],
-                          "startTime": "2026-05-04T09:38:36.111Z",
+                          "startTime": "2026-06-01T06:40:09.594Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -957,10 +1004,10 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 10133,
+                          "duration": 8652,
                           "errors": [],
                           "stdout": [
                             {
@@ -972,18 +1019,18 @@
                           "steps": [
                             {
                               "title": "DS CRF 페이지로 이동 및 필수 항목 입력",
-                              "duration": 6868
+                              "duration": 5436
                             },
                             {
                               "title": "Second E-Sign 서명 진행",
-                              "duration": 1231
+                              "duration": 1210
                             },
                             {
                               "title": "Second E-Sign 서명 표기 확인",
-                              "duration": 2031
+                              "duration": 2006
                             }
                           ],
-                          "startTime": "2026-05-04T09:38:46.367Z",
+                          "startTime": "2026-06-01T06:40:17.774Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -1015,28 +1062,21 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3550,
+                          "duration": 3538,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "getByRole('presentation').locator('[data-list-index=\\'0\\'] [data-automation-key=\\'2\\']')\n"
-                            },
-                            {
-                              "text": "getByRole('presentation').locator('[data-list-index=\\'0\\'] [data-automation-key=\\'2\\']')\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
                           "steps": [
                             {
                               "title": "Audit Trail에서 Second E-Sign ON 텍스트 확인",
-                              "duration": 3549
+                              "duration": 3536
                             }
                           ],
-                          "startTime": "2026-05-04T09:39:17.745Z",
+                          "startTime": "2026-06-01T06:40:44.656Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -1068,10 +1108,10 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 894,
+                          "duration": 844,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
@@ -1079,14 +1119,14 @@
                           "steps": [
                             {
                               "title": "Second E-Sign 서명 취소 진행",
-                              "duration": 841
+                              "duration": 808
                             },
                             {
                               "title": "Second E-Sign 서명 날짜 미표기 확인",
-                              "duration": 49
+                              "duration": 33
                             }
                           ],
-                          "startTime": "2026-05-04T09:39:22.835Z",
+                          "startTime": "2026-06-01T06:40:49.428Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -1118,28 +1158,21 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 23,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3529,
+                          "duration": 3375,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "getByRole('presentation').locator('[data-list-index=\\'0\\'] [data-automation-key=\\'2\\']')\n"
-                            },
-                            {
-                              "text": "getByRole('presentation').locator('[data-list-index=\\'0\\'] [data-automation-key=\\'2\\']')\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
                           "steps": [
                             {
                               "title": "Audit Trail에서 Second E-Sign OFF 텍스트 확인",
-                              "duration": 3527
+                              "duration": 3374
                             }
                           ],
-                          "startTime": "2026-05-04T09:39:25.240Z",
+                          "startTime": "2026-06-01T06:40:51.430Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -1179,7 +1212,7 @@
           "specs": [
             {
               "title": "1. 사용자가 새 공지사항을 작성하면 Notice 목록에 반영되어야 한다",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -1190,40 +1223,90 @@
                   "projectName": "cdms",
                   "results": [
                     {
-                      "workerIndex": 23,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2412,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 32765,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled role=\"button\" color=\"primary\" data-testid=\"button\" class=\"GrButton css-7775kd\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled role=\"button\" color=\"primary\" data-testid=\"button\" class=\"GrButton css-7775kd\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at NoticePage.createNotice (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts:27:75)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\notice.test.ts:58:9\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\notice.test.ts:57:5",
+                        "location": {
+                          "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts",
+                          "column": 75,
+                          "line": 27
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Title\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m getLabel(\u001b[32m'save'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'en'\u001b[39m) })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mif\u001b[39m(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m)\u001b[33m.\u001b[39misVisible()){\n \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m)\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"저장 토스트 메시지 확인 후 닫음\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts",
+                            "column": 75,
+                            "line": 27
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled role=\"button\" color=\"primary\" data-testid=\"button\" class=\"GrButton css-7775kd\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Title\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m getLabel(\u001b[32m'save'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'en'\u001b[39m) })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mif\u001b[39m(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m)\u001b[33m.\u001b[39misVisible()){\n \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m)\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"저장 토스트 메시지 확인 후 닫음\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at NoticePage.createNotice (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts:27:75)\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\notice.test.ts:58:9\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\notice.test.ts:57:5\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "팝업 1개 처리 완료\n"
                         }
                       ],
-                      "stderr": [],
+                      "stderr": [
+                        {
+                          "text": "   실패한 테스트: 1. 사용자가 새 공지사항을 작성하면 Notice 목록에 반영되어야 한다\n"
+                        },
+                        {
+                          "text": "   실패 원인: TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled role=\"button\" color=\"primary\" data-testid=\"button\" class=\"GrButton css-7775kd\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n"
+                        },
+                        {
+                          "text": "   스크린샷: test-results/screenshots/1. 사용자가 새 공지사항을 작성하면 Notice 목록에 반영되어야 한다.png\n"
+                        }
+                      ],
                       "retry": 0,
                       "steps": [
                         {
                           "title": "Notice 추가 버튼 클릭 및 내용 입력",
-                          "duration": 1383
-                        },
-                        {
-                          "title": "Notice 목록 반영 확인",
-                          "duration": 1027
+                          "duration": 32616,
+                          "error": {
+                            "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled role=\"button\" color=\"primary\" data-testid=\"button\" class=\"GrButton css-7775kd\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                            "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled role=\"button\" color=\"primary\" data-testid=\"button\" class=\"GrButton css-7775kd\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at NoticePage.createNotice (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts:27:75)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\notice.test.ts:58:9\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\notice.test.ts:57:5",
+                            "location": {
+                              "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts",
+                              "column": 75,
+                              "line": 27
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Title\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m getLabel(\u001b[32m'save'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'en'\u001b[39m) })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mif\u001b[39m(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m)\u001b[33m.\u001b[39misVisible()){\n \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m)\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"저장 토스트 메시지 확인 후 닫음\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                          }
                         }
                       ],
-                      "startTime": "2026-05-04T09:39:31.295Z",
+                      "startTime": "2026-06-01T06:40:56.815Z",
                       "annotations": [],
                       "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\\error-context.md"
+                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
                           "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\\trace.zip"
                         }
-                      ]
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts",
+                        "column": 75,
+                        "line": 27
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "a650075360bc0d36d20a-e971d7e63a822bdffe03",
@@ -1244,40 +1327,20 @@
                   "projectName": "cdms",
                   "results": [
                     {
-                      "workerIndex": 23,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 7521,
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Notice 상세 진입 및 수정 모드 전환",
-                          "duration": 138
-                        },
-                        {
-                          "title": "파일 업로드",
-                          "duration": 2362
-                        },
-                        {
-                          "title": "첨부파일명 확인",
-                          "duration": 5020
-                        }
-                      ],
-                      "startTime": "2026-05-04T09:39:49.648Z",
+                      "startTime": "2026-06-01T06:41:45.335Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-notice-5ea46-가-파일을-업로드하면-파일-이름이-화면에-표기된다-cdms\\trace.zip"
-                        }
-                      ]
+                      "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "a650075360bc0d36d20a-4cd41776a0f53b4c9f6b",
@@ -1298,40 +1361,20 @@
                   "projectName": "cdms",
                   "results": [
                     {
-                      "workerIndex": 23,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2052,
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "저장 토스트 메시지 확인 후 닫음\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "steps": [
-                        {
-                          "title": "제목 및 내용 수정",
-                          "duration": 1877
-                        },
-                        {
-                          "title": "수정된 내용 확인",
-                          "duration": 173
-                        }
-                      ],
-                      "startTime": "2026-05-04T09:39:58.244Z",
+                      "startTime": "2026-06-01T06:41:45.336Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-notice-cc9b3-Notice-Detail-페이지에-반영되어야-한다-cdms\\trace.zip"
-                        }
-                      ]
+                      "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "a650075360bc0d36d20a-68a686b4ac3d765a42c5",
@@ -1352,36 +1395,20 @@
                   "projectName": "cdms",
                   "results": [
                     {
-                      "workerIndex": 23,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 937,
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Notice 탭 이동 및 삭제",
-                          "duration": 745
-                        },
-                        {
-                          "title": "삭제된 Notice 미노출 확인",
-                          "duration": 190
-                        }
-                      ],
-                      "startTime": "2026-05-04T09:40:02.015Z",
+                      "startTime": "2026-06-01T06:41:45.336Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-notice-c7f50-면-해당-Notice는-List에서-보이지-않는다-cdms\\trace.zip"
-                        }
-                      ]
+                      "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "a650075360bc0d36d20a-4ce49deb2f6f06f1bab6",
@@ -1396,11 +1423,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-04T09:35:07.466Z",
-    "duration": 299275.6159999985,
-    "expected": 22,
-    "skipped": 0,
-    "unexpected": 0,
+    "startTime": "2026-06-01T06:36:46.538Z",
+    "duration": 299656.064,
+    "expected": 19,
+    "skipped": 3,
+    "unexpected": 1,
     "flaky": 0
   }
 }

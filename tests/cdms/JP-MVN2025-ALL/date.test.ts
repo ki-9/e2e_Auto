@@ -4,6 +4,7 @@ import dayjs from 'dayjs';
 import { LoginPage, CDMS_LOGIN_CONFIG } from '../../../pages/common/LoginPage';
 import { StudyListPage } from '../../../pages/cdms/common/StudyListPage';
 import { SubjectListPage } from '../../../pages/cdms/common/SubjectListPage';
+import { BaseCDMSPage } from '../../../pages/cdms/common/BaseCDMSPage';
 import { DatePage } from '../../../pages/cdms/JP-MVN2025-ALL/DatePage';
 import { validateEnvironmentVariables } from '../../helpers/test-helpers';
 
@@ -32,7 +33,7 @@ test.beforeAll(async () => {
   validateEnvironmentVariables();
 });
 
-test.describe('[EDC] Date Item UK 날짜 입력 테스트', () => {
+test.describe('[EDC] Data Capture 테스트', () => {
 
   let context: BrowserContext;
   let datePage: DatePage;
@@ -85,7 +86,7 @@ test.describe('[EDC] Date Item UK 날짜 입력 테스트', () => {
         await datePage.clickSave();
       });
       await test.step('IE 페이지 활성화 확인', async () => {
-        await datePage.waitForIEPageActive(IE_PAGE_NAME);
+        await datePage.waitForPageActive(IE_PAGE_NAME);
         const iePageLinkLocator = datePage.getPage()
           .getByRole('link', { name: IE_PAGE_NAME });
 
@@ -122,6 +123,31 @@ test.describe('[EDC] Date Item UK 날짜 입력 테스트', () => {
     test('저장된 IE 페이지에서 미입력 Field에 Auto Query가 보인다', async () => {
       await test.step('Auto Query 21개 Open 검증', async () => {
         await datePage.verifyAutoQueryOnEmptyFields(21);
+      });
+    });
+  });
+
+  test.describe.serial('[EDC] MH Dictionary Capture Test', () => {
+
+    test('MH 페이지의 Dictionary 아이템 입력 길이가 제한된다', async () => {
+      await test.step('MH CRF 페이지로 이동', async () => {
+        await datePage.scrollToVisit(VISIT_1);
+        await datePage.goToCrfPage(VISIT_1, MH_PAGE_NAME);
+        await datePage.activateCrf();
+      });
+      await test.step('Dictionary 아이템에 최대 길이 이하로 입력', async () => {
+        await datePage.setDictionaryFieldInAppendable("test", "진단명/수술명");
+        await datePage.clickSave();
+        await datePage.verifySuccessToast();
+      });
+      await test.step('Dictionary 아이템에 최대 길이 초과로 입력', async () => {
+        await datePage.setDictionaryFieldInAppendable("test255-1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890", "진단명/수술명");
+        await datePage.clickModifySaveButton('New Data');
+        await datePage.verifySuccessToast();
+        await datePage.waitForPageReady();
+
+        const length = await datePage.getTextLength(await datePage.getAppendableTableLocator("dictionary", "진단명/수술명"));
+        expect(length).toBe(255);
       });
     });
   });
