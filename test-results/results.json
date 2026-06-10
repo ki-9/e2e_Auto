@@ -96,152 +96,27 @@
   },
   "suites": [
     {
-      "title": "cdms\\JP-MVN2025-ALL\\addSubject.test.ts",
-      "file": "cdms/JP-MVN2025-ALL/addSubject.test.ts",
+      "title": "cdms\\ML42494\\createReport.test.ts",
+      "file": "cdms/ML42494/createReport.test.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Subject 추가 테스트",
-          "file": "cdms/JP-MVN2025-ALL/addSubject.test.ts",
-          "line": 17,
+          "title": "ML42494 Report 생성 테스트",
+          "file": "cdms/ML42494/createReport.test.ts",
+          "line": 34,
           "column": 15,
-          "specs": [
-            {
-              "title": "1. Subject가 성공적으로 추가되면 성공 토스트가 보인다",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "cdms",
-                  "projectName": "cdms",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4640,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "팝업 1개 처리 완료\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Subject 메뉴 진입 및 추가 폼 열기",
-                          "duration": 851
-                        },
-                        {
-                          "title": "Subject 정보 입력 및 저장",
-                          "duration": 3705
-                        },
-                        {
-                          "title": "성공 토스트 확인",
-                          "duration": 80
-                        }
-                      ],
-                      "startTime": "2026-06-01T06:36:48.181Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-addSub-d21fe-ect가-성공적으로-추가되면-성공-토스트가-보인다-cdms\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "55b2d1ba91416515d606-160f1774e444dea0b036",
-              "file": "cdms/JP-MVN2025-ALL/addSubject.test.ts",
-              "line": 53,
-              "column": 9
-            },
-            {
-              "title": "2. Subject가 성공적으로 추가되면 해당 Subject의 Schedule 화면으로 이동한다",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "cdms",
-                  "projectName": "cdms",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "생성된 Subject ID: 6802958328472455696\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Subject ID 저장",
-                          "duration": 3
-                        }
-                      ],
-                      "startTime": "2026-06-01T06:37:16.168Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-addSub-4adc4-Subject의-Schedule-화면으로-이동한다-cdms\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "55b2d1ba91416515d606-d0fe2bb4b723c708396a",
-              "file": "cdms/JP-MVN2025-ALL/addSubject.test.ts",
-              "line": 67,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "cdms\\JP-MVN2025-ALL\\date.test.ts",
-      "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "[EDC] Data Capture 테스트",
-          "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-          "line": 36,
-          "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "[EDC] IE Data Capture Test",
-              "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-              "line": 77,
+              "title": "Subject 생성",
+              "file": "cdms/ML42494/createReport.test.ts",
+              "line": 81,
               "column": 17,
               "specs": [
                 {
-                  "title": "사용자가 SV 페이지를 저장하면 IE 페이지가 활성화된다",
+                  "title": "Subject를 생성하면 Schedule 페이지로 이동된다",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -253,10 +128,10 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 10,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5240,
+                          "duration": 3724,
                           "errors": [],
                           "stdout": [
                             {
@@ -267,25 +142,21 @@
                           "retry": 0,
                           "steps": [
                             {
-                              "title": "SV CRF 페이지로 이동",
-                              "duration": 1524
+                              "title": "Subject 추가 폼 열기",
+                              "duration": 1166
                             },
                             {
-                              "title": "날짜 입력 및 저장",
-                              "duration": 3676
-                            },
-                            {
-                              "title": "IE 페이지 활성화 확인",
-                              "duration": 37
+                              "title": "Subject 정보 입력 및 저장",
+                              "duration": 2554
                             }
                           ],
-                          "startTime": "2026-06-01T06:37:17.366Z",
+                          "startTime": "2026-06-10T06:43:39.301Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---79025--SV-페이지를-저장하면-IE-페이지가-활성화된다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--30728-ct를-생성하면-Schedule-페이지로-이동된다-cdms\\trace.zip"
                             }
                           ]
                         }
@@ -293,163 +164,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-00cebd4950c71fcf4e4e",
-                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 79,
-                  "column": 9
-                },
-                {
-                  "title": "사용자가 confirmMessage[ADD]가 설정된 아이템을 최초 저장하려고 할 때, 확인 메시지(Dialog)가 보인다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3635,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "IE 페이지 이동 및 항목 선택",
-                              "duration": 1870
-                            },
-                            {
-                              "title": "페이지 저장 후 Confirm Message Dialog 표시 확인",
-                              "duration": 1763
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:37:39.235Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---2c5f5-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "e570a71fee3fd918bafd-3a17d2b13ebd0326d203",
-                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 102,
-                  "column": 9
-                },
-                {
-                  "title": "사용자가 confirmMessage[MODIFY]가 설정된 아이템을 수정하려고 할 때, 확인 메시지(Dialog)가 보인다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3602,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "항목 수정하고 페이지 저장 후 Confirm Message Dialog 표시 확인",
-                              "duration": 3598
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:37:43.894Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---d9fee-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "e570a71fee3fd918bafd-cd03b973b3583f25b198",
-                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 114,
-                  "column": 9
-                },
-                {
-                  "title": "저장된 IE 페이지에서 미입력 Field에 Auto Query가 보인다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 787,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "Auto Query 21개 Open 검증",
-                              "duration": 786
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:37:48.667Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---ba095--미입력-Field에-Auto-Query가-보인다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "e570a71fee3fd918bafd-3d89ac0434983b0e9f07",
-                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 123,
+                  "id": "0b3fb7ee96fc01514827-7001bf1f503d3fee6d6a",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 83,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "[EDC] MH Dictionary Capture Test",
-              "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-              "line": 130,
+              "title": "AE 데이터 입력 및 Report 테스트",
+              "file": "cdms/ML42494/createReport.test.ts",
+              "line": 96,
               "column": 17,
               "specs": [
                 {
-                  "title": "MH 페이지의 Dictionary 아이템 입력 길이가 제한된다",
+                  "title": "1. Subject의 AE 페이지로 이동한다",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -461,42 +190,27 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 10,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 9124,
+                          "duration": 137,
                           "errors": [],
-                          "stdout": [
-                            {
-                              "text": "팝업 1개 처리 완료\n"
-                            },
-                            {
-                              "text": "이미 활성화 된 페이지\n"
-                            }
-                          ],
+                          "stdout": [],
                           "stderr": [],
                           "retry": 0,
                           "steps": [
                             {
-                              "title": "MH CRF 페이지로 이동",
-                              "duration": 1740
-                            },
-                            {
-                              "title": "Dictionary 아이템에 최대 길이 이하로 입력",
-                              "duration": 3674
-                            },
-                            {
-                              "title": "Dictionary 아이템에 최대 길이 초과로 입력",
-                              "duration": 3708
+                              "title": "AE 페이지 이동 및 URL 확인",
+                              "duration": 135
                             }
                           ],
-                          "startTime": "2026-06-01T06:37:50.833Z",
+                          "startTime": "2026-06-10T06:43:51.744Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---a39fd--Dictionary-아이템-입력-길이가-제한된다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--269da-테스트-1-Subject의-AE-페이지로-이동한다-cdms\\trace.zip"
                             }
                           ]
                         }
@@ -504,21 +218,1329 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-519c125ff51b4c97e9ea",
-                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 132,
+                  "id": "0b3fb7ee96fc01514827-fdb7fc1c7abb74bd888c",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 98,
+                  "column": 9
+                },
+                {
+                  "title": "2. SAE 이상사례를 입력한다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3716,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "AE 발생 여부 체크",
+                              "duration": 1023
+                            },
+                            {
+                              "title": "SAE Term 입력",
+                              "duration": 768
+                            },
+                            {
+                              "title": "SAE Seriousness 설정 및 저장",
+                              "duration": 1924
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:43:52.633Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--1d00d-Report-테스트-2-SAE-이상사례를-입력한다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-228c355bf142addf7594",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 105,
+                  "column": 9
+                },
+                {
+                  "title": "3. Non-Seriousness 이상사례를 입력한다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3107,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "AESI 행 추가 및 Term 입력",
+                              "duration": 912
+                            },
+                            {
+                              "title": "AESI 조건 설정 및 수정 저장",
+                              "duration": 2193
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:43:57.299Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--c9077--Non-Seriousness-이상사례를-입력한다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-baa5e80c7dc8899f2599",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 126,
+                  "column": 9
+                }
+              ],
+              "suites": [
+                {
+                  "title": "SAE Report 테스트",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 143,
+                  "column": 21,
+                  "specs": [
+                    {
+                      "title": "SAE Report가 생성된다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 4592,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "SAE Report 메뉴 진입",
+                                  "duration": 81
+                                },
+                                {
+                                  "title": "Report 목록에서 Term 확인",
+                                  "duration": 377
+                                },
+                                {
+                                  "title": "Report 페이지 진입 및 Merge Table 데이터 확인",
+                                  "duration": 4131
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:01.369Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--0d4e0-Report-테스트-SAE-Report가-생성된다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-d4fccb734a8bb39854d1",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 145,
+                      "column": 13
+                    },
+                    {
+                      "title": "필수 값이 입력되지 않으면 SAE Report가 저장되지 않는다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 538,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "필수값 미입력 상태로 저장 시도 — 경고 확인",
+                                  "duration": 536
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:06.760Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--7e8d3-되지-않으면-SAE-Report가-저장되지-않는다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-ef2074ba65f1e480819d",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 159,
+                      "column": 13
+                    },
+                    {
+                      "title": "필수 값이 입력되면 SAE Report가 저장된다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 2274,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "필수값 입력 후 저장 — 제출 버튼 노출 확인",
+                                  "duration": 2272
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:08.102Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--4e785-필수-값이-입력되면-SAE-Report가-저장된다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-b9debce33ad29cf1fce5",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 165,
+                      "column": 13
+                    },
+                    {
+                      "title": "필수 값이 입력되지 않으면 SAE Report가 제출되지 않는다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 283,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "필수값 제거 후 제출 버튼 비활성화 확인",
+                                  "duration": 282
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:11.191Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--817d9-되지-않으면-SAE-Report가-제출되지-않는다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-079fb179266f60e428fd",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 172,
+                      "column": 13
+                    },
+                    {
+                      "title": "필수 값이 입력되면 SAE Report가 제출된다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 4700,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "필수값 재입력 후 제출",
+                                  "duration": 4699
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:12.244Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--c8180-필수-값이-입력되면-SAE-Report가-제출된다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-31c1eaea75ef63c88fc7",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 179,
+                      "column": 13
+                    },
+                    {
+                      "title": "제출된 SAE Report에서 F/U Report가 생성된다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 2483,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "F/U Report 생성 및 탭 2개 확인",
+                                  "duration": 2481
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:17.947Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--78213-E-Report에서-F-U-Report가-생성된다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-f50158c065f622b22ba3",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 191,
+                      "column": 13
+                    },
+                    {
+                      "title": "생성 직후의 SAE Report에서 Sync 가능 항목은 없다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 252,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "Sync 팝업 열기 및 빈 데이터 확인",
+                                  "duration": 251
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:21.398Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--adbe7-SAE-Report에서-Sync-가능-항목은-없다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-5f9d80f13c2a0beeca28",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 197,
+                      "column": 13
+                    }
+                  ]
+                },
+                {
+                  "title": "AESI Report 테스트",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 143,
+                  "column": 21,
+                  "specs": [
+                    {
+                      "title": "AESI Report가 생성된다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 6138,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "AESI Report 메뉴 진입",
+                                  "duration": 88
+                                },
+                                {
+                                  "title": "Report 목록에서 Term 확인",
+                                  "duration": 1917
+                                },
+                                {
+                                  "title": "Report 페이지 진입 및 Merge Table 데이터 확인",
+                                  "duration": 4132
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:22.513Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--24f8e-eport-테스트-AESI-Report가-생성된다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-e21128b4d0cf6bb78e04",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 145,
+                      "column": 13
+                    },
+                    {
+                      "title": "필수 값이 입력되지 않으면 AESI Report가 저장되지 않는다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 497,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "필수값 미입력 상태로 저장 시도 — 경고 확인",
+                                  "duration": 495
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:29.559Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--e8aaf-지-않으면-AESI-Report가-저장되지-않는다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-bec9ea75b7505386549f",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 159,
+                      "column": 13
+                    },
+                    {
+                      "title": "필수 값이 입력되면 AESI Report가 저장된다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 2382,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "필수값 입력 후 저장 — 제출 버튼 노출 확인",
+                                  "duration": 2381
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:30.943Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--0d2ca-수-값이-입력되면-AESI-Report가-저장된다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-20f833d7f8099cc121e1",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 165,
+                      "column": 13
+                    },
+                    {
+                      "title": "필수 값이 입력되지 않으면 AESI Report가 제출되지 않는다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 287,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "필수값 제거 후 제출 버튼 비활성화 확인",
+                                  "duration": 287
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:34.234Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--26bcf-지-않으면-AESI-Report가-제출되지-않는다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-e6def8fedcc8fad59b36",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 172,
+                      "column": 13
+                    },
+                    {
+                      "title": "필수 값이 입력되면 AESI Report가 제출된다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 4650,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "필수값 재입력 후 제출",
+                                  "duration": 4649
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:35.410Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--b948d-수-값이-입력되면-AESI-Report가-제출된다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-a493c098f4d574a93a96",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 179,
+                      "column": 13
+                    },
+                    {
+                      "title": "제출된 AESI Report에서 F/U Report가 생성된다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 3085,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "F/U Report 생성 및 탭 2개 확인",
+                                  "duration": 3084
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:41.196Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--86a74-I-Report에서-F-U-Report가-생성된다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-2f046154a67f012e3516",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 191,
+                      "column": 13
+                    },
+                    {
+                      "title": "생성 직후의 AESI Report에서 Sync 가능 항목은 없다",
+                      "ok": true,
+                      "tags": [],
+                      "tests": [
+                        {
+                          "timeout": 60000,
+                          "annotations": [],
+                          "expectedStatus": "passed",
+                          "projectId": "cdms",
+                          "projectName": "cdms",
+                          "results": [
+                            {
+                              "workerIndex": 10,
+                              "parallelIndex": 0,
+                              "status": "passed",
+                              "duration": 247,
+                              "errors": [],
+                              "stdout": [],
+                              "stderr": [],
+                              "retry": 0,
+                              "steps": [
+                                {
+                                  "title": "Sync 팝업 열기 및 빈 데이터 확인",
+                                  "duration": 245
+                                }
+                              ],
+                              "startTime": "2026-06-10T06:44:45.295Z",
+                              "annotations": [],
+                              "attachments": [
+                                {
+                                  "name": "trace",
+                                  "contentType": "application/zip",
+                                  "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--abec8-ESI-Report에서-Sync-가능-항목은-없다-cdms\\trace.zip"
+                                }
+                              ]
+                            }
+                          ],
+                          "status": "expected"
+                        }
+                      ],
+                      "id": "0b3fb7ee96fc01514827-9df11c8e666126be720b",
+                      "file": "cdms/ML42494/createReport.test.ts",
+                      "line": 197,
+                      "column": 13
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Report Merge Table 테스트",
+              "file": "cdms/ML42494/createReport.test.ts",
+              "line": 209,
+              "column": 17,
+              "specs": [
+                {
+                  "title": "1. DM 페이지로 이동한다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3971,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "Subject 메뉴 → 첫 번째 Subject → DM 페이지 이동 확인",
+                              "duration": 3969
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:44:46.394Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--36e09-ge-Table-테스트-1-DM-페이지로-이동한다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-d5a3b66c1f41b7a2df2b",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 214,
+                  "column": 9
+                },
+                {
+                  "title": "2. DM 페이지에 데이터를 입력하고 저장한다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4313,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "Sex, Height, Weight 입력",
+                              "duration": 1600
+                            },
+                            {
+                              "title": "저장 및 성공 확인",
+                              "duration": 2711
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:44:51.357Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--2c051-스트-2-DM-페이지에-데이터를-입력하고-저장한다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-576bf0a101bb65760019",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 220,
+                  "column": 9
+                },
+                {
+                  "title": "3. DM 페이지에서 입력한 데이터가 Report Sync 가능 항목에 표시된다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2880,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "SAE Report 진입 및 Sync 팝업 열기",
+                              "duration": 2813
+                            },
+                            {
+                              "title": "Sync 가능 항목 값 및 버튼 비활성화 확인",
+                              "duration": 64
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:44:56.682Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--3dc63-이터가-Report-Sync-가능-항목에-표시된다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-d4cd3ffa31c644f2c187",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 229,
+                  "column": 9
+                },
+                {
+                  "title": "4. Sync 가능 항목들을 Sync 수행한다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1403,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "첫 번째 항목 선택 및 Sync 실행",
+                              "duration": 1403
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:45:00.713Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--9105f-스트-4-Sync-가능-항목들을-Sync-수행한다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-019a57c2022784ed2a80",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 242,
+                  "column": 9
+                },
+                {
+                  "title": "5. Sync 수행한 데이터가 Report 페이지에 반영된다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1376,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "Height 값 및 Sex 선택 상태 확인",
+                              "duration": 1373
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:45:03.191Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--9e97b-c-수행한-데이터가-Report-페이지에-반영된다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-2b1bffd29b57c57b7c02",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 248,
+                  "column": 9
+                },
+                {
+                  "title": "6. Sync 가능 항목들이 존재하지 않는다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 489,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "Sync 팝업 열기 및 빈 데이터 확인",
+                              "duration": 485
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:45:06.191Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--0038a-테스트-6-Sync-가능-항목들이-존재하지-않는다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-db399f4fa32587750c52",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 255,
+                  "column": 9
+                },
+                {
+                  "title": "7. DM 페이지 Initialize를 수행한다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5097,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "DM 페이지 이동 및 Initialize 실행",
+                              "duration": 5096
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:45:09.936Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--07661-트-7-DM-페이지-Initialize를-수행한다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-f5ada729b1dd9419541c",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 263,
+                  "column": 9
+                },
+                {
+                  "title": "8. DM 페이지에서 초기화한 데이터가 Report Sync 가능 항목에 표시된다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3666,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "SAE Report 진입 및 Sync 팝업 열기",
+                              "duration": 3568
+                            },
+                            {
+                              "title": "초기화된 항목 값 및 버튼 비활성화 확인",
+                              "duration": 94
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:45:16.535Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--f3135-이터가-Report-Sync-가능-항목에-표시된다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-bf1b2972eafba1c005c2",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 270,
+                  "column": 9
+                },
+                {
+                  "title": "9. Sync 가능 항목들을 Sync 수행한다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1517,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "첫 번째 항목 선택 및 Sync 실행",
+                              "duration": 1515
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:45:21.789Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--386b7-스트-9-Sync-가능-항목들을-Sync-수행한다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-a6c5debc5d37ec4ae40d",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 283,
+                  "column": 9
+                },
+                {
+                  "title": "10. Sync 수행한 데이터가 Report 페이지에 반영된다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1643,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "Height 빈 값 및 Sex 미선택 확인",
+                              "duration": 1641
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:45:24.994Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--ccd99-c-수행한-데이터가-Report-페이지에-반영된다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-376ea981f14db8f9174f",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 289,
+                  "column": 9
+                },
+                {
+                  "title": "11. Sync 가능 항목들이 존재하지 않는다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 947,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "Sync 팝업 열기 및 빈 데이터 확인",
+                              "duration": 946
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:45:28.099Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--60cdf-스트-11-Sync-가능-항목들이-존재하지-않는다-cdms\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-abd5b9dabab5f3232484",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 296,
                   "column": 9
                 }
               ]
             },
             {
-              "title": "[EDC] Date Item UK Format Capture Test",
-              "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-              "line": 155,
+              "title": "Report 삭제 테스트",
+              "file": "cdms/ML42494/createReport.test.ts",
+              "line": 306,
               "column": 17,
               "specs": [
                 {
-                  "title": "Day UK 입력 저장 시 Audit에서 UK-MMM-YYYY 포맷으로 기록된다",
+                  "title": "1. SAE Report 페이지로 이동한다",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -530,89 +1552,31 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 10,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 7533,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "팝업 1개 처리 완료\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "Date Item CRF 페이지로 이동",
-                              "duration": 4398
-                            },
-                            {
-                              "title": "Day UK 값 입력 및 저장",
-                              "duration": 2665
-                            },
-                            {
-                              "title": "Audit에서 UK-MMM-YYYY 포맷 확인",
-                              "duration": 466
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:38:18.613Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---d517d-dit에서-UK-MMM-YYYY-포맷으로-기록된다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "e570a71fee3fd918bafd-4642c6c5804e5f14e212",
-                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 157,
-                  "column": 9
-                },
-                {
-                  "title": "Month UK 입력 저장 시 Audit에서 DD-UNK-YYYY 포맷으로 기록된다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2435,
+                          "duration": 1203,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
                           "steps": [
                             {
-                              "title": "Month UK 값 입력 및 수정 저장",
-                              "duration": 1957
+                              "title": "SAE Report 메뉴 진입",
+                              "duration": 188
                             },
                             {
-                              "title": "Audit에서 DD-UNK-YYYY 포맷 확인",
-                              "duration": 468
+                              "title": "삭제되지 않은 첫 번째 Report 탐색 및 진입",
+                              "duration": 1011
                             }
                           ],
-                          "startTime": "2026-06-01T06:38:42.950Z",
+                          "startTime": "2026-06-10T06:45:30.884Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---91b8d-dit에서-DD-UNK-YYYY-포맷으로-기록된다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--3d1a0--테스트-1-SAE-Report-페이지로-이동한다-cdms\\trace.zip"
                             }
                           ]
                         }
@@ -620,13 +1584,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-ee2fe17198dbf041f7a8",
-                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 176,
+                  "id": "0b3fb7ee96fc01514827-b46323da546ab33bc7ea",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 308,
                   "column": 9
                 },
                 {
-                  "title": "모든 UK 입력 저장 시 Audit에서 UK-UNK-UKUK으로 기록된다",
+                  "title": "2. Report 페이지에서 CRF 페이지로 이동된다",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -638,31 +1602,27 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 10,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3948,
+                          "duration": 3176,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
                           "steps": [
                             {
-                              "title": "Year UK 값 입력 및 수정 저장",
-                              "duration": 3400
-                            },
-                            {
-                              "title": "Audit에서 UK-UNK-UKUK 확인",
-                              "duration": 545
+                              "title": "CRF 페이지 이동 및 AE Term 셀 확인",
+                              "duration": 3172
                             }
                           ],
-                          "startTime": "2026-06-01T06:38:46.329Z",
+                          "startTime": "2026-06-10T06:45:34.834Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "trace",
                               "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---b8a13--Audit에서-UK-UNK-UKUK으로-기록된다-cdms\\trace.zip"
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--c4842--Report-페이지에서-CRF-페이지로-이동된다-cdms\\trace.zip"
                             }
                           ]
                         }
@@ -670,160 +1630,14 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e570a71fee3fd918bafd-9ee188414eb45e0f7b26",
-                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 189,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "[EDC] Background Color Test",
-              "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-              "line": 203,
-              "column": 17,
-              "specs": [
-                {
-                  "title": "설정한 Background 색상이 표시된다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2232,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "팝업 1개 처리 완료\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "WHODrug C3 페이지로 이동",
-                              "duration": 1343
-                            },
-                            {
-                              "title": "설정한 셀의 Background 색상 확인",
-                              "duration": 886
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:38:51.696Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-date---8207e-est-설정한-Background-색상이-표시된다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "e570a71fee3fd918bafd-b97de966251ec44e1597",
-                  "file": "cdms/JP-MVN2025-ALL/date.test.ts",
-                  "line": 204,
-                  "column": 9
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "cdms\\JP-MVN2025-ALL\\eSign.test.ts",
-      "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "[EDC] E-sign 테스트",
-          "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-          "line": 47,
-          "column": 6,
-          "specs": [],
-          "suites": [
-            {
-              "title": "[EDC] E-Sign 플로우",
-              "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-              "line": 88,
-              "column": 17,
-              "specs": [
-                {
-                  "title": "1. Profile 데이터 입력 및 E-Sign 수행",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 18337,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "팝업 1개 처리 완료\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "Profile CRF 페이지 이동 및 데이터 입력",
-                              "duration": 4269
-                            },
-                            {
-                              "title": "E-Sign 서명 완료 및 서명 상태 확인",
-                              "duration": 3740
-                            },
-                            {
-                              "title": "Audit Trail에서 E-Sign On 텍스트 확인",
-                              "duration": 10326
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:39:11.499Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--b1f96--Profile-데이터-입력-및-E-Sign-수행-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c0514f904eafe22d3216-806a4100e4795c084c3d",
-                  "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-                  "line": 90,
+                  "id": "0b3fb7ee96fc01514827-0a9fac705b0339dd8871",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 320,
                   "column": 9
                 },
                 {
-                  "title": "2. E-Sign 상태에서 데이터를 변경 후 저장했을 때 E-Sign이 해제된다",
-                  "ok": true,
+                  "title": "3. Report를 생성시킨 이상사례의 행을 삭제한다",
+                  "ok": false,
                   "tags": [],
                   "tests": [
                     {
@@ -834,587 +1648,310 @@
                       "projectName": "cdms",
                       "results": [
                         {
-                          "workerIndex": 0,
+                          "workerIndex": 10,
                           "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 4842,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "데이터 수정 저장",
-                              "duration": 3014
-                            },
-                            {
-                              "title": "E-Sign 해제 확인",
-                              "duration": 57
-                            },
-                            {
-                              "title": "Audit Trail에서 E-Sign Off 텍스트 확인",
-                              "duration": 1770
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:39:48.320Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--c9516-터를-변경-후-저장했을-때-E-Sign이-해제된다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c0514f904eafe22d3216-3e9b4dd8e0f727c91d0a",
-                  "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-                  "line": 111,
-                  "column": 9
-                },
-                {
-                  "title": "3. E-Sign 상태에서 Assign Trigger가 실행 될 경우 E-Sign이 해제된다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 12151,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "E-Sign 재서명",
-                              "duration": 3190
-                            },
-                            {
-                              "title": "Assign Trigger 적용 항목 수정",
-                              "duration": 5382
-                            },
-                            {
-                              "title": "Profile 페이지 복귀 후 E-Sign 해제 확인",
-                              "duration": 1849
-                            },
-                            {
-                              "title": "Audit Trail에서 E-Sign Off 텍스트 확인",
-                              "duration": 1728
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:39:55.016Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--52766-igger가-실행-될-경우-E-Sign이-해제된다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c0514f904eafe22d3216-c018f18bf105baa5a7df",
-                  "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-                  "line": 125,
-                  "column": 9
-                },
-                {
-                  "title": "4. E-Sign 상태에서 Refresh 실행 후 변경되는 데이터가 없다면 E-Sign이 유지된다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 6045,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "E-Sign 재서명",
-                              "duration": 3233
-                            },
-                            {
-                              "title": "Refresh 실행 후 E-Sign 유지 확인",
-                              "duration": 2809
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:40:09.594Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--d6e3a--변경되는-데이터가-없다면-E-Sign이-유지된다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c0514f904eafe22d3216-e78e0a1b9c596820f36c",
-                  "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-                  "line": 145,
-                  "column": 9
-                }
-              ]
-            },
-            {
-              "title": "[EDC] Second E-sign 플로우",
-              "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-              "line": 159,
-              "column": 17,
-              "specs": [
-                {
-                  "title": "1. 사용자가 Second E-Sign 버튼을 클릭하면, 전자 서명이 완료되며, 해당 페이지에 서명 날짜가 표기된다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 8652,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "팝업 1개 처리 완료\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "DS CRF 페이지로 이동 및 필수 항목 입력",
-                              "duration": 5436
-                            },
-                            {
-                              "title": "Second E-Sign 서명 진행",
-                              "duration": 1210
-                            },
-                            {
-                              "title": "Second E-Sign 서명 표기 확인",
-                              "duration": 2006
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:40:17.774Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--db598-명이-완료되며-해당-페이지에-서명-날짜가-표기된다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c0514f904eafe22d3216-529548cdfa3884daf3e2",
-                  "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-                  "line": 161,
-                  "column": 9
-                },
-                {
-                  "title": "2. 사용자가 Second E-Sign 버튼을 클릭하여 전자 서명이 완료되면 Audit Trail에 Second E-Sign ON로 표기된다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3538,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "Audit Trail에서 Second E-Sign ON 텍스트 확인",
-                              "duration": 3536
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:40:44.656Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--66f02-ail에-Second-E-Sign-ON로-표기된다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c0514f904eafe22d3216-3a28c446a43c5a77b66c",
-                  "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-                  "line": 177,
-                  "column": 9
-                },
-                {
-                  "title": "3. 사용자가 Cancel Second E-Sign 버튼을 클릭하면, 전자 서명이 취소되며, 해당 페이지의 서명 날짜가 표기되지 않는다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 844,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "Second E-Sign 서명 취소 진행",
-                              "duration": 808
-                            },
-                            {
-                              "title": "Second E-Sign 서명 날짜 미표기 확인",
-                              "duration": 33
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:40:49.428Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--b59d8-소되며-해당-페이지의-서명-날짜가-표기되지-않는다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c0514f904eafe22d3216-2927f704d0f3ee8ac739",
-                  "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-                  "line": 183,
-                  "column": 9
-                },
-                {
-                  "title": "4. 사용자가 Cancel Second E-Sign 버튼을 클릭하면, 전자 서명이 취소되며, Audit Trail에 Second E-Sign OFF로 표기된다",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "cdms",
-                      "projectName": "cdms",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3375,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "Audit Trail에서 Second E-Sign OFF 텍스트 확인",
-                              "duration": 3374
-                            }
-                          ],
-                          "startTime": "2026-06-01T06:40:51.430Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-eSign--26b25-il에-Second-E-Sign-OFF로-표기된다-cdms\\trace.zip"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "c0514f904eafe22d3216-31f11b884ef49c27a610",
-                  "file": "cdms/JP-MVN2025-ALL/eSign.test.ts",
-                  "line": 192,
-                  "column": 9
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "cdms\\JP-MVN2025-ALL\\notice.test.ts",
-      "file": "cdms/JP-MVN2025-ALL/notice.test.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Study Notice",
-          "file": "cdms/JP-MVN2025-ALL/notice.test.ts",
-          "line": 20,
-          "column": 15,
-          "specs": [
-            {
-              "title": "1. 사용자가 새 공지사항을 작성하면 Notice 목록에 반영되어야 한다",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "cdms",
-                  "projectName": "cdms",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 32765,
-                      "error": {
-                        "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled role=\"button\" color=\"primary\" data-testid=\"button\" class=\"GrButton css-7775kd\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
-                        "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled role=\"button\" color=\"primary\" data-testid=\"button\" class=\"GrButton css-7775kd\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at NoticePage.createNotice (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts:27:75)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\notice.test.ts:58:9\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\notice.test.ts:57:5",
-                        "location": {
-                          "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts",
-                          "column": 75,
-                          "line": 27
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Title\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m getLabel(\u001b[32m'save'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'en'\u001b[39m) })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mif\u001b[39m(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m)\u001b[33m.\u001b[39misVisible()){\n \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m)\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"저장 토스트 메시지 확인 후 닫음\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts",
-                            "column": 75,
-                            "line": 27
-                          },
-                          "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled role=\"button\" color=\"primary\" data-testid=\"button\" class=\"GrButton css-7775kd\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Title\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m getLabel(\u001b[32m'save'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'en'\u001b[39m) })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mif\u001b[39m(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m)\u001b[33m.\u001b[39misVisible()){\n \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m)\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"저장 토스트 메시지 확인 후 닫음\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at NoticePage.createNotice (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts:27:75)\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\notice.test.ts:58:9\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\notice.test.ts:57:5\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "팝업 1개 처리 완료\n"
-                        }
-                      ],
-                      "stderr": [
-                        {
-                          "text": "   실패한 테스트: 1. 사용자가 새 공지사항을 작성하면 Notice 목록에 반영되어야 한다\n"
-                        },
-                        {
-                          "text": "   실패 원인: TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled role=\"button\" color=\"primary\" data-testid=\"button\" class=\"GrButton css-7775kd\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n"
-                        },
-                        {
-                          "text": "   스크린샷: test-results/screenshots/1. 사용자가 새 공지사항을 작성하면 Notice 목록에 반영되어야 한다.png\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Notice 추가 버튼 클릭 및 내용 입력",
-                          "duration": 32616,
+                          "status": "failed",
+                          "duration": 870,
                           "error": {
-                            "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled role=\"button\" color=\"primary\" data-testid=\"button\" class=\"GrButton css-7775kd\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
-                            "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Save' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled role=\"button\" color=\"primary\" data-testid=\"button\" class=\"GrButton css-7775kd\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at NoticePage.createNotice (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts:27:75)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\notice.test.ts:58:9\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\JP-MVN2025-ALL\\notice.test.ts:57:5",
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at AEPage.verifyAERowStrikeStatus (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\ML42494\\AEPage.ts:132:44)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\ML42494\\createReport.test.ts:334:9\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\ML42494\\createReport.test.ts:332:7",
                             "location": {
-                              "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts",
-                              "column": 75,
-                              "line": 27
+                              "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\ML42494\\AEPage.ts",
+                              "column": 44,
+                              "line": 132
                             },
-                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Title\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m getLabel(\u001b[32m'save'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'en'\u001b[39m) })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mif\u001b[39m(\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m)\u001b[33m.\u001b[39misVisible()){\n \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m)\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"저장 토스트 메시지 확인 후 닫음\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\cdms\\ML42494\\AEPage.ts:132\n\n\u001b[0m \u001b[90m 130 |\u001b[39m       \u001b[33m.\u001b[39mnth(targetAeSeq)\n \u001b[90m 131 |\u001b[39m       \u001b[33m.\u001b[39mgetAttribute(\u001b[32m'class'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 132 |\u001b[39m     expect(rowClass\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mincludes(\u001b[32m'--strike'\u001b[39m))\u001b[33m.\u001b[39mtoBe(hasStrike)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 133 |\u001b[39m   }\n \u001b[90m 134 |\u001b[39m\n \u001b[90m 135 |\u001b[39m   \u001b[90m// 특정 인덱스의 AE 행에서 복원 아이콘 클릭 (Delete 아이콘과 동일 위치)\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\ML42494\\AEPage.ts",
+                                "column": 44,
+                                "line": 132
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\pages\\cdms\\ML42494\\AEPage.ts:132\n\n\u001b[0m \u001b[90m 130 |\u001b[39m       \u001b[33m.\u001b[39mnth(targetAeSeq)\n \u001b[90m 131 |\u001b[39m       \u001b[33m.\u001b[39mgetAttribute(\u001b[32m'class'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 132 |\u001b[39m     expect(rowClass\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mincludes(\u001b[32m'--strike'\u001b[39m))\u001b[33m.\u001b[39mtoBe(hasStrike)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 133 |\u001b[39m   }\n \u001b[90m 134 |\u001b[39m\n \u001b[90m 135 |\u001b[39m   \u001b[90m// 특정 인덱스의 AE 행에서 복원 아이콘 클릭 (Delete 아이콘과 동일 위치)\u001b[39m\u001b[0m\n\u001b[2m    at AEPage.verifyAERowStrikeStatus (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\ML42494\\AEPage.ts:132:44)\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\ML42494\\createReport.test.ts:334:9\u001b[22m\n\u001b[2m    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\ML42494\\createReport.test.ts:332:7\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [
+                            {
+                              "text": "   실패한 테스트: 3. Report를 생성시킨 이상사례의 행을 삭제한다\n"
+                            },
+                            {
+                              "text": "   실패 원인: Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n"
+                            },
+                            {
+                              "text": "   스크린샷: test-results/screenshots/3. Report를 생성시킨 이상사례의 행을 삭제한다.png\n"
+                            }
+                          ],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "AE Term으로 행 탐색 및 Delete 아이콘 클릭",
+                              "duration": 453
+                            },
+                            {
+                              "title": "저장 후 --strike 반영 확인",
+                              "duration": 20,
+                              "error": {
+                                "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                                "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at AEPage.verifyAERowStrikeStatus (C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\ML42494\\AEPage.ts:132:44)\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\ML42494\\createReport.test.ts:334:9\n    at C:\\Users\\jkan\\e2e_auto\\tests\\cdms\\ML42494\\createReport.test.ts:332:7",
+                                "location": {
+                                  "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\ML42494\\AEPage.ts",
+                                  "column": 44,
+                                  "line": 132
+                                },
+                                "snippet": "\u001b[90m   at \u001b[39m..\\pages\\cdms\\ML42494\\AEPage.ts:132\n\n\u001b[0m \u001b[90m 130 |\u001b[39m       \u001b[33m.\u001b[39mnth(targetAeSeq)\n \u001b[90m 131 |\u001b[39m       \u001b[33m.\u001b[39mgetAttribute(\u001b[32m'class'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 132 |\u001b[39m     expect(rowClass\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mincludes(\u001b[32m'--strike'\u001b[39m))\u001b[33m.\u001b[39mtoBe(hasStrike)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 133 |\u001b[39m   }\n \u001b[90m 134 |\u001b[39m\n \u001b[90m 135 |\u001b[39m   \u001b[90m// 특정 인덱스의 AE 행에서 복원 아이콘 클릭 (Delete 아이콘과 동일 위치)\u001b[39m\u001b[0m"
+                              }
+                            }
+                          ],
+                          "startTime": "2026-06-10T06:45:39.714Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--415c8--Report를-생성시킨-이상사례의-행을-삭제한다-cdms\\test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--415c8--Report를-생성시킨-이상사례의-행을-삭제한다-cdms\\error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-ML42494-createReport--415c8--Report를-생성시킨-이상사례의-행을-삭제한다-cdms\\trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\ML42494\\AEPage.ts",
+                            "column": 44,
+                            "line": 132
                           }
                         }
                       ],
-                      "startTime": "2026-06-01T06:40:56.815Z",
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-6cf5b3ee55e106399b78",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 327,
+                  "column": 9
+                },
+                {
+                  "title": "4. 삭제한 이상사례의 Report가 취소된다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
                       "annotations": [],
-                      "attachments": [
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
                         {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\\test-failed-1.png"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\jkan\\e2e_auto\\test-results\\cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\\trace.zip"
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-10T06:45:44.344Z",
+                          "annotations": [],
+                          "attachments": []
                         }
                       ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\jkan\\e2e_auto\\pages\\cdms\\JP-MVN2025-ALL\\NoticePage.ts",
-                        "column": 75,
-                        "line": 27
-                      }
+                      "status": "skipped"
                     }
                   ],
-                  "status": "unexpected"
+                  "id": "0b3fb7ee96fc01514827-0a5b3650d7ed96e94fdb",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 338,
+                  "column": 9
                 }
-              ],
-              "id": "a650075360bc0d36d20a-e971d7e63a822bdffe03",
-              "file": "cdms/JP-MVN2025-ALL/notice.test.ts",
-              "line": 56,
-              "column": 7
+              ]
             },
             {
-              "title": "2. 사용자가 파일을 업로드하면 파일 이름이 화면에 표기된다",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "title": "Report 복원 테스트",
+              "file": "cdms/ML42494/createReport.test.ts",
+              "line": 349,
+              "column": 17,
+              "specs": [
                 {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "cdms",
-                  "projectName": "cdms",
-                  "results": [
+                  "title": "1. 취소된 Report 페이지로 이동한다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-01T06:41:45.335Z",
+                      "timeout": 60000,
                       "annotations": [],
-                      "attachments": []
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-10T06:45:44.345Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
                     }
                   ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "a650075360bc0d36d20a-4cd41776a0f53b4c9f6b",
-              "file": "cdms/JP-MVN2025-ALL/notice.test.ts",
-              "line": 65,
-              "column": 7
-            },
-            {
-              "title": "3. 사용자가 공지사항을 수정하면 해당 Notice Detail 페이지에 반영되어야 한다",
-              "ok": true,
-              "tags": [],
-              "tests": [
+                  "id": "0b3fb7ee96fc01514827-7de0f4b416fd85b63002",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 351,
+                  "column": 9
+                },
                 {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "cdms",
-                  "projectName": "cdms",
-                  "results": [
+                  "title": "2. 취소된 Report 페이지에서 CRF 페이지로 이동된다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-01T06:41:45.336Z",
+                      "timeout": 60000,
                       "annotations": [],
-                      "attachments": []
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-10T06:45:44.345Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
                     }
                   ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "a650075360bc0d36d20a-68a686b4ac3d765a42c5",
-              "file": "cdms/JP-MVN2025-ALL/notice.test.ts",
-              "line": 79,
-              "column": 7
-            },
-            {
-              "title": "4. 사용자가 공지사항을 삭제하면 해당 Notice는 List에서 보이지 않는다",
-              "ok": true,
-              "tags": [],
-              "tests": [
+                  "id": "0b3fb7ee96fc01514827-d21a561811c789f9f74e",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 360,
+                  "column": 9
+                },
                 {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "cdms",
-                  "projectName": "cdms",
-                  "results": [
+                  "title": "3. 삭제했던 이상사례의 행을 복원한다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-01T06:41:45.336Z",
+                      "timeout": 60000,
                       "annotations": [],
-                      "attachments": []
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-10T06:45:44.346Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
                     }
                   ],
-                  "status": "skipped"
+                  "id": "0b3fb7ee96fc01514827-2a12a8d321ad0b6f745c",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 367,
+                  "column": 9
+                },
+                {
+                  "title": "4. Report 아이콘으로 복원된 Report 페이지로 이동한다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-10T06:45:44.346Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-a8e10d9795e2d24dda51",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 377,
+                  "column": 9
+                },
+                {
+                  "title": "5. Report List에서 복원 여부를 확인한다",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "cdms",
+                      "projectName": "cdms",
+                      "results": [
+                        {
+                          "workerIndex": -1,
+                          "parallelIndex": -1,
+                          "status": "skipped",
+                          "duration": 0,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-10T06:45:44.351Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "0b3fb7ee96fc01514827-ddc07d8131c465a65897",
+                  "file": "cdms/ML42494/createReport.test.ts",
+                  "line": 387,
+                  "column": 9
                 }
-              ],
-              "id": "a650075360bc0d36d20a-4ce49deb2f6f06f1bab6",
-              "file": "cdms/JP-MVN2025-ALL/notice.test.ts",
-              "line": 88,
-              "column": 7
+              ]
             }
           ]
         }
@@ -1423,10 +1960,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-01T06:36:46.538Z",
-    "duration": 299656.064,
-    "expected": 19,
-    "skipped": 3,
+    "startTime": "2026-06-10T06:43:37.531Z",
+    "duration": 127546.44600000046,
+    "expected": 31,
+    "skipped": 6,
     "unexpected": 1,
     "flaky": 0
   }

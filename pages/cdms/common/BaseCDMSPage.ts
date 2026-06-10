@@ -187,6 +187,16 @@ export class BaseCDMSPage {
     await this.page.getByRole('button', { name: 'Confirm', exact: true }).click();
   }
 
+  // Initialize 버튼 클릭 및 서명 사유 입력
+  async clickInitializeButton(reason: string, id: string, pw: string): Promise<void> {
+    await this.page.getByRole('button', { name: 'Initialize', exact: true }).click();
+    await this.page.getByPlaceholder('Enter Your Email').fill(id);
+    await this.page.getByPlaceholder('Enter Your Password').fill(pw);
+    await this.page.getByPlaceholder('Please enter the reason for Initialize.').fill(reason);
+    await this.page.waitForTimeout(500);
+    await this.page.getByRole('button', { name: 'Confirm', exact: true }).click();
+  }
+
   // Subject 메뉴로 이동
   async navigateToSubject(): Promise<void> {
     await this.page.getByRole('link', { name: 'Subject', exact: true }).click();

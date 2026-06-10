@@ -1,247 +1,300 @@
-<testsuites id="" name="" tests="23" failures="1" skipped="3" errors="0" time="299.656064">
-<testsuite name="cdms\JP-MVN2025-ALL\addSubject.test.ts" timestamp="2026-06-01T06:36:47.394Z" hostname="cdms" tests="2" failures="0" skipped="0" time="4.644" errors="0">
-<testcase name="Subject 추가 테스트 › 1. Subject가 성공적으로 추가되면 성공 토스트가 보인다" classname="cdms\JP-MVN2025-ALL\addSubject.test.ts" time="4.64">
+<testsuites id="" name="" tests="38" failures="1" skipped="6" errors="0" time="127.54644600000046">
+<testsuite name="cdms\ML42494\createReport.test.ts" timestamp="2026-06-10T06:43:38.440Z" hostname="cdms" tests="38" failures="1" skipped="6" time="75.643" errors="0">
+<testcase name="ML42494 Report 생성 테스트 › Subject 생성 › Subject를 생성하면 Schedule 페이지로 이동된다" classname="cdms\ML42494\createReport.test.ts" time="3.724">
 <system-out>
 <![CDATA[팝업 1개 처리 완료
 
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-addSub-d21fe-ect가-성공적으로-추가되면-성공-토스트가-보인다-cdms\trace.zip]]
+[[ATTACHMENT|cdms-ML42494-createReport--30728-ct를-생성하면-Schedule-페이지로-이동된다-cdms\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Subject 추가 테스트 › 2. Subject가 성공적으로 추가되면 해당 Subject의 Schedule 화면으로 이동한다" classname="cdms\JP-MVN2025-ALL\addSubject.test.ts" time="0.004">
-<system-out>
-<![CDATA[생성된 Subject ID: 6802958328472455696
-
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-addSub-4adc4-Subject의-Schedule-화면으로-이동한다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="cdms\JP-MVN2025-ALL\date.test.ts" timestamp="2026-06-01T06:36:47.394Z" hostname="cdms" tests="9" failures="0" skipped="0" time="38.536" errors="0">
-<testcase name="[EDC] Data Capture 테스트 › [EDC] IE Data Capture Test › 사용자가 SV 페이지를 저장하면 IE 페이지가 활성화된다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="5.24">
-<system-out>
-<![CDATA[팝업 1개 처리 완료
-
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---79025--SV-페이지를-저장하면-IE-페이지가-활성화된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] Data Capture 테스트 › [EDC] IE Data Capture Test › 사용자가 confirmMessage[ADD]가 설정된 아이템을 최초 저장하려고 할 때, 확인 메시지(Dialog)가 보인다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="3.635">
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › 1. Subject의 AE 페이지로 이동한다" classname="cdms\ML42494\createReport.test.ts" time="0.137">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---2c5f5-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\trace.zip]]
+[[ATTACHMENT|cdms-ML42494-createReport--269da-테스트-1-Subject의-AE-페이지로-이동한다-cdms\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="[EDC] Data Capture 테스트 › [EDC] IE Data Capture Test › 사용자가 confirmMessage[MODIFY]가 설정된 아이템을 수정하려고 할 때, 확인 메시지(Dialog)가 보인다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="3.602">
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › 2. SAE 이상사례를 입력한다" classname="cdms\ML42494\createReport.test.ts" time="3.716">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---d9fee-하려고-할-때-확인-메시지-Dialog-가-보인다-cdms\trace.zip]]
+[[ATTACHMENT|cdms-ML42494-createReport--1d00d-Report-테스트-2-SAE-이상사례를-입력한다-cdms\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="[EDC] Data Capture 테스트 › [EDC] IE Data Capture Test › 저장된 IE 페이지에서 미입력 Field에 Auto Query가 보인다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="0.787">
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › 3. Non-Seriousness 이상사례를 입력한다" classname="cdms\ML42494\createReport.test.ts" time="3.107">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---ba095--미입력-Field에-Auto-Query가-보인다-cdms\trace.zip]]
+[[ATTACHMENT|cdms-ML42494-createReport--c9077--Non-Seriousness-이상사례를-입력한다-cdms\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="[EDC] Data Capture 테스트 › [EDC] MH Dictionary Capture Test › MH 페이지의 Dictionary 아이템 입력 길이가 제한된다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="9.124">
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › SAE Report 테스트 › SAE Report가 생성된다" classname="cdms\ML42494\createReport.test.ts" time="4.592">
 <system-out>
-<![CDATA[팝업 1개 처리 완료
-이미 활성화 된 페이지
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--0d4e0-Report-테스트-SAE-Report가-생성된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › SAE Report 테스트 › 필수 값이 입력되지 않으면 SAE Report가 저장되지 않는다" classname="cdms\ML42494\createReport.test.ts" time="0.538">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--7e8d3-되지-않으면-SAE-Report가-저장되지-않는다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › SAE Report 테스트 › 필수 값이 입력되면 SAE Report가 저장된다" classname="cdms\ML42494\createReport.test.ts" time="2.274">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--4e785-필수-값이-입력되면-SAE-Report가-저장된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › SAE Report 테스트 › 필수 값이 입력되지 않으면 SAE Report가 제출되지 않는다" classname="cdms\ML42494\createReport.test.ts" time="0.283">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--817d9-되지-않으면-SAE-Report가-제출되지-않는다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › SAE Report 테스트 › 필수 값이 입력되면 SAE Report가 제출된다" classname="cdms\ML42494\createReport.test.ts" time="4.7">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--c8180-필수-값이-입력되면-SAE-Report가-제출된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › SAE Report 테스트 › 제출된 SAE Report에서 F/U Report가 생성된다" classname="cdms\ML42494\createReport.test.ts" time="2.483">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--78213-E-Report에서-F-U-Report가-생성된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › SAE Report 테스트 › 생성 직후의 SAE Report에서 Sync 가능 항목은 없다" classname="cdms\ML42494\createReport.test.ts" time="0.252">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--adbe7-SAE-Report에서-Sync-가능-항목은-없다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › AESI Report 테스트 › AESI Report가 생성된다" classname="cdms\ML42494\createReport.test.ts" time="6.138">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--24f8e-eport-테스트-AESI-Report가-생성된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › AESI Report 테스트 › 필수 값이 입력되지 않으면 AESI Report가 저장되지 않는다" classname="cdms\ML42494\createReport.test.ts" time="0.497">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--e8aaf-지-않으면-AESI-Report가-저장되지-않는다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › AESI Report 테스트 › 필수 값이 입력되면 AESI Report가 저장된다" classname="cdms\ML42494\createReport.test.ts" time="2.382">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--0d2ca-수-값이-입력되면-AESI-Report가-저장된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › AESI Report 테스트 › 필수 값이 입력되지 않으면 AESI Report가 제출되지 않는다" classname="cdms\ML42494\createReport.test.ts" time="0.287">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--26bcf-지-않으면-AESI-Report가-제출되지-않는다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › AESI Report 테스트 › 필수 값이 입력되면 AESI Report가 제출된다" classname="cdms\ML42494\createReport.test.ts" time="4.65">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--b948d-수-값이-입력되면-AESI-Report가-제출된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › AESI Report 테스트 › 제출된 AESI Report에서 F/U Report가 생성된다" classname="cdms\ML42494\createReport.test.ts" time="3.085">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--86a74-I-Report에서-F-U-Report가-생성된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › AE 데이터 입력 및 Report 테스트 › AESI Report 테스트 › 생성 직후의 AESI Report에서 Sync 가능 항목은 없다" classname="cdms\ML42494\createReport.test.ts" time="0.247">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--abec8-ESI-Report에서-Sync-가능-항목은-없다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report Merge Table 테스트 › 1. DM 페이지로 이동한다" classname="cdms\ML42494\createReport.test.ts" time="3.971">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--36e09-ge-Table-테스트-1-DM-페이지로-이동한다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report Merge Table 테스트 › 2. DM 페이지에 데이터를 입력하고 저장한다" classname="cdms\ML42494\createReport.test.ts" time="4.313">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--2c051-스트-2-DM-페이지에-데이터를-입력하고-저장한다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report Merge Table 테스트 › 3. DM 페이지에서 입력한 데이터가 Report Sync 가능 항목에 표시된다" classname="cdms\ML42494\createReport.test.ts" time="2.88">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--3dc63-이터가-Report-Sync-가능-항목에-표시된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report Merge Table 테스트 › 4. Sync 가능 항목들을 Sync 수행한다" classname="cdms\ML42494\createReport.test.ts" time="1.403">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--9105f-스트-4-Sync-가능-항목들을-Sync-수행한다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report Merge Table 테스트 › 5. Sync 수행한 데이터가 Report 페이지에 반영된다" classname="cdms\ML42494\createReport.test.ts" time="1.376">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--9e97b-c-수행한-데이터가-Report-페이지에-반영된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report Merge Table 테스트 › 6. Sync 가능 항목들이 존재하지 않는다" classname="cdms\ML42494\createReport.test.ts" time="0.489">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--0038a-테스트-6-Sync-가능-항목들이-존재하지-않는다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report Merge Table 테스트 › 7. DM 페이지 Initialize를 수행한다" classname="cdms\ML42494\createReport.test.ts" time="5.097">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--07661-트-7-DM-페이지-Initialize를-수행한다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report Merge Table 테스트 › 8. DM 페이지에서 초기화한 데이터가 Report Sync 가능 항목에 표시된다" classname="cdms\ML42494\createReport.test.ts" time="3.666">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--f3135-이터가-Report-Sync-가능-항목에-표시된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report Merge Table 테스트 › 9. Sync 가능 항목들을 Sync 수행한다" classname="cdms\ML42494\createReport.test.ts" time="1.517">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--386b7-스트-9-Sync-가능-항목들을-Sync-수행한다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report Merge Table 테스트 › 10. Sync 수행한 데이터가 Report 페이지에 반영된다" classname="cdms\ML42494\createReport.test.ts" time="1.643">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--ccd99-c-수행한-데이터가-Report-페이지에-반영된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report Merge Table 테스트 › 11. Sync 가능 항목들이 존재하지 않는다" classname="cdms\ML42494\createReport.test.ts" time="0.947">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--60cdf-스트-11-Sync-가능-항목들이-존재하지-않는다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report 삭제 테스트 › 1. SAE Report 페이지로 이동한다" classname="cdms\ML42494\createReport.test.ts" time="1.203">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--3d1a0--테스트-1-SAE-Report-페이지로-이동한다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report 삭제 테스트 › 2. Report 페이지에서 CRF 페이지로 이동된다" classname="cdms\ML42494\createReport.test.ts" time="3.176">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--c4842--Report-페이지에서-CRF-페이지로-이동된다-cdms\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report 삭제 테스트 › 3. Report를 생성시킨 이상사례의 행을 삭제한다" classname="cdms\ML42494\createReport.test.ts" time="0.87">
+<failure message="createReport.test.ts:327:9 3. Report를 생성시킨 이상사례의 행을 삭제한다" type="FAILURE">
+<![CDATA[  [cdms] › cdms\ML42494\createReport.test.ts:327:9 › ML42494 Report 생성 테스트 › Report 삭제 테스트 › 3. Report를 생성시킨 이상사례의 행을 삭제한다 › 저장 후 --strike 반영 확인 
 
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---a39fd--Dictionary-아이템-입력-길이가-제한된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] Data Capture 테스트 › [EDC] Date Item UK Format Capture Test › Day UK 입력 저장 시 Audit에서 UK-MMM-YYYY 포맷으로 기록된다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="7.533">
-<system-out>
-<![CDATA[팝업 1개 처리 완료
+    Error: expect(received).toBe(expected) // Object.is equality
 
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---d517d-dit에서-UK-MMM-YYYY-포맷으로-기록된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] Data Capture 테스트 › [EDC] Date Item UK Format Capture Test › Month UK 입력 저장 시 Audit에서 DD-UNK-YYYY 포맷으로 기록된다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="2.435">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---91b8d-dit에서-DD-UNK-YYYY-포맷으로-기록된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] Data Capture 테스트 › [EDC] Date Item UK Format Capture Test › 모든 UK 입력 저장 시 Audit에서 UK-UNK-UKUK으로 기록된다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="3.948">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---b8a13--Audit에서-UK-UNK-UKUK으로-기록된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] Data Capture 테스트 › [EDC] Background Color Test › 설정한 Background 색상이 표시된다" classname="cdms\JP-MVN2025-ALL\date.test.ts" time="2.232">
-<system-out>
-<![CDATA[팝업 1개 처리 완료
+    Expected: true
+    Received: false
 
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-date---8207e-est-설정한-Background-색상이-표시된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="cdms\JP-MVN2025-ALL\eSign.test.ts" timestamp="2026-06-01T06:36:47.394Z" hostname="cdms" tests="8" failures="0" skipped="0" time="57.784" errors="0">
-<testcase name="[EDC] E-sign 테스트 › [EDC] E-Sign 플로우 › 1. Profile 데이터 입력 및 E-Sign 수행" classname="cdms\JP-MVN2025-ALL\eSign.test.ts" time="18.337">
-<system-out>
-<![CDATA[팝업 1개 처리 완료
+       at ..\pages\cdms\ML42494\AEPage.ts:132
 
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-eSign--b1f96--Profile-데이터-입력-및-E-Sign-수행-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] E-sign 테스트 › [EDC] E-Sign 플로우 › 2. E-Sign 상태에서 데이터를 변경 후 저장했을 때 E-Sign이 해제된다" classname="cdms\JP-MVN2025-ALL\eSign.test.ts" time="4.842">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-eSign--c9516-터를-변경-후-저장했을-때-E-Sign이-해제된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] E-sign 테스트 › [EDC] E-Sign 플로우 › 3. E-Sign 상태에서 Assign Trigger가 실행 될 경우 E-Sign이 해제된다" classname="cdms\JP-MVN2025-ALL\eSign.test.ts" time="12.151">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-eSign--52766-igger가-실행-될-경우-E-Sign이-해제된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] E-sign 테스트 › [EDC] E-Sign 플로우 › 4. E-Sign 상태에서 Refresh 실행 후 변경되는 데이터가 없다면 E-Sign이 유지된다" classname="cdms\JP-MVN2025-ALL\eSign.test.ts" time="6.045">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-eSign--d6e3a--변경되는-데이터가-없다면-E-Sign이-유지된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] E-sign 테스트 › [EDC] Second E-sign 플로우 › 1. 사용자가 Second E-Sign 버튼을 클릭하면, 전자 서명이 완료되며, 해당 페이지에 서명 날짜가 표기된다" classname="cdms\JP-MVN2025-ALL\eSign.test.ts" time="8.652">
-<system-out>
-<![CDATA[팝업 1개 처리 완료
-
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-eSign--db598-명이-완료되며-해당-페이지에-서명-날짜가-표기된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] E-sign 테스트 › [EDC] Second E-sign 플로우 › 2. 사용자가 Second E-Sign 버튼을 클릭하여 전자 서명이 완료되면 Audit Trail에 Second E-Sign ON로 표기된다" classname="cdms\JP-MVN2025-ALL\eSign.test.ts" time="3.538">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-eSign--66f02-ail에-Second-E-Sign-ON로-표기된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] E-sign 테스트 › [EDC] Second E-sign 플로우 › 3. 사용자가 Cancel Second E-Sign 버튼을 클릭하면, 전자 서명이 취소되며, 해당 페이지의 서명 날짜가 표기되지 않는다" classname="cdms\JP-MVN2025-ALL\eSign.test.ts" time="0.844">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-eSign--b59d8-소되며-해당-페이지의-서명-날짜가-표기되지-않는다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="[EDC] E-sign 테스트 › [EDC] Second E-sign 플로우 › 4. 사용자가 Cancel Second E-Sign 버튼을 클릭하면, 전자 서명이 취소되며, Audit Trail에 Second E-Sign OFF로 표기된다" classname="cdms\JP-MVN2025-ALL\eSign.test.ts" time="3.375">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-eSign--26b25-il에-Second-E-Sign-OFF로-표기된다-cdms\trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="cdms\JP-MVN2025-ALL\notice.test.ts" timestamp="2026-06-01T06:36:47.394Z" hostname="cdms" tests="4" failures="1" skipped="3" time="32.765" errors="0">
-<testcase name="Study Notice › 1. 사용자가 새 공지사항을 작성하면 Notice 목록에 반영되어야 한다" classname="cdms\JP-MVN2025-ALL\notice.test.ts" time="32.765">
-<failure message="notice.test.ts:56:7 1. 사용자가 새 공지사항을 작성하면 Notice 목록에 반영되어야 한다" type="FAILURE">
-<![CDATA[  [cdms] › cdms\JP-MVN2025-ALL\notice.test.ts:56:7 › Study Notice › 1. 사용자가 새 공지사항을 작성하면 Notice 목록에 반영되어야 한다 › Notice 추가 버튼 클릭 및 내용 입력 
-
-    TimeoutError: locator.click: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('button', { name: 'Save' })
-        - locator resolved to <button disabled role="button" color="primary" data-testid="button" class="GrButton css-7775kd">…</button>
-      - attempting click action
-        2 × waiting for element to be visible, enabled and stable
-          - element is not enabled
-        - retrying click action
-        - waiting 20ms
-        2 × waiting for element to be visible, enabled and stable
-          - element is not enabled
-        - retrying click action
-          - waiting 100ms
-        57 × waiting for element to be visible, enabled and stable
-           - element is not enabled
-         - retrying click action
-           - waiting 500ms
-
-
-       at ..\pages\cdms\JP-MVN2025-ALL\NoticePage.ts:27
-
-      25 |     await this.page.getByText("Title").click();
-      26 |
-    > 27 |     await this.page.getByRole('button', { name: getLabel('save', 'en') }).click();
-         |                                                                           ^
-      28 |     if(await this.page.getByRole('alert').isVisible()){
-      29 |         await this.page.getByRole('alert').getByRole('button').click();
-      30 |         console.log("저장 토스트 메시지 확인 후 닫음");
-        at NoticePage.createNotice (C:\Users\jkan\e2e_auto\pages\cdms\JP-MVN2025-ALL\NoticePage.ts:27:75)
-        at C:\Users\jkan\e2e_auto\tests\cdms\JP-MVN2025-ALL\notice.test.ts:58:9
-        at C:\Users\jkan\e2e_auto\tests\cdms\JP-MVN2025-ALL\notice.test.ts:57:5
+      130 |       .nth(targetAeSeq)
+      131 |       .getAttribute('class');
+    > 132 |     expect(rowClass?.includes('--strike')).toBe(hasStrike);
+          |                                            ^
+      133 |   }
+      134 |
+      135 |   // 특정 인덱스의 AE 행에서 복원 아이콘 클릭 (Delete 아이콘과 동일 위치)
+        at AEPage.verifyAERowStrikeStatus (C:\Users\jkan\e2e_auto\pages\cdms\ML42494\AEPage.ts:132:44)
+        at C:\Users\jkan\e2e_auto\tests\cdms\ML42494\createReport.test.ts:334:9
+        at C:\Users\jkan\e2e_auto\tests\cdms\ML42494\createReport.test.ts:332:7
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\test-failed-1.png
+    ..\test-results\cdms-ML42494-createReport--415c8--Report를-생성시킨-이상사례의-행을-삭제한다-cdms\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ..\test-results\cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\error-context.md
+    Error Context: ..\test-results\cdms-ML42494-createReport--415c8--Report를-생성시킨-이상사례의-행을-삭제한다-cdms\error-context.md
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-results\cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\trace.zip
+    ..\test-results\cdms-ML42494-createReport--415c8--Report를-생성시킨-이상사례의-행을-삭제한다-cdms\trace.zip
     Usage:
 
-        npx playwright show-trace ..\test-results\cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\trace.zip
+        npx playwright show-trace ..\test-results\cdms-ML42494-createReport--415c8--Report를-생성시킨-이상사례의-행을-삭제한다-cdms\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
-<![CDATA[팝업 1개 처리 완료
+<![CDATA[
+[[ATTACHMENT|cdms-ML42494-createReport--415c8--Report를-생성시킨-이상사례의-행을-삭제한다-cdms\test-failed-1.png]]
 
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\test-failed-1.png]]
+[[ATTACHMENT|cdms-ML42494-createReport--415c8--Report를-생성시킨-이상사례의-행을-삭제한다-cdms\error-context.md]]
 
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\error-context.md]]
-
-[[ATTACHMENT|cdms-JP-MVN2025-ALL-notice-a611e-항을-작성하면-Notice-목록에-반영되어야-한다-cdms\trace.zip]]
+[[ATTACHMENT|cdms-ML42494-createReport--415c8--Report를-생성시킨-이상사례의-행을-삭제한다-cdms\trace.zip]]
 ]]>
 </system-out>
 <system-err>
-<![CDATA[   실패한 테스트: 1. 사용자가 새 공지사항을 작성하면 Notice 목록에 반영되어야 한다
-   실패 원인: TimeoutError: locator.click: Timeout 30000ms exceeded.
-Call log:
-[2m  - waiting for getByRole('button', { name: 'Save' })[22m
-[2m    - locator resolved to <button disabled role="button" color="primary" data-testid="button" class="GrButton css-7775kd">…</button>[22m
-[2m  - attempting click action[22m
-[2m    2 × waiting for element to be visible, enabled and stable[22m
-[2m      - element is not enabled[22m
-[2m    - retrying click action[22m
-[2m    - waiting 20ms[22m
-[2m    2 × waiting for element to be visible, enabled and stable[22m
-[2m      - element is not enabled[22m
-[2m    - retrying click action[22m
-[2m      - waiting 100ms[22m
-[2m    57 × waiting for element to be visible, enabled and stable[22m
-[2m       - element is not enabled[22m
-[2m     - retrying click action[22m
-[2m       - waiting 500ms[22m
+<![CDATA[   실패한 테스트: 3. Report를 생성시킨 이상사례의 행을 삭제한다
+   실패 원인: Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
 
-   스크린샷: test-results/screenshots/1. 사용자가 새 공지사항을 작성하면 Notice 목록에 반영되어야 한다.png
+Expected: [32mtrue[39m
+Received: [31mfalse[39m
+   스크린샷: test-results/screenshots/3. Report를 생성시킨 이상사례의 행을 삭제한다.png
 ]]>
 </system-err>
 </testcase>
-<testcase name="Study Notice › 2. 사용자가 파일을 업로드하면 파일 이름이 화면에 표기된다" classname="cdms\JP-MVN2025-ALL\notice.test.ts" time="0">
+<testcase name="ML42494 Report 생성 테스트 › Report 삭제 테스트 › 4. 삭제한 이상사례의 Report가 취소된다" classname="cdms\ML42494\createReport.test.ts" time="0">
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Study Notice › 3. 사용자가 공지사항을 수정하면 해당 Notice Detail 페이지에 반영되어야 한다" classname="cdms\JP-MVN2025-ALL\notice.test.ts" time="0">
+<testcase name="ML42494 Report 생성 테스트 › Report 복원 테스트 › 1. 취소된 Report 페이지로 이동한다" classname="cdms\ML42494\createReport.test.ts" time="0">
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Study Notice › 4. 사용자가 공지사항을 삭제하면 해당 Notice는 List에서 보이지 않는다" classname="cdms\JP-MVN2025-ALL\notice.test.ts" time="0">
+<testcase name="ML42494 Report 생성 테스트 › Report 복원 테스트 › 2. 취소된 Report 페이지에서 CRF 페이지로 이동된다" classname="cdms\ML42494\createReport.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report 복원 테스트 › 3. 삭제했던 이상사례의 행을 복원한다" classname="cdms\ML42494\createReport.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report 복원 테스트 › 4. Report 아이콘으로 복원된 Report 페이지로 이동한다" classname="cdms\ML42494\createReport.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="ML42494 Report 생성 테스트 › Report 복원 테스트 › 5. Report List에서 복원 여부를 확인한다" classname="cdms\ML42494\createReport.test.ts" time="0">
 <skipped>
 </skipped>
 </testcase>

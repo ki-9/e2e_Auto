@@ -40,6 +40,12 @@ const COMMON_CONFIG: CommonLoginConfig = {
       role: 'Owner',
       name: 'Auto Owner1',
     },
+    pi: {
+      email: process.env.TEST_EMAIL_PI || '',
+      password: process.env.TEST_PASSWORD_PI || '',
+      role: 'PI',
+      name: 'Auto PI1',
+    },
   },
 };
 
